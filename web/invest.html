@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>我要投资</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/invest.css">
+  <link rel="stylesheet" href="../css/jkd-tab.css">
+  <link rel="stylesheet" href="../css/jquery-calendar.css" />
+  <link rel="stylesheet" href="../css/jkdpop-box.css">
+  <link rel="stylesheet" href="../css/chome.css">
+  <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+  <script src="../js/home.js"></script>
+  <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="../js/jquery-calendar.js"></script>
+  <script>
+    $(document).ready(function(){
+      //投标进度条
+      function perNum(){
+        var jkdWidth="40%";
+        $(".bar-num").css("width",jkdWidth);
+        $(".bar-num-count").append(jkdWidth);
+      };
+      perNum();//进度条
+    });
+  </script>
+</head>
+<body>
+<div id="header"></div>
+<!--立即投标-->
+    <div class="my-loan mg0 wd12 ">
+      <div class="my-loanl fl box-sh back-w">
+
+        <div class="my-loanl-top border-bot">
+          <p class="myloan-name fl font18"><span class="font60">[担保贷] </span>20170501DBD001-鄂</p>
+          <div class="percent flr">
+            <div class="barp">
+              <div class="bar-num"></div>
+            </div>
+            <span class="bar-num-count"></span>
+          </div>
+        </div>
+
+        <div class="my-loanl-mid">
+            <ul>
+              <li>
+                <span class="pro-num">项目金额</span>
+                <span class="font20">100<span class="font16">万</span></span>
+              </li>
+              <li>
+                <span class="pro-num">项目期限</span>
+                <span class="font20">3<span class="font16">个月</span></span>
+              </li>
+              <li>
+                <span class="pro-num">年化利率</span>
+                <span class="font24">8.00%</span>
+              </li>
+              <li>
+                <div class="loan-box flr">
+                  <div class="loan-icon"><img src="../images/transferable-icon.png"></div>
+                  <div class="loan-icon"><img src="../images/loanphone-icon.png"></div>
+                </div>
+              </li>
+            </ul>
+        </div>
+
+        <div class="loan-info">
+          <div class="loan-row">
+            <div class="loan-til">借款方性质</div>
+            <div class="loan-txt font60">个人</div>
+            <div class="loan-til">还款方式</div>
+            <div class="loan-txt font60">按月付息到期还本</div>
+          </div>
+          <!--
+          guarantee
+          1. 个人用户，汽车贷show
+          2.企业用户,商票，信用贷，信用宝hide
+          -->
+          <div class="guarantee">
+            <div class="loan-row">
+              <div class="loan-til">担保机构</div>
+              <div class="loan-txt font60">武汉市农业担保公司</div>
+            </div>
+          </div>
+
+          <div class="loan-row">
+            <div class="loan-til">是否支持转让</div>
+            <div class="loan-txt font60">可转让</div>
+            <div class="loan-til">起投金额</div>
+            <div class="loan-txt font60">10000元</div>
+          </div>
+
+          <div class="loan-row">
+            <div class="loan-til">项目发布时间</div>
+            <div class="loan-txt font60">2017-05-01</div>
+            <div class="loan-til">项目成立时间</div>
+            <div class="loan-txt font60">2017-05-01</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="my-loanr flr box-sh back-w ">
+        <div class="invest-til pt-re font18 clorg tl-center">立即投标</div>
+        <div style="clear: both"></div>
+        <p class="surplus-loan">
+          项目剩余投资金额
+          <span class="surplus-num font22">1000.00 <span class="font14">元</span></span>
+        </p>
+        <div class="loan-numfinfo">
+          <div class="loan-select">
+            <input type="text" class="min-num" value="最低投资金额 50">
+            <select>
+              <option>请选择奖券</option>
+            </select>
+            <div style="clear: both"></div>
+            <p class="colred font12">请填写正确投资金额</p>
+            <p class="font16">账户可用余额 10.01 <a href="myjkd-recharge.html" class="recharge col-w">充值</a></p>
+          </div>
+        </div>
+
+        <div class="loanr-bot">
+          <div class="loanr-botl fl">
+            <div class="loanr-til">
+              <span class="fl">实际支付金额</span>
+              <span class="fl"><a class="q-mark" title="实际支付金额"><img src="../images/q-mark.png"></a></span>
+              <span class="fl colred">500 0000.00</span>
+              <span class="fl font14">元</span>
+            </div>
+            <div class="loanr-til">
+              <span class="fl colred font16">您的投资金额需大于项目起投金额</span>
+            </div>
+          </div>
+          <div class="flr hov-alpha"><a class="invest-btn">立即投资</a></div>
+        </div>
+      </div>
+    </div>
+<!--投标信息-->
+    <div class="loan-peinfo mg0 wd12 back-w box-sh">
+      <div id="investSlide" class="investSlide">
+      <div id="my-loanhd" class="hd font16">
+        <ul>
+          <li class="loan-btn loan-btn1 loan-btnbg">借款方信息</li>
+          <!--个人用户，商票，信用贷，汽车贷，信用宝-show-->
+          <li class="loan-btn loan-btn2">
+            <span>担保方信息</span>
+          </li>
+          <!--credit信用宝-show-->
+          <li class="credit-btn dis-none ">
+            <span>个人资产及征信信息</span>
+          </li>
+
+          <li class="loan-btn loan-btn3">项目详情</li>
+          <li class="loan-btn loan-btn4">还款计划</li>
+          <li class="loan-btn loan-btn5">投标详情</li>
+        </ul>
+      </div>
+      <div id="my-loanbd" class="bd">
+        <!--1.借款方信息-->
+        <div class="loan-bd1">
+          <!--1-1个人用户，商票，信用贷，汽车贷-show-->
+          <div class="loan-personal">
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">项目经理</span>
+                <span  class="font60">王**</span>
+                <span class="flr"><a class="lred-btn col-w  hov-alpha" href="invest-warrantlog.html">近12个月项目记录</a></span>
+              </div>
+
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">工作城市</span>
+                <span class="font60">陕西省西安市</span>
+              </div>
+              <div class="loan-bdti3 fl">
+                <span class="loan-bdpe">是否结婚</span>
+                <span class="font60">已婚</span>
+              </div>
+
+              <div class="loan-bdti4 fl">
+                <span class="loan-bdpe">是否结婚</span>
+                <span class="font60">已婚</span>
+              </div>
+            </div>
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">借款人</span>
+                <span  class="font60">王**</span>
+                <span class="flr"><a class="lred-btn col-w  hov-alpha" href="invest-personal.html">近12个月项目记录</a></span>
+              </div>
+
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">工作年限</span>
+                <span class="font60">**年</span>
+              </div>
+              <div class="loan-bdti3 fl">
+                <span class="loan-bdpe">有无购房</span>
+                <span class="font60">是</span>
+              </div>
+            </div>
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">年龄</span>
+                <span  class="font60">**岁</span>
+              </div>
+
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">公司类别 </span>
+                <span class="font60">国内私营企业</span>
+              </div>
+              <div class="loan-bdti3 fl">
+                <span class="loan-bdpe">有无车贷 </span>
+                <span class="font60">是</span>
+              </div>
+            </div>
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">性别</span>
+                <span  class="font60">男</span>
+              </div>
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">学历 </span>
+                <span class="font60">大学专科和专科学校</span>
+              </div>
+              <div class="loan-bdti3 fl">
+                <span class="loan-bdpe">有无房贷</span>
+                <span class="font60">是</span>
+              </div>
+            </div>
+          </div>
+          <!--1-2信用宝-show-->
+          <div class="credit-treasure dis-none">
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">借款人</span>
+                <span  class="font60">王**</span>
+              </div>
+
+              <div class="loan-bdti2 fl">
+                <span class="loan-bdpe">身份证号码</span>
+                <span class="font60">130152********0012</span>
+              </div>
+              <div class="loan-bdti3 fl">
+                <span class="loan-bdpe tl-r ">子女状况 </span>
+                <span class="font60">未成年</span>
+              </div>
+            </div>
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">年龄</span>
+                <span  class="font60">**周岁</span>
+              </div>
+
+              <div class="loan-bdti2 fl">
+                <span class="loan-bdpe">户籍</span>
+                <span class="font60">河北省石家庄鹿泉市获鹿镇襄阳*****</span>
+              </div>
+            </div>
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">行别</span>
+                <span  class="font60">男</span>
+              </div>
+
+              <div class="loan-bdti2 fl">
+                <span class="loan-bdpe">是否结婚 </span>
+                <span class="font60">已婚</span>
+              </div>
+            </div>
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">手机号码</span>
+                <span  class="font60">137***8128</span>
+              </div>
+
+              <div class="loan-bdti2 fl">
+                <span class="loan-bdpe">借款用途 </span>
+                <span class="font60">消费</span>
+              </div>
+            </div>
+          </div><!--end-->
+          <!--1-3企业用户-show-->
+          <div class="loan-company dis-none">
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">项目经理</span>
+                <span  class="font60">王**</span>
+                <span class="loan-bdbtn"><a class="lred-btn col-w  hov-alpha" href="invest-warrantlog.html">近12个月项目记录</a></span>
+              </div>
+
+              <div class="loan-bdti2 fl">
+                <span class="loan-bdpe">企业名称</span>
+                <span class="font60">武汉***餐饮有限公司</span>
+                <span class="loan-bdbtn"><a class="lred-btn col-w  hov-alpha" href="invest-warrantlog.html">近12个月项目记录</a></span>
+              </div>
+              <div class="loan-bdti3 fl">
+                <span class="loan-bdpe tl-r ">企业规模</span>
+                <span class="font60">小型企业</span>
+              </div>
+            </div>
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">法人代表</span>
+                <span  class="font60">王**</span>
+              </div>
+
+              <div class="loan-bdti2 fl">
+                <span class="loan-bdpe">注册资本</span>
+                <span class="font60"> 3000万元</span>
+              </div>
+              <div class="loan-bdti3 fl">
+                <span class="loan-bdpe tl-r fl ">企业经营范围  </span>
+                <span class="loan-bdtxt font50 fl"> 沥青（不含危险化学品）、混凝土的加工及销售；
+                         公路工程及信息咨询。</span>
+              </div>
+            </div>
+          </div><!--end-->
+        </div>
+        <!--2.担保借款方信息-->
+        <div class="loan-bd2">
+          <!--2-1个人用户，商票，信用贷，汽车贷-->
+          <div class="loan-bd2personal  ">
+              <div class="loan-bdrow">
+                <div class="loan-bdtil fl">
+                  <span class="loan-bdpe font60">企业名称</span>
+                  <span>武汉***餐饮有限公司</span>
+                  <span><a class="lred-btn col-w  hov-alpha">近12个月项目记录</a></span>
+                </div>
+
+                <div class="loan-bdti2 fl">
+                  <span class="loan-bdpe font60"> 组织类别</span>
+                  <span>有限责任</span>
+                </div>
+
+                <div class="loan-bdti3 fl">
+                  <span class="loan-bdpe font60">经营范围</span>
+                  <span>商务服务、经济信息咨询、企业管理咨询、策划服务、项目投资、技术推广服务、市场调研、业务代理、发布广告、软件与网络技术服务、电脑打字与打印服务、会议及展览服务。</span>
+                </div>
+
+            </div>
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe font60">兼营</span>
+                <span>担保</span>
+              </div>
+
+              <div class="loan-bdti2 fl">
+                <span class="loan-bdpe font60">成立日期</span>
+                <span>2010-08-02</span>
+              </div>
+
+              <div class="loan-bdti3 fl">
+                <span class="loan-bdpe font60">湖北省</span>
+                <span>武汉市</span>
+              </div>
+            </div>
+          </div>
+          <!--2-2信用宝-show-->
+          <div class="loan-bd2credit dis-none">
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">月收入水平</span>
+                <span class=" font60">10000-30000元</span>
+              </div>
+
+              <div class="loan-bdti2 fl">
+                <span class="loan-bdpe">其他信用贷款</span>
+                <span class=" font60">无</span>
+              </div>
+
+              <div class="loan-bdti3 fl">
+                <span class="loan-bdpe">信用卡已用额度</span>
+                <span class=" font60">0.00</span>
+              </div>
+
+            </div>
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe">房产</span>
+                <span class="font60"> 有房产</span>
+              </div>
+
+              <div class="loan-bdti2 fl">
+                <span class="loan-bdpe">未销户信用卡</span>
+                <span class="font60">无</span>
+              </div>
+
+            </div>
+          </div><!--end-->
+        </div>
+        <!--3.项目详情-->
+        <div class="loan-bd3">
+          <!--3-1个人用户，商票，信用贷，汽车贷-show信用宝hide-->
+          <div class="loan-bd3top mg0">
+            <div class="loan-bdrow">
+              <div class="loan-bdtil fl">
+                <span class="loan-bdpe font60">借款用途</span>
+                <span>经营</span>
+              </div>
+
+              <div class="loan-bdti2 fl">
+                <span class="loan-bdpe font60">还款来源</span>
+                <span>经营收入</span>
+              </div>
+
+              <div class="loan-bdti3 fl">
+                <span class="loan-bdpe font60">征信情况</span>
+                <span>良好</span>
+              </div>
+              <div class="loan-bdti4 fl">
+                <span class="loan-bdpe font60">担保方式</span>
+                <span>资产抵押</span>
+              </div>
+              <div class="loan-bdrow">
+                <div class="loan-bdtil fl">
+                  <span class="loan-bdpe font60">备注 </span>
+                  <span> 无</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--3-2个人用户，商票，信用贷，汽车贷-show信用宝hide-->
+          <div class="loan-bd3mid border-bot">
+            <h4 class="font18">基本情况</h4>
+            <p class="pulish-info">借款企业为湖北武汉某农业企业，该企业成立于2011 年12 月，注册资金1100 万元。企业主营业务为：蔬菜、花卉种植及销售；园艺机械、器具及配件的销售；农业技术、生物技术的研发、转让、推广服务。2016 年全年企业主营业务收入7679 万元，净利润1516 万元。借款用途：补充流动资金。还款来源：该企业的销售收入。借款企业负面情况查询：据全国法院被执行人信息查询系统、全国法院失信被执行人名单信息公布与查询平台及互联网搜索，未发现借款企业有涉诉信息及负面信息。担保情况：本次贷款由武汉市农业担保有限公司提供全额本息不可撤销之连带责任保证担保。综述:借款企业此次借款用于流动资金周转，经湖北金开贷金融服务有限公司多次实地尽职调查认为借款企业信誉较好，企业经营情况良好，销售回款稳定，具有较好的还款能力。
+            </p>
+          </div>
+          <!--全部展示-->
+          <div class="loan-bd3mid border-bot">
+            <h4 class="font18">项目流程</h4>
+            <div class="loan-bd3mid2">
+              <div class="pulish">
+                <p class="font24 font60">项目发布</p>
+                <p class="font16">2017-05-01 </p>
+              </div>
+              <span class="pulishbg"><img src="../images/pulishbg.png" ></span>
+              <div class="pulish">
+                <p class="font24 font60">完成募集</p>
+                <p class="font16">2017-05-01 </p>
+              </div>
+              <span class="pulishbg"><img src="../images/pulishbg.png" ></span>
+              <div class="pulish">
+                <p class="font24 font60">项目管理</p>
+                <a class="txt-underl font12">查看金开贷项目管理规则</a>
+                <p>2017-05-01报告已上传 </p>
+                <p>2017-05-01报告已上传 </p>
+              </div>
+              <span class="pulishbg"><img src="../images/pulishbg.png" ></span>
+              <div class="pulish">
+                <p class="font24 col-w font60">项目完成</p>
+                <p class="col-w ">2017-05-01</p>
+              </div>
+            </div>
+          </div>
+          <div class="loan-bd3mid border-bot">
+            <h4 class="font18">图片资料</h4>
+            <div class="loan-bd3bot">
+
+              <div class="swip-ban fl">
+                <div class="classSlideBox">
+                  <div class="bd">
+                    <ul>
+                      <li>
+                          <div class="pulish-img">1</div>
+                          <div class="pulish-img"></div>
+                          <div class="pulish-img"></div>
+                      </li>
+                      <li>
+                        <div class="pulish-img">2</div>
+                        <div class="pulish-img"></div>
+                        <div class="pulish-img"></div>
+                      </li>
+                      <li>
+                        <div class="pulish-img">3</div>
+                        <div class="pulish-img"></div>
+                        <div class="pulish-img"></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                  <a class="prev" href="javascript:void(0)"></a>
+                  <a class="next" href="javascript:void(0)"></a>
+                </div>
+              </div>
+              <div class="swip-banr flr">
+                <h4 class="font18">协议模板：</h4>
+                <a class="agreement">投资项目合同模板预览</a>
+                <h4 class="font18">风险提示</h4>
+                <div class="risc-book">
+                  商务服务、经济信息咨询、企业管理咨询、策划服务、项目投资、技术推广服务、市场调研、业务代理、发布广告、软件与网络技术服务、电脑打字与打印服务、会议及展览服务。
+                  商务服务、经济信息咨询、企业管理咨询、策划服务、项目投资、技术推广服务、市场调研、业务代理、发布广告、软件与网络技术服务、电脑打字与打印服务、会议及展览服务。
+                  商务服务、经济信息咨询、企业管理咨询、策划服务、项目投资、技术推广服务、市场调研、业务代理、发布广告、软件与网络技术服务、电脑打字与打印服务、会议及展览服务。
+                </div>
+                <a class="agreement">风险提示书模板预览</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--4.还款计划-->
+        <div class="loan-bd4 wd12">
+            <table class="wd12">
+              <thead>
+                <tr>
+                  <th style="width: 220px"><span class="loan-time">预期还款时间</span></th>
+                  <th style="width: 245px">应付本金（元）</th>
+                  <th style="width: 245px">应付利息（元）</th>
+                  <th style="width: 218px">应付利息（元）</th>
+                  <th style="width: 188px">剩余本金（元）</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><span class="loan-time">2017-06-05</span></td>
+                <td>10000.00</td>
+                <td>6666.68 </td>
+                <td>6666.68</td>
+                <td>6666.68</td>
+              </tr>
+              <tr>
+                <td><span class="loan-time">2017-06-05</span></td>
+                <td>10000.00</td>
+                <td>6666.68 </td>
+                <td>6666.68</td>
+                <td>6666.68</td>
+              </tr>
+              <tr>
+                <td><span class="loan-time">2017-06-05</span></td>
+                <td>10000.00</td>
+                <td>6666.68 </td>
+                <td>6666.68</td>
+                <td>6666.68</td>
+              </tr>
+              </tbody>
+            </table>
+        </div>
+        <!--5.投标详情-->
+        <div class="loan-bd5">
+          <table class="wd12">
+            <thead>
+            <tr>
+              <th style="width: 282px"><span class="loan-time">投标人</span></th>
+              <th style="width: 280px">利率</th>
+              <th style="width: 338px">投标金额（元）</th>
+              <th style="width: 231px">投标时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><span class="loan-time">jin***kai</span></td>
+              <td>8%</td>
+              <td>6666.68 </td>
+              <td>2017-05-05 10:00:02</td>
+            </tr>
+            </tbody>
+          </table>
+          <p class="tl-center mg0"><a class="yel-sbtn col-w  hov-alpha ">查看更多</a></p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<div style="clear: both"></div>
+<div id="footer"></div>
+<script type="text/javascript">
+  //轮播
+  var ary = location.href.split("&");
+  jQuery(".classSlideBox").slide( { mainCell:".bd ul", effect:ary[1],
+    autoPlay:ary[2],
+    trigger:ary[3],
+    easing:ary[4],
+    delayTime:ary[5],
+    mouseOverStop:ary[6],
+    pnLoop:ary[7] ,
+    autoPlay:true,
+    delayTime:800,
+    effect:"fold",//渐隐 fade
+  });
+  $(document).ready(function() {
+      $(".loan-btn1").click(
+              function (){
+                $(this).addClass("loan-btnbg").siblings().removeClass("loan-btnbg");
+                $(this).siblings().removeClass("credit-btnbg");
+                $(".loan-bd1").show().siblings().hide();
+              }
+      );
+    $(".loan-btn2").click(
+            function (){
+              $(this).addClass("loan-btnbg").siblings().removeClass("loan-btnbg");
+              $(".loan-bd2").show().siblings().hide();
+            }
+    );
+
+    $(".credit-btn").click(
+            function (){
+              $(this).addClass("credit-btnbg").siblings().removeClass("loan-btnbg ");
+              $(".loan-bd2").show().siblings().hide();
+            }
+    );
+    $(".loan-btn3").click(
+            function (){
+              $(this).addClass("loan-btnbg").siblings().removeClass("loan-btnbg");
+              $(this).siblings().removeClass("credit-btnbg");
+              $(".loan-bd3").show().siblings().hide();
+            }
+    );
+    $(".loan-btn4").click(
+            function (){
+              $(this).addClass("loan-btnbg").siblings().removeClass("loan-btnbg");
+              $(this).siblings().removeClass("credit-btnbg");
+              $(".loan-bd4").show().siblings().hide();
+            }
+    );
+    $(".loan-btn5").click(
+            function (){
+              $(this).addClass("loan-btnbg").siblings().removeClass("loan-btnbg");
+              $(this).siblings().removeClass("credit-btnbg");
+              $(".loan-bd5").show().siblings().hide();
+            }
+    );
+
+  })
+</script>
+<style>
+ .home-a3{color:#f15b3a }
+</style>
+</body>
+</html>

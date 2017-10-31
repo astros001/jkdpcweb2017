@@ -1,0 +1,402 @@
+/*金开贷弹出窗*/
+#popLayer{
+    display: none;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:100001;
+    background:#000;
+    -moz-opacity: 0.6;
+    opacity:0.6;
+    filter: alpha(opacity=80);/* 只支持IE6、7、8、9 */
+}
+/*风险提示书*/
+.jkdpopBox,.loanInfoPop{
+    position: absolute;
+    display:none;
+    width:690px;
+    min-height: 722px;
+    border-radius: 8px;
+    overflow: hidden;
+    left:0;
+    right:0;
+    bottom:40px;
+    top:40px;
+    margin: 0 auto;
+    z-index:100002;
+    background: #fff;
+}
+.riscpop-tip{
+    height: 64px;
+    line-height: 64px;
+    background: #f2f2f2;
+}
+.close-pop{
+    top:2px;
+    right: 15px;
+}
+.risc-txt{
+    width: 630px;
+    height:490px;
+    padding: 30px;
+    line-height: 30px;
+    overflow-y:scroll;
+}
+.riscpop-btn{
+    height:98px;
+    padding:10px 0 0 30px;
+    line-height: 26px;
+    background: #f2f2f2;
+}
+.risc-pop{
+    width: 172px;
+    height: 44px;
+}
+/*风险提示书调用*/
+.transfer-pop{
+    display: none;
+    position: fixed;
+    width: 378px;
+    height: 230px;
+    border-radius: 8px;
+    left:0;
+    right:0;
+    bottom:40px;
+    top:20%;
+    margin: 0 auto;
+    z-index:100002;
+    background: #fff;
+    overflow: hidden;
+}
+.transfer-pop .transfer-txt{
+    line-height: 174px;
+}
+.transfer-popbtn{
+    padding: 20px  104px 0 104px;
+    height: 56px;
+    background: #f2f2f2;
+}
+/*回款计划书*/
+.return-plan{
+    position: absolute;
+    display:none;
+    width:1000px;
+    height: 640px;
+    border-radius: 8px;
+    left:0;
+    right:0;
+    bottom:40px;
+    top:10%;
+    margin: 0 auto;
+    z-index:100002;
+    background: #fff;
+    overflow: hidden;
+}
+.return-til{
+    height: 60px;
+    line-height: 60px;
+    background: #f2f2f2;
+}
+.return-plan .recharge-redbtn{
+    top: 20px;
+    left: 24px;
+}
+.return-tab{
+    width: 952px;
+    height: 450px;
+    margin-top: 20px;
+    overflow-y: scroll ;
+}
+.return-tab thead{
+    width: 952px;
+    background:#f2f2f2 ;
+    line-height: 38px;
+}
+.return-tab thead th,.return-tab tbody td{
+    text-align: left;
+    text-indent: 22px;
+}
+.return-tab tbody td{
+    line-height:54px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.return-img img{
+    margin-top:16px;
+}
+/*借款信息确认*/
+.loanInfoPop{
+    width: 740px;
+    height: 808px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.loanInfoTxt{
+    height: 730px;
+    overflow-y:scroll ;
+}
+.loanInfoPop .riscpop-btn{
+    height: 70px;
+}
+.loanInfoPop .riscpop-btn .risc-pop{
+    width: 284px;
+    padding-top: 20px;
+}
+.loanInfoPop .riscpop-btn  .lgray-btn{
+    margin-left: 38px;
+}
+.loanInfo-til{
+    line-height: 62px;
+    font-weight: 700;
+}
+.loanInfo-tab1{
+    width: 616px;
+}
+.loanInfo-tab1 tbody tr{
+    border: 1px solid #f2f2f2 ;
+    line-height: 30px;
+    text-align: left;
+}
+.loanInfo-tab1 tbody tr td{
+    border: 1px solid #f2f2f2 ;
+    padding:0 14px;
+}
+.loanInfo-name{
+    width: 102px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.loanInfo-nametxt{
+    width: 170px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*我的奖券*/
+
+.lotteryCoinPop,.detailCoinPop,.lotteryRatesPop,.lotteryManagePop,.lotteryOtherPop,.lotteryCashbagPop,.lotteryCashPop,.lotteryEssPop{
+    width: 548px;
+    min-height:380px;
+    border-radius: 8px;
+    display: none;
+    background: #fff;
+    position: fixed;
+    left:0;
+    right:0;
+    top:10%;
+    bottom:10%;
+    margin: 0 auto;
+    z-index:100002;
+}
+.lottery-poptop{
+    width: 548px;
+    height:196px;
+    position: relative;
+}
+.lot-popclosed,.calcu-popclosed{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 100004;
+    top: 0;
+    right: 6px;
+}
+.lottery-popbg{
+    width: 548px;
+    height: 236px;
+    background: url(../images/lottery-popbg.png) no-repeat top center;
+    position: absolute;
+    top: -38px;
+    left: 0;
+}
+.lot-til{
+    line-height: 46px;
+    padding-right:10px;
+    margin-bottom: 34px;
+}
+.jkd-active {
+    line-height: 48px;
+}
+.jkd-active-time{
+    width: 436px;
+    line-height: 42px;
+}
+.lot-poptxt{
+    width: 470px;
+    min-height: 60px;
+    line-height: 30px;
+    padding: 6px 40px;
+    padding-bottom: 20px;
+}
+.lot-poptxt p{
+    padding-bottom:10px;
+}
+/*金开币奖券详情*/
+.lot-detail-til{
+    margin-top:40px;
+}
+/*加息券奖券详情*/
+.lotteryRatesPop{
+    display: none;
+}
+.lot-poprow{
+    width: 470px;
+    height: 34px;
+}
+.lot-popl{
+    width: 290px;
+    height: 34px;
+    overflow: hidden;
+}
+.lot-popr{
+    width: 178px;
+    height: 34px;
+    overflow: hidden;
+}
+.lot-poprow-name{
+    width: 130px;
+    height: 34px;
+    display: inline-block;
+}
+.lot-poprow-info{
+    width: 100px;
+    height: 34px;
+    display: inline-block;
+}
+/*第三方优惠券*/
+.lotteryCashbag{
+}
+.lotteryCashRow{
+    width:420px;
+    height: 24px;
+    padding-top:4px;
+    margin: 0 auto;
+}
+.lotteryCashRow span{
+    width: 210px;
+    height: 24px;
+    display: inline-block;
+}
+/*实体奖品*/
+.lotteryEssPop .lotteryEssPopTime{
+    padding-top: 24px;
+}
+/*可支持银行卡绑定*/
+.rechargeBanklist{
+    width: 834px;
+    min-height:560px;
+    border-radius: 8px;
+    display:none;
+    position: fixed;
+    left:0;
+    right:0;
+    top:10%;
+    bottom:10%;
+    margin: 0 auto;
+    z-index:100002;
+}
+.rechargeBanklist .lot-popclosed{
+    padding-top: 18px;
+    padding-right: 14px;
+}
+
+/*借款申请*/
+.lendPop{
+    display:none;
+    position: fixed;
+    width:376px;
+    height: 240px;
+    border-radius: 8px;
+    overflow: hidden;
+    left:0;
+    right:0;
+    bottom:40px;
+    top:20%;
+    margin: 0 auto;
+    z-index:100002;
+    background: #fff;
+}
+.lendPop .return-img img{
+    margin: 6px 16px 0 0;
+}
+.lendPoptxt{
+    width: 260px;
+    height: 108px;
+    font-weight: 700;
+    margin: 74px 0 0 64px;
+}
+.sub-lendapply{
+    width:200px;
+    height: 100px;
+}
+/*金开贷计算器*/
+.jkdCalculator{
+    width: 696px;
+    height: 400px;
+    display: none;
+    border-radius: 8px;
+    background: #fff;
+    position: fixed;
+    left:0;
+    right:0;
+    top:10%;
+    bottom:10%;
+    margin: 0 auto;
+    z-index:100002;
+    overflow: hidden;
+}
+.calculate,.calculateBot{
+    height: 60px;
+    line-height: 60px;
+    background: #f2f2f2;
+    text-align: center;
+}
+.calcu-popclosed{
+    top: 16px;
+}
+.calculateInfo{
+    height: 112px;
+    padding: 24px 0 0 74px;
+}
+.calcuRow{
+    width: 548px;
+    height: 50px;
+}
+.calculateNum,.calculateRate,.calculateSelec,.calculateSelecr{
+    width: 258px;
+    padding-left: 10px;
+    height: 36px;
+    font-size: 16px;
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+}
+.calculateSelec,.calculateSelecr{
+    width: 270px;
+    padding-left: 6px;
+}
+.calculateNum,.calculateSelec{
+    float: left;
+}
+.calculateRate,.calculateSelecr{
+    float: right;
+}
+.calculateTable{
+    width: 550px;
+    height: 124px;
+    margin:24px 0 0 74px ;
+    overflow-y: scroll;
+}
+.calculateTable table thead tr{
+    height:34px;
+    text-align: center;
+    background: #e9e9e9;
+}
+.calculateTable tbody{
+    line-height:34px;
+    text-align: center;
+}
+.calculateBot{
+    padding-top: 14px;
+}

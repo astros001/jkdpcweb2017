@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+    <script src="../js/home.js"></script>
+</head>
+<body>
+<input type="text" name="date"  id="today">
+
+<script type="text/javascript">
+    function today(){
+        var today=new Date();//new 出当前时间
+        var h=today.getFullYear();//获取年
+        var m=today.getMonth()+1;//获取月
+        var d=today.getDate();//获取日
+        var H = today.getHours();//获取时
+        var M = today.getMinutes();//获取分
+        var S = today.getSeconds();//获取秒
+        return h+"-"+m+"-"+d+" "+H+":"+M+":"+S; //返回 年-月-日 时:分:秒
+    }
+    document.getElementById("today").value = today();//将获取到的 年-月-日 时:分:秒 赋给input文本输入框
+</script>
+</body>
+</html>

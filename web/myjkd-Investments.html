@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我的投资</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/invest.css">
+    <link rel="stylesheet" href="../css/jkd-tab.css">
+    <link rel="stylesheet" href="../css/jquery-calendar.css" />
+    <link rel="stylesheet" href="../css/jkdpop-box.css">
+    <link rel="stylesheet" href="../css/chome.css">
+    <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="../js/jquery-calendar.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".invest-icon li").hover(function () {
+                $(this).children("div").show();
+            }, function () {
+                $(this).children("div").hide();
+            });
+        })
+    </script>
+</head>
+<body>
+<div id="header"></div>
+<!--二.我的金开贷-->
+<div class="my-jkd wd12 mg0">
+    <!--侧边栏-->
+    <div id="myjkd-leftmenu"></div>
+    <!--侧边栏-r-->
+    <div class="my-jkd-con fl pt-re">
+        <div class="my-invest back-w box-sh">
+            <div class="my-investl font16 pt-re">
+                <div class="invest-til pt-ab font18 clorg tl-center">我的投资</div>
+                <div style="clear: both"></div>
+                <ul>
+                    <li>
+                        <a class="q-mark fl" title="在平台累计投资项目笔数"><img src="../images/q-mark.png"></a>
+                        <span class="colg add-numl">累计投资笔数</span>
+                        <span><span class="colred">200</span> 笔</span>
+                    </li>
+                    <li>
+                        <a class="q-mark fl" title="在平台累计认购债权转让项目笔数"><img src="../images/q-mark.png"></a>
+                        <span class="add-num colg">累计债权认购笔数</span>
+                        <span><span class="colred">20</span> 笔</span>
+                    </li>
+
+                    <li>
+                        <a class="q-mark fl" title="在平台已转让的投资项目笔数"><img src="../images/q-mark.png"></a>
+                        <span class="add-numl colg">已转让笔数</span>
+                        <span><span class="colred">20</span> 笔</span>
+                    </li>
+                    <li>
+                        <a class="q-mark fl" title="在平台已结清的投资项目笔数"><img src="../images/q-mark.png"></a>
+                        <span class="add-num colg">已结清项目</span>
+                        <span><span class="colred">20</span> 笔</span>
+                    </li>
+
+                </ul>
+            </div>
+            <!--bg-->
+            <div class="invest-bg flr  pt-ab">
+                <div class="col-w">
+                    <a class="q-mark fl" title="待收回的投资本金与利息总额"><img src="../images/q-mark-yl.png"></a>
+                    <p class="principal font22 ">待收本息</p>
+                    <p class="principal-num font32">300.00<span class="font22">元</span></p>
+                </div>
+            </div>
+        </div>
+        <!--投资项目列表-->
+        <div style="clear: both"></div>
+        <div class="invest-list back-w box-sh pt-re ">
+            <div class="exgoldSlide">
+                <!--tag标题-->
+                <div class="hd">
+                    <ul class="tabs myinvest-nav invest-top back-w">
+                        <li class="nav-li pt-re"><a class="classtab1 font18">投资项目列表</a></li>
+                        <li class="nav-li pt-re"><a class="font18">债权认购项目列表</a></li>
+                        <p class="inves-tip flr"><span class="colred">"下期还款日"</span> 为借款人最后还款期限,投资人请于次日查询账户明细</p>
+                    </ul>
+                </div>
+                <!--二级菜单-->
+                <div class="bd">
+                    <div class="myinvest-con-tab">
+                        <ul class="sm-btngroup ">
+                            <li><a class="sm-current">全部</a></li>
+                            <li><a class="">投标中</a></li>
+                            <li><a class="">还款中</a></li>
+                            <li><a class="">已结清</a></li>
+                        </ul>
+                        <table class="all-pro">
+                            <!--标的-标题-->
+                            <tr>
+                                <td style="width:262px;">
+                                    <p class="all-pro-tdtil pro-name">项目名称</p>
+                                </td>
+                                <td style="width: 100px">
+                                    <p class="all-pro-tdtil">投资金额</p>
+                                </td>
+                                <td style="width: 126px">
+                                    <p class="all-pro-tdtil">利率</p>
+                                </td>
+                                <td style="width: 74px">
+                                    <p class="all-pro-tdtil">期限</p>
+                                </td>
+                                <td style="width: 125px">
+                                    <p class="all-pro-tdtil">已得收益</p>
+                                </td>
+                                <td style="width: 100px">
+                                    <p class="all-pro-tdtil">剩余期数/天数</p>
+                                </td>
+                                <td style="width: 120px">
+                                    <p class="all-pro-tdtil">下期还款日</p>
+                                </td>
+                                <td style="width: 80px">
+                                    <p class="all-pro-tdtil">状态</p>
+                                </td>
+                            </tr>
+                            <!--标的-->
+                            <tr>
+                                <td><p class="pd-l"><span class="font60">[担保贷]</span>项目发布时间112019年11月28日56556</p></td>
+                                <td><p>10000.00</p></td>
+                                <td><p>8.00%+1.00%</p></td>
+                                <td><p>120天</p></td>
+                                <td><p>1000.00</p></td>
+                                <td><p>2期</p></td>
+                                <td><p>2017-06-01</p></td>
+                                <td><p>还款中</p></td>
+                            </tr>
+                            <!--标的-状态-->
+                            <tr>
+                                <td colspan="8">
+                                     <span class="transf-td border-bot ">
+                                           <span class="fl"><img src="../images/transferable-icon.png"></span>
+                                           <ul class="invest-icon flr">
+                                               <li>
+                                                   <a class="prospectus pt-ab" onclick="returnPop()"><img src="../images/Prospectus.png"></a>
+                                                   <div class="bl-til prospectus-txt pt-re  font12 ">回款计划书
+                                                   </div>
+                                               </li>
+                                               <li>
+                                                   <a class="trans-icon pt-ab" onclick="jkdpopBox()"><img src="../images/trans-icon.png"></a>
+                                                   <div class="bl-til trans-txt pt-re  font12">可转让</div>
+                                               </li>
+                                               <li>
+                                                   <a class="load-icon pt-ab"><img src="../images/load-icon.png"></a>
+                                                   <div class="bl-tilg load-txt  pt-re  font12  ">下载合同</div>
+                                               </li>
+                                          </ul>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="clear: both"></div>
+                        <!--分页器-->
+                        <div>
+                            <div class="jkdPagination">
+                                <a class="homePag hov-alpha">首页</a>
+                                <a class="jkdpag-l hov-alpha"><img src="../images/jkdpagleft.png"></a>
+                                <div class="jkdpag-num">
+                                    <div>
+                                        <span class="colred">1</span>
+                                        <span>/</span>
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                                <a class="jkdpag-r hov-alpha"><img src="../images/jkdpagright.png"></a>
+                                <a class="lastPag hov-alpha">尾页</a>
+                            </div>
+                        </div>
+                        <!--分页-->
+                    </div>
+                    <div class="myinvest-con-tab">
+                        <ul class="sm-btngroup ">
+                            <li><a class="sm-current">全部</a></li>
+                            <li><a class="">投标中</a></li>
+                            <li><a class="">还款中</a></li>
+                            <li><a class="">已结清</a></li>
+                        </ul>
+                        <table class="all-pro">
+                            <!--标的-标题-->
+                            <tr>
+                                <td style="width:262px;">
+                                    <p class="all-pro-tdtil pro-name">项目名称</p>
+                                </td>
+                                <td style="width: 100px">
+                                    <p class="all-pro-tdtil">投资金额</p>
+                                </td>
+                                <td style="width: 126px">
+                                    <p class="all-pro-tdtil">利率</p>
+                                </td>
+                                <td style="width: 74px">
+                                    <p class="all-pro-tdtil">期限</p>
+                                </td>
+                                <td style="width: 125px">
+                                    <p class="all-pro-tdtil">已得收益</p>
+                                </td>
+                                <td style="width: 100px">
+                                    <p class="all-pro-tdtil">剩余期数/天数</p>
+                                </td>
+                                <td style="width: 120px">
+                                    <p class="all-pro-tdtil">下期还款日</p>
+                                </td>
+                                <td style="width: 80px">
+                                    <p class="all-pro-tdtil">状态</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                jQuery(".exgoldSlide").slide(
+                        {
+                            trigger: "click",//点击查看or mouseover
+                        }
+                );
+            </script>
+        </div>
+
+    </div>
+</div>
+<div style="clear: both"></div>
+<div id="footer">
+</div>
+<style>
+    .home-a2 {
+        color: #f15b3a
+    }
+
+    .jkd-li2 {
+        background: url("../images/jkd-icon.png") no-repeat 5px 2px;
+    }
+
+    .jkd-a2 {
+        background: url("../images/2.png") no-repeat;
+        background-position: 14px 4px;
+        color: #f15b3a;
+    }
+</style>
+
+</body>
+</html>

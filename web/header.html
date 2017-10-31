@@ -1,0 +1,287 @@
+<!--金开贷弹窗组件全局引入jkdpop-box.html-->
+<div class="jkdpop-globle"></div>
+<!--top-nav-->
+<div class="top_content mg0 back-w">
+    <div class="botline border-bot">
+        <div class="top wd12 mg0">
+            <div class="serv-phone fl font12">
+                <p>400-1888-136，400-6020-603</p>
+                <p class="colred">(工作日 09:00 - 17:00)</p>
+            </div>
+            <div class="med-cion fl">
+                <!--qq-->
+                <div class="qqicon qqicon-hov fl pt-re">
+                    <img src="../images/headfoot/61.jpg">
+                    <div class="qqcode pt-ab"><img src="../images/headfoot/qqcode.jpg"></div>
+                </div>
+                <!--微信-->
+                <div class="qqicon wxcode-hov fl pt-re">
+                    <img src="../images/headfoot/60.jpg">
+                    <div class="wxcode pt-ab"><img src="../images/headfoot/wxcode.jpg"></div>
+                </div>
+                <!--sina-->
+                <div class="qqicon sina-hov fl pt-re">
+                    <img src="../images/headfoot/59.jpg">
+                    <div class="sinacode pt-ab"><img src="../images/headfoot/sinacode.jpg"></div>
+                </div>
+                <!--appload-->
+                <a href="app-loading.html" class="app-load app-hov  fl pt-re">
+                    <div class="app-icon fl"><img src="../images/headfoot/26.jpg"></div>
+                    <div class="app-txt fl">APP下载</div>
+                    <div class="appcode pt-ab"><img src="../images/headfoot/wxcode.jpg"></div>
+                </a>
+            </div>
+
+            <div class="login-regs flr ">
+                <a class="fl" href="activity-detail.html">近期活动</a>
+                <a class="fl" href="#">礼品商城</a>
+                <div class="login-regs-btn flr">
+                    <a href="login.html" class="fl  colred">登录</a>
+                    <div class="fl">I</div>
+                    <a href="register.html" class="flr">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导航栏部分-->
+    <div class="nav wd12 mg0">
+        <div class="slogen fl"><img src="../images/headfoot/slogen.png"></div>
+        <ul>
+            <li>
+                <a class="home-a1" href="home.html" style="width:86px">首页</a>
+            </li>
+            <li>
+                <a class="home-a2" href="my-jkd.html">我的金开贷</a>
+            </li>
+            <li>
+                <a  href="invest-type.html" class="pt-re home-a3">我要理财
+                    <div class="nav-square pt-ab "><img src="../images/headfoot/nav-square.png"></div>
+                </a>
+                <ul class="home-a3ul">
+                    <li><a  href="invest-type.html" class="home-a3d">担保贷</a></li>
+                    <li><a  href="invest-type.html" class="home-a3c">汽车贷</a></li>
+                    <li><a  href="invest-type.html" class="home-a3x">信用贷</a></li>
+                    <li><a  href="invest-type.html" class="home-a3s">商票贷</a></li>
+                    <li><a href="invest-transfer.html" class="home-a3z">债权转让</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="pt-re home-a4" href="lending.html">我要借款
+                    <!--预留
+                       <div class="nav-square pt-ab "><img src="../images/headfoot/nav-square.png"></div>
+                    -->
+                </a>
+                 <!--预留
+                     <ul>
+                        <li><a href="javascript:void(0);">个人消费</a></li>
+                        <li><a href="javascript:void(0);">企业经营</a></li>
+                        <li><a href="javascript:void(0);">短期周转</a></li>
+                    </ul>
+                 -->
+            </li>
+            <li>
+                <a class="pt-re home-a5" href="javascript:void(0);">信息披露
+                    <div class="nav-square pt-ab "><img src="../images/headfoot/nav-square.png"></div>
+                </a>
+                <ul>
+                    <li><a href="javascript:void(0);">数据报告</a></li>
+                    <li><a href="javascript:void(0);">平台动态</a></li>
+                    <li><a href="javascript:void(0);">投资人教育</a></li>
+                    <li><a href="javascript:void(0);">平台指南</a></li>
+                    <li><a href="javascript:void(0);">联系我们</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="home-a6" href="help-center.html" style="width: 70px">帮助中心</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--全局侧边栏-->
+<ul class="backto-top">
+    <li class="backto-top1 tl-center">
+        <a class="openCalculator">
+            <div><img src="../images/home-calculator.png"></div>
+            <p class=" homeCalculator font12 col6">收益计算</p>
+        </a>
+    </li>
+    <li class="backto-top2 tl-center">
+        <a href="help-feedback.html">
+            <div><img src="../images/home-feedback.png"></div>
+            <p class="font12 col6">意见反馈</p>
+        </a>
+    </li>
+    <li class="backto-top3 tl-center">
+        <a href="app-loading.html">
+            <div><img src="../images/home-load.png"></div>
+            <p class="font12 col6">App下载</p>
+        </a>
+    </li>
+    <li id="backto-top" class="backto-top4 tl-center">
+    </li>
+</ul>
+<script>
+    $(document).ready(function() {
+        //nav导航栏 动画效果
+        $(".nav> ul > li").hover(function(){
+            $(this).children("ul").slideDown(200);
+        },function(){
+            $(this).children("ul").slideUp(100);
+        });
+        $("#backto-top").hover(function(){
+            $(this).attr("src", "../images/home-topred.png");
+        },function(){
+            $(this).attr("src", "../images/home-topgray.png");
+        });
+    });
+</script>
+<style>
+    /*导航*/
+    .botline {
+        height: 46px;
+    }
+    .top_content {
+        margin-left: auto;
+        margin-right: auto;
+        color: #09131e;
+        font-family: "微软雅黑";
+    }
+
+    /*顶部导航*/
+    .top {
+        height: 46px;
+        line-height: 22px;
+    }
+
+    .serv-phone {
+        min-width: 222px;
+    }
+
+    .med-cion {
+        width: 314px;
+        height: 46px;
+    }
+
+    .qqicon {
+        width: 46px;
+        height: 38px;
+        padding-top: 8px;
+    }
+
+    .app-load {
+        width: 126px;
+        height: 46px;
+    }
+
+    .app-icon {
+        padding: 8px 6px 0 12px;
+    }
+
+    .app-txt, .login-regs {
+        line-height: 46px;
+    }
+
+    .login-regs {
+        width: 270px;
+        height: 46px;
+    }
+
+    .login-regs a {
+        display: block;
+        padding: 0 8px;
+    }
+
+    .login-regs a:hover {
+        color: #fb5530;
+    }
+
+    .login-regs-btn {
+        width: 94px;
+        height: 46px;
+    }
+
+    /*二维码部分*/
+    .qqcode, .wxcode, .sinacode, .appcode {
+        display: none;
+        top: 38px;
+        left: -22px;
+        right: 0;
+        z-index: 10000;
+    }
+
+    .qqicon-hov:hover .qqcode, .wxcode-hov:hover .wxcode, .sina-hov:hover .sinacode, .appcode-hov:hover .appcode {
+        display: block;
+    }
+
+    /*导航栏99999*/
+    .nav {
+        height: 76px;
+        background: #fff;
+    }
+
+    .slogen {
+        width: 534px;
+        padding-top: 16px;
+    }
+
+    .nav li {
+    }
+
+    .nav > ul > li {
+        float: left;
+        position: relative;
+        z-index: 99999;
+    }
+
+    .nav > ul > li > a {
+        font-size: 16px;
+        background: #fff;
+    }
+
+    .nav > ul > li > ul {
+        font-size: 14px;
+    }
+
+    .nav > ul > li > ul > li > a:hover {
+        color: #f15b3a;
+    }
+
+    .nav ul li a {
+        display: block;
+        width: 126px;
+        height: 76px;
+        text-decoration: none;
+        background: #fff;
+        line-height: 76px;
+        text-align: left;
+    }
+
+    .nav ul li a:hover {
+        color: #f15b3a;
+    }
+
+    .nav li ul {
+        display: none;
+        position: absolute;
+        right: 38px;
+        top: 74px;
+        box-shadow: 2px 2px 0 #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        border-left: 1px solid #e6e6e6;
+        border-right: 1px solid #e6e6e6;
+    }
+
+    .nav > ul > li > ul > li > a {
+        width: 86px;
+        height: 40px;
+        padding-left: 12px;
+        line-height: 40px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .nav-square {
+        bottom: 2px;
+        right: 44px;
+    }
+
+</style>

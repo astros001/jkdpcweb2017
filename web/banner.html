@@ -1,0 +1,51 @@
+<div class="swip-ban">
+    <div id="slideBox" class="slideBox">
+        <div class="hd">
+            <!-- 导航条-->
+            <div class="ban-menu">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bd">
+            <ul>
+                <li style="background:url(../images/banner1.png) top center no-repeat;"></li>
+                <li style="background:url(../images/banner1.png) top center no-repeat;"></li>
+            </ul>
+        </div>
+        <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+    </div>
+    <!-- 注册-->
+    <div class="ban-regis wd12 mg0 pt-re">
+        <div class="ban-regis-box back-w pt-ab">
+            <p class="turnover">平台累计成交额</p>
+            <p class="turnover-num font36 colred">2,973,371,900</p>
+            <div class="regis-border border-bot"></div>
+            <p class="turnover">平台注册人数</p>
+            <p class="people-num font36 colred">65000</p>
+            <a href="register.html" class="sub-regisbtn"><img src="../images/regis-btn.png"></a>
+            <a class="gigt-packtxt font60">注册即享888红包大礼</a>
+            <p class="ban-login"><a href="login.html">已有账户？立即登录</a></p>
+        </div>
+    </div>
+</div>
+<script id="jsID" type="text/javascript">
+    var ary = location.href.split("&");
+    jQuery(".slideBox").slide({
+        mainCell: ".bd ul", effect: ary[1],
+        autoPlay: ary[2],
+        trigger: ary[3],
+        easing: ary[4],
+        delayTime: ary[5],
+        mouseOverStop: ary[6],
+        pnLoop: ary[7],
+        autoPlay: true,
+        delayTime: 800,
+        effect: "fold",//渐隐 fade
+        trigger: "click",//点击查看or mouseover
+    });
+</script>

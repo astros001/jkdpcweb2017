@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>我要投资</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/invest.css">
+  <link rel="stylesheet" href="../css/jkd-tab.css">
+  <link rel="stylesheet" href="../css/jquery-calendar.css" />
+  <link rel="stylesheet" href="../css/jkdpop-box.css">
+  <link rel="stylesheet" href="../css/chome.css">
+  <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+  <script src="../js/home.js"></script>
+  <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="../js/jquery-calendar.js"></script>
+  <script>
+    $(document).ready(function(){
+      //投标进度条
+      function perNum(){
+        var jkdWidth="40%";
+        $(".bar-num").css("width",jkdWidth);
+        $(".bar-num-count").append(jkdWidth);
+      };
+      perNum();//进度条
+    });
+  </script>
+</head>
+<body>
+<div id="header"></div>
+<!--立即投标-->
+    <div class="my-loan mg0 wd12 back-w box-sh ">
+        <div class="bonding-til border-bot font18">
+          <span class="fl colred">担保公司担保记录</span>
+          <a class="flr txt-underl" href="invest.html">返回项目详情</a>
+        </div>
+        <div class="bonding-mid mg0">
+            <div class="bonding-midl fl">
+
+                <div>
+                  <h4>
+                    <span class="bonding-circle"></span>
+                    <span  class="bonding-name">借款人 </span>
+                    <span>薛晓燕</span>
+                  </h4>
+                  <!--
+                    企业
+                    <h4>
+                    <span class="bonding-circle"></span>
+                    <span  class="bonding-name">借款企业：</span>
+                    <span>陕西***餐饮有限公司</span>
+                  </h4>
+                  -->
+                </div>
+            </div>
+            <div class="bonding-midr flr">
+                <table>
+                  <thead>
+                    <tr>
+                      <td width="84px">
+                        <p>投标中</p>
+                      </td>
+                      <td width="174px">
+                        <p>还款中</p>
+                      </td>
+                      <td width="180px">
+                        <p  class="investing">还款中</p>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>
+                      <span class="colred">0</span>
+                      <span>元</span>
+                    </td>
+                    <td>
+                      <span class="colred">31450000</span>
+                      <span>元</span>
+                    </td>
+                    <td>
+                      <p  class="investing">
+                        <span class="colred">31450000</span>
+                        <span>元</span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="colred">0</span>
+                      <span>笔</span>
+                    </td>
+                    <td>
+                      <span class="colred">3</span>
+                      <span>笔</span>
+                    </td>
+                    <td>
+                      <p  class="investing">
+                        <span class="colred">31</span>
+                        <span>笔</span>
+                      </p>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="bonding-bot mg0 pt-re">
+            <div class="bonding-botil">
+              <p class="font18">担保公司近12个月担保记录</p>
+            </div>
+          <table>
+            <tbody>
+            <tr>
+              <td width="86">
+                <div><img src="../images/transferable-icon.png"></div>
+              </td>
+              <td width="300px">
+                <p class="loan-num font14"><span class="font60">[担保贷]</span> 20170501DBD001-陕</p>
+              </td>
+              <td width="160px">
+                <p class="loan-company-name">中小担保</p>
+                <p>50起投</p>
+              </td>
+              <td width="224px">
+                <p class="font40">7.44%</p>
+              </td>
+              <td width="160px">
+                <p class="loan-money font22">30<span class="font18">万</span></p>
+                <p class="font22">12<span class="font18">个月</span></p>
+              </td>
+              <td width="264px">
+                <a href="invest.html">
+                  <p class="payment-btn col6 font20">还款中</p>
+                </a>
+                <!--进度-->
+                <div class="percent">
+                  <div class="barp">
+                    <div class="bar-num"></div>
+                  </div>
+                  <span class="bar-num-count"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td width="86">
+                <div><img src="../images/transferable-icon.png"></div>
+              </td>
+              <td width="300px">
+                <p class="loan-num font14"><span class="font60">[担保贷]</span> 20170501DBD001-陕</p>
+              </td>
+              <td width="160px">
+                <p class="loan-company-name">中小担保</p>
+                <p>50起投</p>
+              </td>
+              <td width="224px">
+                <p class="font40">7.44%</p>
+              </td>
+              <td width="160px">
+                <p class="loan-money font22">30<span class="font18">万</span></p>
+                <p class="font22">12<span class="font18">个月</span></p>
+              </td>
+              <td width="264px">
+                <a class="invest-btn" href="invest.html">立即投资</a>
+                <!--进度-->
+                <div class="percent">
+                  <div class="barp">
+                    <div class="bar-num"></div>
+                  </div>
+                  <span class="bar-num-count"></span>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="jkdPagination">
+            <a class="homePag hov-alpha">首页</a>
+            <a class="jkdpag-l hov-alpha"><img src="../images/jkdpagleft.png"></a>
+            <div class="jkdpag-num">
+              <div>
+                <span class="colred">1</span>
+                <span>/</span>
+                <span>4</span>
+              </div>
+            </div>
+            <a class="jkdpag-r hov-alpha"><img src="../images/jkdpagright.png"></a>
+            <a class="lastPag hov-alpha">尾页</a>
+          </div>
+        </div>
+    </div>
+
+
+
+<div style="clear: both"></div>
+<div id="footer"></div>
+<style>
+ .home-a3{color:#f15b3a }
+</style>
+</body>
+</html>

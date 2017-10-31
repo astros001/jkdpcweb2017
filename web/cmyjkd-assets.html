@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我的金开贷</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/invest.css">
+    <link rel="stylesheet" href="../css/jkd-tab.css">
+    <link rel="stylesheet" href="../css/jquery-calendar.css" />
+    <link rel="stylesheet" href="../css/jkdpop-box.css">
+    <link rel="stylesheet" href="../css/chome.css">
+    <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="../js/jquery-calendar.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<!--二.我的金开贷-->
+<div class="my-jkd wd12 mg0">
+    <!--侧边栏-->
+    <div id="cmyjkd-leftmenu"></div>
+
+    <!--侧边栏-r-->
+    <div class="my-jkd-con my-assets fl">
+       <div class="my-assetsr ">
+           <div class="my-assets-top font16 back-w  box-sh ">
+               <div class="invest-til font18 pt-re colg tl-center">我的资产</div>
+               <div style="clear: both"></div>
+               <div class="my-assets-ul">
+                    <div class="my-assets-ul1 fl">
+                        <div class="my-assetsinfo">
+                            <a class="q-mark fl" title="账户当前可用资金+冻结资金总额"><img src="../images/q-mark.png"></a>
+                            <span class="colg">账户余额</span>
+                            <span><span class="colred">200.00</span> 元</span>
+                        </div>
+                        <div>
+                            <a class="q-mark fl" title="账户当前可自由使用的资金总额"><img src="../images/q-mark.png"></a>
+                            <span class="colg">可用资金</span>
+                            <span><span class="colred">200.00</span> 元</span>
+                        </div>
+                    </div>
+
+                   <div class="my-assets-ul2 fl">
+                       <div class="my-assetsinfo">
+                           <a class="q-mark fl" title="账户当前不可自由支配的余额资金总额"><img src="../images/q-mark.png"></a>
+                           <span class="colg">冻结资金</span>
+                           <span><span class="colred">200.00</span> 元</span>
+                       </div>
+                       <div>
+                           <a class="q-mark fl" title="应支付的由他人代为归还的本金利息总额"><img src="../images/q-mark.png"></a>
+                           <span class="colg">应付代偿</span>
+                           <span><span class="colred">200.00</span> 元</span>
+                       </div>
+                   </div>
+                   <div class="my-assets-ul3 fl">
+                       <div class="my-assetsinfo">
+                           <a class="q-mark fl" title=""><img src="../images/q-mark.png"></a>
+                           <span class="colg">金开币余额</span>
+                           <span class="colred">200</span>
+                       </div>
+                   </div>
+                   <div class="my-assets-ul4 fl">
+                       <div class="my-assetsinfo">
+                           <a class="q-mark fl" title=""><img src="../images/qcoin.png"></a>
+                           <a class="coin-log d-colg  hov-alpha">金开币记录查询</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="bank-card mg0 ">
+                    <div class="bank-cardl  fl col-w">
+                        <p class="bind-card">
+                            <span class="fl">绑定银行卡</span>
+                            <a class="replac-card col-w flr" href="cmyjkd-safe-changecard.html">更换</a>
+                        </p>
+                        <div style="clear: both"></div>
+                        <p class="bind-name font24">中国工商银行</p>
+                        <p class="bind-num font24">6013************9212</p>
+                    </div>
+                   <div class="bank-cardr fl font14 over-hid">
+                       <div class="tele-num">
+                           <span class="tele-name">电子账户</span>
+                           <span class="colred">8888888888888888888</span>
+                       </div>
+                       <div class="tele-num">
+                           <span class="tele-name">开户名</span>
+                           <span class="colred">户名</span>
+                       </div>
+                       <div class="tele-num">
+                           <span class="tele-name">开户行</span>
+                           <span class="colred">西安银行东二环支行</span>
+                       </div>
+                       <div class="aaset-recharge">
+                           <a class="drawing-blbtn flr hov-alpha" href="cmyjkd-withdraw.html">提现</a>
+                           <!--
+                           <a class="recharge-redbtn flr hov-alpha" href="myjkd-recharge.html">充值</a>
+                           -->
+                       </div>
+                   </div>
+               </div>
+           </div >
+       </div>
+
+        <div style="clear: both"></div>
+        <!--资金记录查询-->
+        <div class="cash-log back-w box-sh pt-re">
+            <div class="cash-logtil  font18 pt-re colg tl-center">资金记录查询</div>
+            <div class="assets-select">
+                <div>
+                    <p class="assets-selectp fl">
+                        <span>资金通道</span>
+                        <span>
+                            <select>
+                                <option>西安银行</option>
+                            </select>
+                        </span>
+                    </p>
+                </div>
+                <div>
+                    <p class="assets-selectp fl">
+                        <span>开始时间</span>
+                        <span>
+                           <input type="text" class="calendar1" maxlength="10" onfocus="$(this).calendar()" />
+                        </span>
+                    </p>
+                </div>
+                <div>
+                    <p class="assets-selectp fl">
+                        <span>结束时间</span>
+                        <span>
+                           <input type="text" class="calendar1" maxlength="10" onfocus="$(this).calendar()" />
+                        </span>
+                    </p>
+                </div>
+                <a class="recharge-redbtn fl hov-alpha">查询</a>
+
+            </div>
+            <table>
+                <tr>
+                    <td colspan="5">
+                        <div class="assets-table">
+                            <p class="asset-p1 fl">时间</p>
+                            <p class="asset-p2 fl">项目名称</p>
+                            <p class="asset-p3 fl">摘要</p>
+                            <p class="asset-p4 fl">出入（元）</p>
+                            <p class="asset-p5 fl">账户余额（元）</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <div class="assets-tbody">
+                            <p class="asset-p1 fl">2017-05-01 10:00:17</p>
+                            <p class="asset-p2 fl ">
+                                <span class="product-name">[担保贷]dasffdaf;ldasffdafl</span>
+                                <span class="transferable-icon pt-re"><img src="../images/transferable-icon.png"></span>
+                            </p>
+                            <p class="asset-p3 fl">还款</p>
+                            <p class="asset-p4 fl colred">+1000.00</p>
+                            <p class="asset-p5 fl">1000.00</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <div class="assets-tbody">
+                            <p class="asset-p1 fl">2017-05-01 10:00:17</p>
+                            <p class="asset-p2 fl">
+                                <span class="product-name">[担保贷] 20170501DBD001-陕</span>
+                            </p>
+                            <p class="asset-p3 fl">还款</p>
+                            <p class="asset-p4 fl colgr">-1000.00</p>
+                            <p class="asset-p5 fl">1000.00</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div style="clear: both"></div>
+            <!--分页器-->
+            <div id="jkdPagination">
+                <div class="jkdPagination">
+                    <a class="homePag hov-alpha">首页</a>
+                    <a class="jkdpag-l hov-alpha"><img src="../images/jkdpagleft.png"></a>
+                    <div class="jkdpag-num">
+                        <div>
+                            <span class="colred">1</span>
+                            <span>/</span>
+                            <span>4</span>
+                        </div>
+                    </div>
+                    <a class="jkdpag-r hov-alpha"><img src="../images/jkdpagright.png"></a>
+                    <a class="lastPag hov-alpha">尾页</a>
+                </div>
+            </div>
+            <!--分页-->
+        </div>
+
+    </div>
+
+</div>
+<div style="clear: both"></div>
+<div id="footer">
+</div>
+<style>
+    .home-a2{color:#f15b3a }
+    .jkd-li3{
+        background: url("../images/jkd-icon.png") no-repeat 5px 2px;
+    }
+    .jkd-a3{
+        background: url("../images/3.png") no-repeat;
+        background-position:  14px 4px ;
+        color: #f15b3a;
+    }
+</style>
+
+</body>
+</html>

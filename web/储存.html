@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="hd">
+    <ul  class="tabs myinvest-nav  invest-top back-w">
+        <li class="nav-li pt-re"><a class="classtab1 font18">资金记录查询</a></li>
+        <li class="nav-li pt-re"><a class="font18">购买体验标列表</a></li>
+    </ul>
+</div>
+
+
+<div class="bd content exgold-con  box-sh">
+
+    <div>
+        <div class="tab1_1 exgold-select">
+                    <span class="assets-select">
+                        <span>
+                            <p class="assets-selectp fl">
+                                <span>开始时间</span>
+                                <span>
+                                    <input type="text" name="date"  class="calendar1"  maxlength="10" onfocus="$(this).calendar()" />
+                                </span>
+                            </p>
+                        </span>
+                        <span>
+                            <p class="assets-selectp fl">
+                                <span>结束时间</span>
+                                <span>
+                                    <input type="text" class="calendar1" maxlength="10" onfocus="$(this).calendar()" readonly/>
+                                </span>
+                            </p>
+                        </span>
+                        <a class="recharge-redbtn fl hov-alpha">查询</a>
+                    </span>
+            <table>
+                <tr>
+                    <td colspan="5">
+                                <span class="exgold-table ">
+                                    <p class="exgold-p1 fl">发生时间</p>
+                                    <p class="exgold-p2 fl">获取/使用途径</p>
+                                    <p class="exgold-p3 fl">体验金变化（元）</p>
+                                    <p class="exgold-p4 fl">到期时间</p>
+                                    <p class="exgold-p5 fl">体验金余额（元）</p>
+                                </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                                <span class="exgold-tbody">
+                                    <p class="exgold-p1 fl">2017-05-01 10:00:17</p>
+                                    <p class="exgold-p2 fl ">
+                                        <span>注册赠送</span>
+                                    </p>
+                                    <p class="exgold-p3 fl   colred">+1000.00</p>
+                                    <p class="exgold-p4 fl">2018-12-31</p>
+                                    <p class="exgold-p5 fl">1000.00</p>
+                                </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                                <span class="exgold-tbody">
+                                    <p class="exgold-p1 fl">2017-05-01 10:00:17</p>
+                                    <p class="exgold-p2 fl">购买体验标</p>
+                                    <p class="exgold-p3 colgr fl">-1000.00</p>
+                                    <p class="exgold-p4 fl">2018-12-31</p>
+                                    <p class="exgold-p5 fl">1000.00</p>
+                                </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div>
+        <div class="tab1_2  myinvest-con-tab">
+            <ul class="sm-btngroup ">
+                <li><a  class="sm-current">全部</a></li>
+                <li><a class="">投标中</a></li>
+                <li><a class="">还款中</a></li>
+                <li><a class="">已结清</a></li>
+            </ul>
+            <table class="all-pro">
+                <!--标的-标题-->
+                <tr>
+                    <td style="width:262px;">
+                        <p class="all-pro-tdtil pro-name">项目名称</p>
+                    </td>
+                    <td style="width: 100px">
+                        <p class="all-pro-tdtil">投资金额</p>
+                    </td>
+                    <td style="width: 126px">
+                        <p class="all-pro-tdtil">利率</p>
+                    </td>
+                    <td style="width: 74px">
+                        <p class="all-pro-tdtil">期限</p>
+                    </td>
+                    <td style="width: 125px">
+                        <p class="all-pro-tdtil">已得收益</p>
+                    </td>
+                    <td style="width: 100px">
+                        <p class="all-pro-tdtil">剩余期数/天数</p>
+                    </td>
+                    <td style="width: 120px">
+                        <p class="all-pro-tdtil">下期还款日</p>
+                    </td>
+                    <td style="width: 80px">
+                        <p class="all-pro-tdtil">状态</p>
+                    </td>
+                </tr>
+                <!--标的-->
+                <tr>
+                    <td><p class="pd-l"><span class="font60">[担保贷]</span> 20170501DBD001-陕</p></td>
+                    <td><p >10000.00</p></td>
+                    <td><p >8.00%+1.00%</p></td>
+                    <td><p>120天</p></td>
+                    <td><p>1000.00</p></td>
+                    <td><p>2期</p></td>
+                    <td><p>2017-06-01</p></td>
+                    <td><p>还款中</p></td>
+                </tr>
+                <!--标的-状态-->
+                <tr>
+                    <td colspan="8">
+                                    <span class="transf-td border-bot ">
+                                        <ul class="invest-icon exgold flr">
+                                            <li>
+                                                <a class="prospectus pt-ab"><img src="../images/Prospectus.png"></a>
+                                                <div class="bl-til prospectus-txt pt-re  font12 ">回款计划书</div>
+                                            </li>
+                                            <li>
+                                                <a class="load-icon pt-ab"><img src="../images/load-icon.png"></a>
+                                                <div class="bl-tilg load-txt  pt-re  font12  ">下载合同</div>
+                                            </li>
+                                        </ul>
+                                    </span>
+                    </td>
+                </tr>
+                <!--标的-->
+                <tr>
+                    <td><p class="pd-l"><span class="font60">[担保贷]</span> 20170501DBD001-陕</p></td>
+                    <td><p >10000.00</p></td>
+                    <td><p >8.00%+1.00%</p></td>
+                    <td><p>120天</p></td>
+                    <td><p>1000.00</p></td></td>
+                    <td><p>2期</p></td>
+                    <td><p>2017-06-01</p></td>
+                    <td><p>还款中</p></td>
+                </tr>
+                <!--标的-状态-->
+                <tr>
+                    <td colspan="8">
+                                    <span class="transf-td border-bot ">
+                                        <ul class="invest-icon exgold flr">
+                                            <li>
+                                                <a class="prospectus pt-ab"><img src="../images/Prospectus.png"></a>
+                                                <div class="bl-til prospectus-txt pt-re  font12 ">回款计划书</div>
+                                            </li>
+                                            <li>
+                                                <a class="load-icon pt-ab"><img src="../images/load-icon.png"></a>
+                                                <div class="bl-tilg load-txt  pt-re  font12  ">下载合同</div>
+                                            </li>
+                                        </ul>
+                                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

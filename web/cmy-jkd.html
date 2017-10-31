@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我的金开贷</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/invest.css">
+    <link rel="stylesheet" href="../css/jkd-tab.css">
+    <link rel="stylesheet" href="../css/jquery-calendar.css" />
+    <link rel="stylesheet" href="../css/jkdpop-box.css">
+    <link rel="stylesheet" href="../css/chome.css">
+    <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="../js/jquery-calendar.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<!--我的金开贷-企业用户-->
+<div class="cmy-jkd wd12 mg0">
+    <!--侧边栏-->
+    <div id="cmyjkd-leftmenu"></div>
+    <div class="my-jkd-con fl">
+        <div class="activation-top wid90 back-w box-sh">
+            <p class="activation-tip font16 fl">亲爱的jinkaidai,您尚未激活银行存管电子账户，请立即激活！</p>
+            <a class="redbtn fl col-w tl-center font18 hov-alpha">立即激活</a>
+        </div>
+        <div class="person-center wid90 ">
+            <div class="cperson-centerl fl back-w box-sh">
+                <div class="head-box border-r fl">
+                    <div class="head-img fl over-hid"><img src="../images/headimg.png"></div>
+                    <div class="pe-name flr">
+                        <p class="pe-txt font22 fl">JinkaidaiJinkaidaiJinkaidai</p>
+                        <a><img src="../images/editicon.png"></a>
+                    </div>
+                </div>
+                <!--VIP待定-->
+                <div class="vip-box fl">
+                    <a class="idcode fl"><img src="../images/idcode.png"></a>
+                    <a class="sf-center fl"><img src="../images/security-center.png"></a>
+                    <a class="jkd-letter fl pt-re">
+                        <img src="../images/jkd-letter.png">
+                        <div class="letter-num  pt-ab over-hid col-w tl-center">156</div>
+                    </a>
+                </div>
+                <a class="jkdcoin dis-bl fl">
+                    <div class="jkdcoin-img fl"><img src="../images/cjkdcoin.png"></div>
+                    <p class="jkd-num fl">金开币<span class="coin-num colred">200</span></p>
+                </a>
+                <div style="clear: both;"></div>
+            </div>
+            <!--激活账户-->
+            <div class="activ-account flr back-w box-sh">
+                <div class="account-num mg0 tl-center dis-none">
+                    <p class="bank-name font16 col6">银行存管电子账户</p>
+                    <p class="bank-num font18 col6">888888781010002152</p>
+                    <a class="redbtn col-w mg0 tl-center font18 hov-alpha">立即激活</a>
+                </div>
+                <!--激活后-->
+                <div class="activ-accounted ">
+                    <div class="fl">
+                        <div class="bankxa-sm-logo fl"><img src="../images/bankxa-sm-logo.png"></div>
+                        <p class="elec-name fl font16 col6">电子账户</p>
+                        <div style="clear: both"></div>
+                        <p class="bank-num font18 font60 ">888888781010002152</p>
+                    </div>
+                    <div class="recharge-activ fl">
+                        <a class="drawing-blbtn flr hov-alpha" href="cmyjkd-withdraw.html">提现</a>
+                        <!--
+                        <a class="recharge-redbtn flr hov-alpha" href="myjkd-recharge.html">充值</a>
+                        -->
+                    </div>
+                        <!--
+                        <a class="limit-txt hov-red">想提高充值限额？</a>
+                        -->
+                </div>
+            </div>
+
+        </div>
+        <!--我的账户信息-->
+        <div style="clear: both"></div>
+        <div class="mine-account flr mg0 back-w box-sh pt-re">
+            <div class="mine-accl fl border-r">
+                <div class="acc-box">
+                    <a class="q-mark fl" title="账户当前可用资金+冻结资金总额"><img src="../images/q-mark.png"></a>
+                    <span class="my-balance colg font16">账户余额</span>
+                    <span class="font16"><span class="my-balance-num colred">0.00</span> 元</span>
+                </div>
+                <div class="acc-box ">
+                    <p class="profit">
+                        <a class="q-mark fl" title="待偿还的利息总额"><img src="../images/q-mark.png"></a>
+                        <span class="my-profit colg font16">待还利息</span>
+                        <span class="font16"><span class="my-balance-num colred">0.00</span> 元</span>
+                    </p>
+                </div>
+                <div class="cacc-box">
+                    <p class="profit">
+                        <a class="q-mark fl" title="替他人支付的利息总额"><img src="../images/q-mark.png"></a>
+                        <span class="my-profit colg font16">代付利息</span>
+                        <span class="font16"><span class="my-balance-num colred">0.00</span> 元</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mine-accl fl">
+                <div class="acc-boxr">
+                    <a class="q-mark fl" title="账户当前不可自由支配的余额资金总额"><img src="../images/q-mark.png"></a>
+                    <span class="my-balance colg font16">冻结金额</span>
+                    <span class="font16"><span class="my-balance-num colred">0.00</span> 元</span>
+                </div>
+                <div class="acc-boxr ">
+                    <p class="profit">
+                        <a class="q-mark fl" title="待偿还的本金总额"><img src="../images/q-mark.png"></a>
+                        <span class="my-profit colg font16">待还本金</span>
+                        <span class="font16"><span class="my-balance-num colred">0.00</span> 元</span>
+                    </p>
+                </div>
+            </div>
+            <!--背景-->
+            <div class="acc-bg pt-ab col-w">
+                <div class="acc-bgl fl">
+                    <a class="q-mark fl" title="当前借款人需偿还的本息总额"><img src="../images/q-mark-yl.png"></a>
+                    <span class="font16">当前总负债</span>
+                    <span class="add-income font36">30000000.00 <span class="font14">元</span></span>
+                </div>
+                <div class="acc-bgl fl">
+                    <a class="q-mark fl" title="本期应偿还的本金与利息总额"><img src="../images/q-mark-yl.png"></a>
+                    <span class="font16">本期待还</span>
+                    <span class="add-income font36">300 0000.00 <span class="font14">元</span></span>
+                </div>
+            </div>
+        </div>
+        <!--投资概况-->
+        <div style="clear: both"></div>
+        <div class="invest-info back-w box-sh font16">
+            <ul>
+                <li>
+                    <div class="invet-icon"><img src="../images/idcard.png"></div>
+                    <p class="">账户绑定银行卡</p>
+                    <p class="colred">尾号(1234)</p>
+                </li>
+                <li>
+                    <div class="invet-icon"><img src="../images/loan-pro.png"></div>
+                    <p class="">借款项目</p>
+                    <p class="colred">20个</p>
+                </li>
+                <li>
+                    <div class="invet-icon"><img src="../images/cassure.png"></div>
+                    <p class="">担保项目</p>
+                    <p class="colred">20个</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div style="clear: both"></div>
+<div id="footer">
+</div>
+<style>
+    .home-a2 {
+        color: #f15b3a
+    }
+
+    .jkd-li1 {
+        background: url("../images/jkd-icon.png") no-repeat 5px 2px;
+    }
+    .jkd-a1 {
+        background: url("../images/1.png") no-repeat;
+        background-position: 14px 4px;
+        color: #f15b3a;
+    }
+</style>
+</body>
+</html>

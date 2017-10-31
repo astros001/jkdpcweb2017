@@ -1,0 +1,72 @@
+<!--帮助中心-侧边栏-->
+<div class="helpaside fl">
+    <div class="help-aside pt-re back-w fl">
+        <div class="help-centertil border-bot back-w font18 font60">帮助中心</div>
+        <ul class="help-asideul pt-ab font16">
+            <li class="helptop-li">
+                <a class="help-lia">常见问题</a>
+            </li>
+            <li class="">
+                <a class="help-lia">理财投资</a>
+            </li>
+            <li class="">
+                <a class="help-lia">融资借款</a>
+            </li>
+            <li class="">
+                <a class="help-lia">平台规则</a>
+            </li>
+            <li class="">
+                <a class="help-lia">名词解释</a>
+            </li>
+        </ul>
+        <div style="clear: both"></div>
+        <div class="oth-help-centertil border-bot back-w font18 font60">其它帮助</div>
+        <ul class="other-help ">
+            <li>
+                <a href="" class="cyber-open col-w font12 hov-alpha">银行存管开户指南（网站）</a>
+            </li>
+            <li>
+                <a href="" class="app-open col-w font12 hov-alpha">银行存管开户指南（APP）</a>
+            </li>
+            <li>
+                <a class="font16" onclick="jkdCalculator()">
+                    <div class="help-img fl"><img src="../images/help-calculate.png"></div>
+                    <p class="help-til fl">收益计算器</p>
+                </a>
+            </li>
+            <li>
+                <a href="help-feedback.html" class="font16">
+                    <div class="help-img fl"><img src="../images/user-report.png"></div>
+                    <p class="help-til fl">用户意见反馈</p>
+                </a>
+            </li>
+            <li>
+                <a href="help-questionnaires.html" class="font16">
+                    <div class="help-img fl"><img src="../images/question-naire.png"></div>
+                    <p class="help-til fl">调查问卷</p>
+                </a>
+            </li>
+        </ul>
+        <div class="service-til border-bot back-w font18 font60">联系客服</div>
+        <div class="service-phone">
+            <div class="service-img fl"><img src="../images/service-phone.png"></div>
+            <p class="fl">400-1888-136</p>
+        </div>
+        <div style="clear: both"></div>
+        <div class="service-phone">
+            <div class="service-img fl"><img src="../images/service-phone.png"></div>
+            <p class="fl">400-6020-603</p>
+            <div style="clear: both"></div>
+        </div>
+        <p class="service-tim colred">(工作日9：00-17：00)</p>
+    </div>
+</div><!--end-->
+<script>
+    $(function(){
+        $(".help-lia").click(
+                function(){
+                    $(this).parent().addClass("helptop-li").siblings().removeClass("helptop-li");
+                }
+        );
+    })
+</script>

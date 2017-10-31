@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>安全中心</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/invest.css">
+  <link rel="stylesheet" href="../css/jkd-tab.css">
+  <link rel="stylesheet" href="../css/jquery-calendar.css" />
+  <link rel="stylesheet" href="../css/jkdpop-box.css">
+  <link rel="stylesheet" href="../css/chome.css">
+  <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+  <script src="../js/home.js"></script>
+  <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="../js/jquery-calendar.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<!--二.我的金开贷-->
+<div class="my-jkd wd12 mg0"> 
+  <!--侧边栏-->
+  <div id="cmyjkd-leftmenu"></div>
+  <!--侧边栏-r-->
+  <div class="my-jkdsafe-con fl back-w box-sh">
+    <div class="safeSlideTxtBox">
+      <div class="hd font18">
+        <ul>
+          <li class="account-info">账户信息</li>
+          <li class="bank-info">银行存管电子账户信息</li>
+          <li class="other-info">其它信息</li>
+        </ul>
+      </div>
+      <div class="safety-factor border-bot">
+        <div class=" safety-bar"> <span class="safety-til colgr fl font16">账号安全系数</span>
+          <div class="safety-barline">
+            <div class="safety-num"  ></div>
+          </div>
+          <span class="safety-counter"></span> <span class="colred">请您完善信息，账号更安全！</span> </div>
+        <div style="clear: both"></div>
+      </div>
+      <div class="bd">
+        <!--1.账户信息-->
+        <div> 
+          <!--用户名-->
+          <div class="">
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">用户名</div>
+              <div class="user-name-info col6 fl">dsavgdf</div>
+              <div class="user-err-info col6 fl">随机用户名仅可修改一次，修改后不能变更</div>
+              <a id="user-btn" class="user-btn yel-sbtn  col-w  hov-alpha">修改</a>
+            </div>
+
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row">
+                  <div class="user-nametxt fl">随机用户名</div>
+                  <div class="user-name fl col6">adgg</div>
+                </div>
+                <div class="user-row">
+                  <div class="user-nametxt fl">新用户名</div>
+                  <div class="user-input fl col6">
+                    <input type="text" value="金芝芝">
+                  </div>
+                  <div class="user-err colred fl">该用户名已经被使用</div>
+                </div>
+                <div class="user-row">
+                  <div class="user-nametxt fl">登录密码</div>
+                  <div class="user-input fl col6">
+                    <input type="password" value="******">
+                  </div>
+                  <div class="user-err colred fl">密码错误</div>
+                </div>
+              </div>
+              <div class="btn-box flr"><a class="user-btnb flr gr-sbtn  col-w  hov-alpha">完成</a></div>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+          <!--登录密码-->
+          <div style="clear: both"></div>
+          <div class="">
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">登录密码</div>
+              <div class="user-name-info col6 fl"></div>
+              <div class="user-err-info col6 fl"></div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha">修改</a> </div>
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row">
+                  <div class="user-nametxt fl">旧密码</div>
+                  <div class="user-input fl col6">
+                    <input type="password" value="">
+                  </div>
+                  <div class="user-err colred fl">密码错误</div>
+                </div>
+                <div class="user-row">
+                  <div class="user-nametxt fl">新密码</div>
+                  <div class="user-input fl col6">
+                    <input type="password" value="">
+                  </div>
+                  <div class="user-err colred fl">请输入与之前密码不同的新密码</div>
+                </div>
+                <div class="user-row">
+                  <div class="user-nametxt fl">重复新密码</div>
+                  <div class="user-input fl col6">
+                    <input type="password" value="******">
+                  </div>
+                  <div class="user-err colred fl">密码错误</div>
+                </div>
+              </div>
+              <div class="btn-box flr"><a class="user-btnb flr gr-sbtn  col-w  hov-alpha">完成</a></div>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+          <!--电话号码-->
+          <div style="clear: both"></div>
+          <div class="">
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">电话号码</div>
+              <div class="user-name-info col6 fl">155****0261</div>
+              <div class="user-err-info col6 fl">若已丢失或停用，请立即更换，避免账户被盗</div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha">修改</a> </div>
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row">
+                  <div class="user-nametxt fl">绑定手机号</div>
+                  <div class="user-input fl col6">155****0261</div>
+                </div>
+                <div class="user-row">
+                  <div class="user-nametxt fl">验证码</div>
+                  <div class="user-input fl col6">
+                    <input type="text" value="">
+                  </div>
+                  <a class="user-num  fl col-w  hov-alpha">发送验证码</a>
+                  <div class="user-err colred fl">验证码错误</div>
+                </div>
+              </div>
+              <div class="btn-box flr"><a class="user-btnb flr gr-sbtn  col-w  hov-alpha">完成</a></div>
+            </div>
+          </div>
+          <div style="clear: both"></div>
+          <!--电子邮箱-->
+          <div class="">
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/admin-none.png"></div>
+              <div class="user-txt font16 fl">电子邮箱</div>
+              <div class="user-name-info col6 fl"></div>
+              <div class="user-err-info col6 fl">接收通知，找回账户信息的重要途径</div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha" id="mail-btn">完善</a> </div>
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row">
+                  <div class="user-nametxt fl">绑定邮箱</div>
+                  <div class="user-input fl col6">
+                    <input type="text" value="">
+                  </div>
+                  <div class="user-err colred fl">请输入正确的邮箱格式</div>
+                </div>
+                <div class="user-row">
+                  <div class="user-nametxt fl">验证码</div>
+                  <div class="user-input fl col6">
+                    <input type="text" value="">
+                  </div>
+                  <a class="user-num  fl col-w  hov-alpha">发送验证码</a>
+                  <div class="user-err colred fl">验证码错误</div>
+                </div>
+              </div>
+              <div class="btn-box flr"><a class="user-btnb flr gr-sbtn  col-w  hov-alpha">完成</a></div>
+            </div>
+          </div>
+          <!--联系地址-->
+          <div style="clear: both"></div>
+          <div class="">
+            <div class="safe-user-name  address">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">联系地址</div>
+              <div class="user-name-info  user-address col6 fl">陕西省西安市雁塔区锦业路125号半导体产业园西部金融大厦6层</div>
+              <div class="user-err-info  user-instruction col6 fl ">联系地址将用于礼品商城及平台活动实物奖
+                品兑换，请及时更新</div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha">修改</a> </div>
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row address-row">
+                  <select>
+                    <option>省份</option>
+                  </select>
+                  <select>
+                    <option>城市</option>
+                  </select>
+                  <select>
+                    <option>区县</option>
+                  </select>
+                </div>
+                <div class="user-row">
+                  <div class="user-nametxt fl">邮编</div>
+                  <div class="user-input fl col6">
+                    <input type="text" value="">
+                  </div>
+                  <div class="user-err colred fl">请输入邮编</div>
+                </div>
+                <div class="user-row detail-addrow">
+                  <div class="user-nametxt fl">详细地址</div>
+                  <div class="detail-add fl col6">
+                    <input type="text" value="">
+                  </div>
+                  <div class="user-err colred fl">请填写地址</div>
+                </div>
+              </div>
+              <div class="btn-box flr"><a class="user-btnb flr gr-sbtn  col-w  hov-alpha">完成</a></div>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+        </div>
+        <!--2.银行存管电子账户信息-->
+        <div>
+          <!--用户信息-->
+          <div class="">
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">用户信息</div>
+              <div class="user-name-info col6 fl">王**</div>
+              <div class="user-err-info col6 fl"></div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha">修改</a> </div>
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row">
+                  <div class="user-nametxt fl">用户姓名</div>
+                  <div class="user-name fl">王**</div>
+                </div>
+                <div class="user-row">
+                  <div class="user-nametxt fl">身份证号</div>
+                  <div class="user-name fl">6201**********0094</div>
+                  <div class="user-err colred fl"></div>
+                </div>
+              </div>
+              <div class="btn-box flr"></div>
+            </div>
+          </div>
+          <!--存管电子账号-->
+          <div style="clear: both"></div>
+          <div class="">
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">存管电子账号</div>
+              <div class="user-name-info col6 fl">8888**********5612</div>
+              <div class="user-err-info col6 fl">与西安银行合作资金存管，保障用户资金安全</div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha">修改</a> </div>
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row">
+                  <div class="user-nametxt fl">存管电子账号</div>
+                  <div class="user-input fl col6">
+                    888888781010235612
+                  </div>
+                  <div class="user-err colred fl"></div>
+                </div>
+                <div class="user-row">
+                  <div class="user-nametxt fl">开户行</div>
+                  <div class="user-input fl col6">
+                    西安银行南大街支行
+                  </div>
+                  <div class="user-err colred fl"></div>
+                </div>
+              </div>
+              <div class="btn-box flr"></div>
+            </div>
+          </div>
+          <div style="clear: both"></div>
+          <!--绑定银行卡号-->
+          <div class="bank-box">
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/admin-none.png"></div>
+              <div class="user-txt font16 fl">绑定银行卡号</div>
+              <div class="user-name-info col6 fl">6215**********6803(工商银行)</div>
+              <div class="user-err-info col6 fl">电子账户充值与提现的唯一指定银行卡</div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha" >完善</a> </div>
+            <div class="user-show " style="display: none">
+              <div class="user-info fl">
+                <div class="user-row">
+                  <div class="user-nametxt fl">绑定银行卡号</div>
+                  <div class="user-input fl col6">
+                    6215**********6803
+                  </div>
+                  <div class="user-err fl"></div>
+                </div>
+                <div class="user-row">
+                  <div class="user-cardtxt fl">如需更换银行卡，请在线提交申请</div>
+                </div>
+                <div class="bank-btn"><a href="cmyjkd-safe-changecard.html" class="user-num  col-w  hov-alpha">提交申请</a></div>
+              </div>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+          <!--交易密码-->
+          <div style="clear: both"></div>
+          <div class="">
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">交易密码</div>
+              <div class="user-name-info col6 fl">******</div>
+              <div class="user-err-info col6 fl">六位数字密码</div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha">修改</a>
+            </div>
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row">
+                  <div class="user-nametxt fl">设置新密码</div>
+                  <div class="user-input fl col6">
+                    <input type="password" value="">
+                  </div>
+                  <div class="user-err colred fl">密码错误</div>
+                </div>
+
+                <div class="user-row">
+                  <div class="user-nametxt fl">确认新密码</div>
+                  <div class="user-input fl col6">
+                    <input type="password" value="">
+                  </div>
+                  <div class="user-err colred fl">密码不一致</div>
+                </div>
+
+                <div class="user-row">
+                  <div class="user-nametxt fl">绑定手机号</div>
+                  <div class="user-input fl col6">155****0261</div>
+                </div>
+
+                <div class="user-row">
+                  <div class="user-nametxt fl">验证码</div>
+                  <div class="user-input fl col6">
+                    <input type="text" value="">
+                  </div>
+                  <a class="user-num  fl col-w  hov-alpha">发送验证码</a>
+                  <div class="user-err colred fl">验证码错误</div>
+                </div>
+
+
+              </div>
+              <div class="btn-box flr"><a class="user-btnb flr gr-sbtn  col-w  hov-alpha">完成</a></div>
+              <div style="clear: both"></div>
+            </div>
+
+          </div>
+          <div style="clear: both"></div>
+
+          <!--手机号码-->
+          <div style="clear: both"></div>
+          <div class="">
+            <div class="safe-user-name  address">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">手机号码</div>
+              <div class="user-name-info  user-address col6 fl">135****5678</div>
+              <div class="user-err-info  user-instruction col6 fl ">若已丢失或停用，请立即更换，避免账户被盗您的电子账户
+                绑定号码与金开贷账户绑定号码不一致，请您尽快修改！</div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha">修改</a>
+            </div>
+
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row">
+                  <div class="user-nametxt fl">姓名</div>
+                  <div class="user-input fl col6">
+                    <input type="text" value="">
+                  </div>
+                  <div class="user-err colred fl">姓名不对</div>
+                </div>
+
+                <div class="user-row">
+                  <div class="user-nametxt fl">身份证号</div>
+                  <div class="user-input fl col6">
+                    <input type="text" value="">
+                  </div>
+                  <div class="user-err colred fl">身份证号不对</div>
+                </div>
+
+                <div class="user-row">
+                  <div class="user-nametxt fl">新手机号</div>
+                  <div class="user-input fl col6">
+                    <input type="text" value="">
+                  </div>
+                  <div class="user-err colred fl">手机号码错误</div>
+                </div>
+
+                <div class="user-row">
+                  <div class="user-nametxt fl">验证码</div>
+                  <div class="user-input fl col6">
+                    <input type="text" value="">
+                  </div>
+                  <a class="user-num  fl col-w  hov-alpha">发送验证码</a>
+                  <div class="user-err colred fl">验证码错误</div>
+                </div>
+
+              </div>
+              <div class="btn-box flr"><a class="user-btnb flr gr-sbtn  col-w  hov-alpha">完成</a></div>
+              <div style="clear: both"></div>
+            </div>
+
+          </div>
+
+        </div>
+        <!--3.其它信息-->
+        <div>
+          <!--个人信息-->
+          <div>
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">个人信息</div>
+              <div class="user-name-info col6 fl"></div>
+              <div class="user-err-info col6 fl"></div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha">修改</a>
+            </div>
+
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+
+                <div class="user-row personal">
+                  <div class="personal-til fl  pdl14">出生日期</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text" name="date" class="calendar1" maxlength="10" onfocus="$(this).calendar()">
+                  </div>
+
+                  <div class="personal-til fl">是否有车</div>
+                  <div class="personal-sel fl col6">
+                   <select>
+                     <option>是</option>
+                     <option>否</option>
+                   </select>
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">行别</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>男</option>
+                      <option>女</option>
+                    </select>
+                  </div>
+
+                  <div class="personal-til fl">有无车贷</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>有</option>
+                      <option>无</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">最高学历</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>请选择</option>
+                    </select>
+                  </div>
+
+                  <div class="personal-til fl">买车年份</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text" name="date" class="calendar1" maxlength="10" onfocus="$(this).calendar()">
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">入学年份</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text" name="date" class="calendar1" maxlength="10" onfocus="$(this).calendar()">
+                  </div>
+
+                  <div class="personal-til fl">汽车品牌</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>请选择</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">毕业院校</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text"  class="calendar1" value="请填写">
+                  </div>
+
+                  <div class="personal-til fl">籍贯</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>城市</option>
+                    </select>
+                  </div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>区县</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">验证码</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text"  class="calendar1" value="请填写">
+                  </div>
+
+                  <div class="personal-til fl">户口所在地</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>城市</option>
+                    </select>
+                  </div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>区县</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">婚姻状况</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>已婚</option>
+                      <option>未婚</option>
+                    </select>
+                  </div>
+
+                  <div class="personal-til fl">居住地址</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>城市</option>
+                    </select>
+                  </div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>区县</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">有无子女</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>有</option>
+                      <option>无</option>
+                    </select>
+                  </div>
+                  <div class="personal-til fl"></div>
+                  <div class="detail-personal fl col6">
+                    <input type="text" value="请输入详细地址">
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">是否有房</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>有</option>
+                      <option>无</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">有无房贷</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>有</option>
+                      <option>无</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-box flr"><a class="user-btnb flr gr-sbtn  col-w  hov-alpha">完成</a></div>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+          <div style="clear: both"></div>
+          <!--工作信息-->
+          <div>
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">工作信息</div>
+              <div class="user-name-info col6 fl"></div>
+              <div class="user-err-info col6 fl">接收通知，找回账户信息的重要途径</div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha">修改</a>
+            </div>
+
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row personal">
+                  <div class="personal-til fl  pdl14">公司名称</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text"class="calendar1">
+                  </div>
+
+                  <div class="personal-til fl">入职年份</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text" name="date" class="calendar1" maxlength="10" onfocus="$(this).calendar()">
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">公司行业</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text"class="calendar1">
+                  </div>
+
+                  <div class="personal-til fl">月收入</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text"class="calendar1">
+                  </div>
+                  <span class="yuan">元</span>
+                  <span class="person-err colred">请填写收入</span>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">公司类别</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>请选择</option>
+                    </select>
+                  </div>
+
+                  <div class="personal-til fl">公司电话</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text"class="calendar1">
+                  </div>
+                  <span class="person-err colred">请填写号码</span>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">公司规模</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text"  class="calendar1" value="请填写">
+                  </div>
+
+                  <div class="personal-til fl">工作城市</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>城市</option>
+                    </select>
+                  </div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>区县</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">职位</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text"  class="calendar1" value="请填写">
+                  </div>
+
+                  <div class="personal-til fl">公司地址</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>城市</option>
+                    </select>
+                  </div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>区县</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">职业</div>
+                  <div class="personal-sel fl col6">
+                    <select>
+                      <option>请选择</option>
+                    </select>
+                  </div>
+                  <div class="personal-til fl"></div>
+                  <div class="detail-personal fl col6">
+                    <input type="text" value="请输入详细地址">
+                  </div>
+                </div>
+
+              </div>
+              <div class="btn-box flr"><a class="user-btnb flr gr-sbtn  col-w  hov-alpha">完成</a></div>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+          <div style="clear: both"></div>
+          <!--紧急联系人-->
+          <div>
+            <div class="safe-user-name">
+              <div class="safe-right fl"><img src="../images/safe-right.png"></div>
+              <div class="user-txt font16 fl">紧急联系人</div>
+              <div class="user-name-info col6 fl"></div>
+              <div class="user-err-info col6 fl"></div>
+              <a class="user-btn yel-sbtn  col-w  hov-alpha">修改</a>
+            </div>
+
+            <div class="user-show" style="display: none">
+              <div class="user-info fl">
+                <div class="user-row personal">
+                  <div class="personal-til fl">联系人姓名</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text"class="calendar1">
+                  </div>
+                  <span class="person-err colred">请填写姓名</span>
+                </div>
+
+                <div class="user-row personal">
+                  <div class="personal-til fl">手机号</div>
+                  <div class="personal-sel fl col6">
+                    <input type="text"class="calendar1">
+                  </div>
+                  <span class="person-err colred">请填写手机号</span>
+                </div>
+
+              </div>
+              <div class="btn-box flr"><a class="user-btnb flr gr-sbtn  col-w  hov-alpha">完成</a></div>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="clear: both"></div>
+<div id="footer"></div>
+<script type="text/javascript">
+  $(document).ready(function() {
+      //选项框
+      jQuery(".safeSlideTxtBox").slide(
+              {
+                  trigger: "click",//点击查看or mouseover
+              }
+      );
+      //安全中心进度条
+      function safeNum() {
+          var safeWidth = "20%";
+          $(".safety-num").css("width", safeWidth);
+          $(".safety-counter").append(safeWidth);
+      };
+      safeNum();
+      //所有下拉
+      $(".user-btn").click(function () {
+          $(this).parent().siblings(".user-show").toggle();
+          var userText = $(this).text();
+          if (userText == "收起") {
+              if ($(this).attr("id") == "mail-btn") {
+                  $(this).text("完善");
+                  $(this).removeClass("lgray-btn").addClass("yel-sbtn");
+              } else {
+                  $(this).text("修改");
+                  $(this).removeClass("lgray-btn").addClass("yel-sbtn");
+              }
+              $(this).parent().removeClass("show-down");
+          }
+          else {
+              $(this).text("收起");
+              $(this).parent().addClass("show-down");
+              $(this).removeClass("yel-sbtn").addClass("lgray-btn");
+          }
+
+      });
+  })
+</script>
+<style>
+        .home-a2{color:#f15b3a }
+        .jkd-li11{
+            background: url("../images/jkd-icon.png") no-repeat 5px 2px;
+        }
+        .jkd-a11{
+            background: url("../images/3.png") no-repeat;
+            background-position:  14px 4px ;
+            color: #f15b3a;
+        }
+    </style>
+</body>
+</html>

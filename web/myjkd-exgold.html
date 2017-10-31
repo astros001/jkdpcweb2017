@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我的体验金</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/invest.css">
+    <link rel="stylesheet" href="../css/jkd-tab.css">
+    <link rel="stylesheet" href="../css/jquery-calendar.css" />
+    <link rel="stylesheet" href="../css/jkdpop-box.css">
+    <link rel="stylesheet" href="../css/chome.css">
+    <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="../js/jquery-calendar.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".invest-icon li").hover(function(){
+                $(this).children("div").show();
+            },function(){
+                $(this).children("div").hide();
+            });
+            })
+    </script>
+</head>
+<body>
+<div id="header"></div>
+<!--二.我的金开贷-->
+<div class="my-jkd wd12 mg0">
+    <!--侧边栏-->
+    <div id="myjkd-leftmenu"></div>
+    <!--侧边栏-r-->
+    <div class="my-jkd-con fl">
+       <div class="jkd-exgold back-w box-sh pt-re">
+           <div class=" my-investl jkd-exgoldl font16 pt-re">
+               <div class="myjkd-transfer-til font18  clorg tl-center pt-ab">我的体验金</div>
+               <div style="clear: both"></div>
+               <ul>
+                   <li class="exgold-li1">
+                       <a class="q-mark fl" title="累计购买的体验项目笔数"><img src="../images/q-mark.png"></a>
+                       <span class="colg add-numl">累计购买笔数</span>
+                       <span><span class="colred">200</span> 笔</span>
+                   </li>
+                   <li class="exgold-li2">
+                       <a class="q-mark fl" title="累计获得的体验金总额"><img src="../images/q-mark.png"></a>
+                       <span class="add-num colg">累计获得体验金</span>
+                       <span><span class="colred">200.22</span> 元</span>
+                   </li>
+
+                   <li class="exgold-li3">
+                       <a class="q-mark fl" title="已到期并付息的体验项目笔数"><img src="../images/q-mark.png"></a>
+                       <span class="add-numl colg">已结清项目</span>
+                       <span><span class="colred">20</span> 笔</span>
+                   </li>
+                   <li class="exgold-li4">
+                       <a class="q-mark fl" title="在平台已使用的体验金总额"><img src="../images/q-mark.png"></a>
+                       <span class="add-num colg">累计使用体验金</span>
+                       <span><span class="colred">210.00</span> 元</span>
+                   </li>
+
+               </ul>
+           </div >
+           <!--bg-->
+           <div class="invest-bg flr  pt-ab">
+              <div class="exgold-y">
+                  <div class="exgold-img fl"><img src="../images/exgold-y.png"></div>
+                  <div class="font16 col-w">
+                      <p>我的体验金</p>
+                      <p>1000.00 元<a class="exgold-use col-w hov-alpha">立即使用</a></p>
+                  </div>
+              </div>
+               <div class="exgold-g">
+                   <div class="exgold-img fl"><img src="../images/exgold-g.png"></div>
+                   <div class="font16 col-w">
+                       <p>即将到期体验金</p>
+                       <p>300.00元</p>
+                       <p>到期日期 2018-12-31</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+        <!--投资项目列表-->
+        <div style="clear: both"></div>
+            <div class="exgold-list back-w box-sh">
+                <div class="exgoldSlide">
+                    <div class="hd">
+                        <ul  class="myinvest-nav  invest-top">
+                            <li>资金记录查询</li>
+                            <li>购买体验标列表</li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <div class="tab1_1 exgold-select pt-re">
+                    <span class="assets-select">
+                        <span>
+                            <p class="assets-selectp fl">
+                                <span>开始时间</span>
+                                <span>
+                                    <input type="text" name="date"  class="calendar1"  maxlength="10" onfocus="$(this).calendar()" />
+                                </span>
+                            </p>
+                        </span>
+                        <span>
+                            <p class="assets-selectp fl">
+                                <span>结束时间</span>
+                                <span>
+                                    <input type="text" class="calendar1" maxlength="10" onfocus="$(this).calendar()" readonly/>
+                                </span>
+                            </p>
+                        </span>
+                        <a class="recharge-redbtn fl hov-alpha">查询</a>
+                    </span>
+                             <table>
+                                <tr>
+                                  <td colspan="5">
+                                    <span class="exgold-table ">
+                                        <p class="exgold-p1 fl">发生时间</p>
+                                        <p class="exgold-p2 fl">获取/使用途径</p>
+                                        <p class="exgold-p3 fl">体验金变化（元）</p>
+                                        <p class="exgold-p4 fl">到期时间</p>
+                                        <p class="exgold-p5 fl">体验金余额（元）</p>
+                                    </span>
+                                  </td>
+                               </tr>
+                               <tr>
+                                  <td colspan="5">
+                                    <span class="exgold-tbody">
+                                        <p class="exgold-p1 fl">2017-05-01 10:00:17</p>
+                                        <p class="exgold-p2 fl ">
+                                            <span>注册赠送</span>
+                                        </p>
+                                        <p class="exgold-p3 fl   colred">+1000.00</p>
+                                        <p class="exgold-p4 fl">2018-12-31</p>
+                                        <p class="exgold-p5 fl">1000.00</p>
+                                    </span>
+                                  </td>
+                                </tr>
+                                 <tr>
+                                     <td colspan="5">
+                                        <span class="exgold-tbody">
+                                            <p class="exgold-p1 fl">2017-05-01 10:00:17</p>
+                                            <p class="exgold-p2 fl">购买体验标</p>
+                                            <p class="exgold-p3 colgr fl">-1000.00</p>
+                                            <p class="exgold-p4 fl">2018-12-31</p>
+                                            <p class="exgold-p5 fl">1000.00</p>
+                                        </span>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td colspan="5">
+                                        <span class="exgold-tbody">
+                                            <p class="exgold-p1 fl">2017-05-01 10:00:17</p>
+                                            <p class="exgold-p2 fl">购买体验标</p>
+                                            <p class="exgold-p3 colgr fl">-1000.00</p>
+                                            <p class="exgold-p4 fl">2018-12-31</p>
+                                            <p class="exgold-p5 fl">1000.00</p>
+                                        </span>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td colspan="5">
+                                        <span class="exgold-tbody">
+                                            <p class="exgold-p1 fl">2017-05-01 10:00:17</p>
+                                            <p class="exgold-p2 fl">购买体验标</p>
+                                            <p class="exgold-p3 colgr fl">-1000.00</p>
+                                            <p class="exgold-p4 fl">2018-12-31</p>
+                                            <p class="exgold-p5 fl">1000.00</p>
+                                        </span>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td colspan="5">
+                                        <span class="exgold-tbody">
+                                            <p class="exgold-p1 fl">2017-05-01 10:00:17</p>
+                                            <p class="exgold-p2 fl">购买体验标</p>
+                                            <p class="exgold-p3 colgr fl">-1000.00</p>
+                                            <p class="exgold-p4 fl">2018-12-31</p>
+                                            <p class="exgold-p5 fl">1000.00</p>
+                                        </span>
+                                     </td>
+                                 </tr>
+                                </table>
+                           <div style="clear: both"></div>
+                           <!--分页器-->
+                           <div id="jkdPagination">
+                               <div class="jkdPagination">
+                                   <a class="homePag hov-alpha">首页</a>
+                                   <a class="jkdpag-l hov-alpha"><img src="../images/jkdpagleft.png"></a>
+                                   <div class="jkdpag-num">
+                                       <div>
+                                           <span class="colred">1</span>
+                                           <span>/</span>
+                                           <span>4</span>
+                                       </div>
+                                   </div>
+                                   <a class="jkdpag-r hov-alpha"><img src="../images/jkdpagright.png"></a>
+                                   <a class="lastPag hov-alpha">尾页</a>
+                               </div>
+                           </div>
+                           <!--分页-->
+
+                       </div>
+                        <div class="tab1_2  myinvest-con-tab pt-re">
+                                <ul class="sm-btngroup ">
+                                    <li><a  class="sm-current">全部</a></li>
+                                    <li><a class="">投标中</a></li>
+                                    <li><a class="">还款中</a></li>
+                                    <li><a class="">已结清</a></li>
+                                </ul>
+                                <table class="all-pro">
+                                    <!--标的-标题-->
+                                    <tr>
+                                        <td style="width:262px;">
+                                            <p class="all-pro-tdtil pro-name">项目名称</p>
+                                        </td>
+                                        <td style="width: 100px">
+                                            <p class="all-pro-tdtil">投资金额</p>
+                                        </td>
+                                        <td style="width: 126px">
+                                            <p class="all-pro-tdtil">利率</p>
+                                        </td>
+                                        <td style="width: 74px">
+                                            <p class="all-pro-tdtil">期限</p>
+                                        </td>
+                                        <td style="width: 125px">
+                                            <p class="all-pro-tdtil">已得收益</p>
+                                        </td>
+                                        <td style="width: 100px">
+                                            <p class="all-pro-tdtil">剩余期数/天数</p>
+                                        </td>
+                                        <td style="width: 120px">
+                                            <p class="all-pro-tdtil">下期还款日</p>
+                                        </td>
+                                        <td style="width: 80px">
+                                            <p class="all-pro-tdtil">状态</p>
+                                        </td>
+                                    </tr>
+                                    <!--标的-->
+                                    <tr>
+                                        <td><p class="pd-l"><span class="font60">[担保贷]</span> 20170501DBD001-陕</p></td>
+                                        <td><p >10000.00</p></td>
+                                        <td><p >8.00%+1.00%</p></td>
+                                        <td><p>120天</p></td>
+                                        <td><p>1000.00</p></td>
+                                        <td><p>2期</p></td>
+                                        <td><p>2017-06-01</p></td>
+                                        <td><p>还款中</p></td>
+                                    </tr>
+                                    <!--标的-状态-->
+                                    <tr>
+                                        <td colspan="8">
+                                    <span class="transf-td border-bot ">
+                                        <ul class="invest-icon exgold flr">
+                                            <li>
+                                                <a class="prospectus pt-ab"><img src="../images/Prospectus.png"></a>
+                                                <div class="bl-til prospectus-txt pt-re  font12 ">回款计划书</div>
+                                            </li>
+                                            <li>
+                                                <a class="load-icon pt-ab"><img src="../images/load-icon.png"></a>
+                                                <div class="bl-tilg load-txt  pt-re  font12  ">下载合同</div>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                        </td>
+                                    </tr>
+                                    <!--标的-->
+                                    <tr>
+                                        <td><p class="pd-l"><span class="font60">[担保贷]</span> 20170501DBD001-陕</p></td>
+                                        <td><p >10000.00</p></td>
+                                        <td><p >8.00%+1.00%</p></td>
+                                        <td><p>120天</p></td>
+                                        <td><p>1000.00</p></td></td>
+                                        <td><p>2期</p></td>
+                                        <td><p>2017-06-01</p></td>
+                                        <td><p>还款中</p></td>
+                                    </tr>
+                                    <!--标的-状态-->
+                                    <tr>
+                                        <td colspan="8">
+                                    <span class="transf-td border-bot ">
+                                        <ul class="invest-icon exgold flr">
+                                            <li>
+                                                <a class="prospectus pt-ab"><img src="../images/Prospectus.png"></a>
+                                                <div class="bl-til prospectus-txt pt-re  font12 ">回款计划书</div>
+                                            </li>
+                                            <li>
+                                                <a class="load-icon pt-ab"><img src="../images/load-icon.png"></a>
+                                                <div class="bl-tilg load-txt  pt-re  font12  ">下载合同</div>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <div style="clear: both"></div>
+                            <!--分页器-->
+                            <div>
+                                <div class="jkdPagination">
+                                    <a class="homePag hov-alpha">首页</a>
+                                    <a class="jkdpag-l hov-alpha"><img src="../images/jkdpagleft.png"></a>
+                                    <div class="jkdpag-num">
+                                        <div>
+                                            <span class="colred">1</span>
+                                            <span>/</span>
+                                            <span>4</span>
+                                        </div>
+                                    </div>
+                                    <a class="jkdpag-r hov-alpha"><img src="../images/jkdpagright.png"></a>
+                                    <a class="lastPag hov-alpha">尾页</a>
+                                </div>
+                            </div>
+                            <!--分页-->
+                            </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(".exgoldSlide").slide(
+                            {
+                                trigger:"click",//点击查看or mouseover
+                            }
+                    );
+                </script>
+            </div>
+        </div>
+    </div>
+<style type="text/css">
+
+</style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //选项框
+            jQuery(".exgoldSlide").slide(
+                    {
+                        trigger: "click",//点击查看or mouseover
+                    }
+            )
+        })
+    </script>
+</div>
+<div style="clear: both"></div>
+<div id="footer">
+</div>
+<style>
+    .home-a2{color:#f15b3a }
+    .jkd-li9{
+        background: url("../images/jkd-icon.png") no-repeat 5px 2px;
+    }
+
+    .jkd-a9{
+        background: url("../images/9.png") no-repeat;
+        background-position:  14px 4px ;
+        color: #f15b3a;
+    }
+</style>
+
+
+</body>
+</html>

@@ -1,0 +1,500 @@
+/*jkd-tab公共-组件重构*/
+.tabs {
+    margin: 0 auto;
+    width: 630px;
+    height:78px;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+}
+.tabs li {
+    float: left;
+    width:122px;
+    height:78px;
+}
+
+.tabs a {
+    width: 122px;
+    float: left;
+    height: 78px;
+    line-height:56px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+
+}
+.classtab1{
+    width:122px;
+    border-left:none;
+}
+.tabs a:nth-child(3){
+    width: 350px;
+    float:right;
+}
+
+.tabs a:hover,.tabs a:focus {
+    border-bottom-color: #999;
+}
+
+.tabs a:focus {
+    outline: 0;
+}
+
+.home-tabs .current {
+    z-index: 3;
+    background:url("../images/bannews.png") no-repeat top center;
+    opacity: 1;
+    color: #2790f2;
+}
+
+.content {
+    background: #fff;
+}
+
+.content h2,.content h3,.content p {
+
+}
+
+.about {
+    color: #999;
+    text-align: center;
+    font: 0.9em Arial, Helvetica;
+}
+
+.about a {
+    color: #777;
+}
+/*end*/
+/*统一tab切换样式*/
+.ban-news{
+    height:358px;
+}
+.ban-news a:hover p{
+    color: #000;
+}
+
+/*首页新闻*/
+.NewsSlideTxtBox{
+    width:630px;
+    text-align:left;
+}
+.NewsSlideTxtBox .hd{
+    height:78px;
+    line-height:58px;
+    position:relative;
+}
+.NewsSlideTxtBox .hd ul{
+    float:left;
+    position:absolute;
+    left:0;
+    top:-1px;
+    height:32px;
+}
+.NewsSlideTxtBox .hd ul li {
+    width: 118px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 18px;
+    text-align:center;
+    float:left;
+    cursor:pointer;
+}
+.NewsSlideTxtBox .hd ul li.on{
+    color: #2790f2;
+    background: url(../images/bannews.png) no-repeat top center;
+}
+.lih56{
+    line-height: 56px;
+}
+.tab-item{
+    margin-left: 50px;
+    top:-2px;
+    right: 0;
+}
+
+.announcement-til{
+    height: 78px;
+}
+
+.ban-news-til{
+    display: block;
+    height:148px;
+}
+.news-time{
+    line-height: 34px;
+}
+.news-til{
+    line-height: 32px;
+    padding-top: 16px;
+}
+.ban-news-til{
+    display: block;
+    height:148px;
+}
+.news-info{
+    width:626px;
+    height:52px;
+    line-height:26px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.more-news,.more-activity{
+    line-height:62px;
+}
+.more-news:hover,.more-activity:hover{
+    color:#8b6602;
+}
+
+.more-news{
+    width: 500px;
+    text-align: right;
+    display: inline-block;
+}
+.announcement-til{
+    height: 78px;
+}
+/*首页新闻END*/
+/* --投资项目列表-tab*/
+.invest-top{
+    width:990px;
+    height:48px;
+}
+.myinvest-nav li{
+    width: 184px;
+    height: 44px;
+    margin-left: 40px;
+}
+.myinvest-nav li a{
+    width: 184px;
+    height: 44px;
+    line-height: 44px;
+    padding-top: 10px;
+    color: #a1a1a1;
+}
+.myinvest-nav .current{
+    width: 184px;
+    height: 44px;
+    z-index: 3;
+    background: url(../images/invest-selected.png) no-repeat top center;
+    opacity: 1;
+    padding-top:0px;
+    color: #a27600;
+    font-size: 20px;
+}
+.nav-li{
+    top: -6px;
+    right: 0;
+}
+.myinvest-con,.myinvest-con-tab,.exgold-con{
+    width: 990px;
+    min-height:430px;
+    margin-bottom: 30px;
+}
+.exgold-con{
+    min-height:350px;
+}
+.inves-tip{
+    width: 436px;
+    height:46px;
+    line-height: 46px;
+    padding-right: 24px;
+    text-align: right;
+}
+.sm-btngroup{
+    width: 940px;
+    height: 58px;
+    padding-left: 50px;
+}
+/* 首页活动TAB切换*/
+.activSlideBox{
+    width:462px;
+    height:280px;
+    overflow:hidden;
+    position:relative;
+}
+.activSlideBox .hd{
+    width:100%;
+    height:15px;
+    overflow:hidden;
+    position:absolute;
+    right:0;
+    bottom:48px;
+    z-index:1;
+}
+
+.activSlideBox .hd ul li{
+    margin-right:6px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    display: inline-block;
+    background:#000;
+    cursor:pointer;
+    opacity:0.6;
+}
+.activSlideBox .hd ul li.on{
+    background:#999;
+    opacity: 1;
+}
+.activSlideBox .bd{
+    position:relative;
+    height:100%;
+    z-index:0;
+}
+.activSlideBox .bd li{
+    width: 462px;
+    height: 215px;
+    zoom:1;
+    vertical-align:middle;
+}
+.activSlideBox .bd img{
+    width: 462px;
+    height:214px;
+}
+.activSlideBox .ban-menu{
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.activSlideBox .ban-menu ul{
+    margin: 0 auto;
+    text-align: center;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+}
+.activSlideBox .ban-menu ul li {
+    width: 4px;
+    height: 4px;
+}
+.activSlideBox.slideBox .prev:hover,
+.activSlideBox.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.activSlideBox.slideBox .prevStop{ display:none;  }
+.activSlideBox.slideBox .nextStop{ display:none;  }
+.activSlideBox.bd ul li{
+    height: 342px;
+    width: 100%;
+    text-align: center;
+}
+/* 首页轮播4css */
+.classSlideBox{
+    width:812px;
+    height:184px;
+    border-right: 1px dashed #e6e6e6;
+    overflow:hidden;
+    position:relative;
+}
+.classSlideBox .bd{
+    position:relative;
+    width:812px;
+    height:184px;
+    text-align: center;
+    overflow: hidden;
+    z-index:0;
+}
+.classSlideBox .bd ul{
+    width: 762px;
+    height: 184px;
+    margin: 0 auto;
+}
+
+.classSlideBox .bd li{
+    width: 762px;
+    height: 178px;
+    overflow: hidden;
+    zoom:1;
+    vertical-align:middle;
+    float: left;
+}
+
+.classSlideBox .bd li>div{
+    width: 230px;
+    height: 176px;
+    margin:0 12px;
+    display: inline-block;
+    overflow: hidden;
+}
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.classSlideBox .prev,
+.classSlideBox .next{
+    position:absolute;
+    left:0;
+    top:50%;
+    margin-top:-25px;
+    display:block;
+    width:32px;
+    height:40px;
+    background:url(../images/slider-arrow4.png) -110px 5px no-repeat;
+    filter:alpha(opacity=50);
+    opacity:0.5;
+}
+.classSlideBox .next{
+    left:auto;
+    right:0;
+    background-position:8px 5px;
+}
+.classSlideBox .prev:hover,
+.classSlideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.classSlideBox .prevStop{ display:none;  }
+.classSlideBox .nextStop{ display:none;  }
+.classSlideTxt{
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 6.5px solid #000;
+    border-bottom: 5px solid transparent;
+    margin-top: 6px;
+    margin-right: 4px;
+    display: inline-block;
+    float: left;
+}
+/*我的金开贷-我的资产*/
+.investSlideTxtBox{
+    width:630px;
+    text-align:left;
+}
+.investSlideTxtBox .hd{
+    height:78px;
+    line-height:58px;
+    position:relative;
+}
+.investSlideTxtBox .hd ul{
+    float:left;
+    position:absolute;
+    left:0;
+    top:-1px;
+    height:32px;
+}
+.investSlideTxtBox .hd ul li {
+    width: 160px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 18px;
+    text-align:center;
+    float:left;
+    cursor:pointer;
+}
+.investSlideTxtBox .hd ul li.on{
+    color: #2790f2;
+    background:url(../images/invest-selected.png) no-repeat top center;
+}
+/*sm-btngroup*/
+.sm-btngroup{
+    width: 800px;
+    height: 26px;
+    margin-left: 45px;
+    padding: 18px 0 20px 0 ;
+}
+.sm-btngroup li a{
+    float: left;
+    min-width: 50px;
+    height: 26px;
+    text-align: center;
+    padding-left:20px;
+    margin-left: 6px;
+    line-height: 26px;
+    background: url("../images/smpoit.png") no-repeat 4px 10px;
+}
+/*选中状态*/
+.sm-btngroup .sm-current{
+    margin-right: 10px;
+    text-align: center;
+    min-width: 40px;
+    padding: 0 12px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 12px;
+    background: #ffba01;
+    line-height: 20px;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 #ffba01;
+}
+.sm-btngroup .sm-current:hover{
+    opacity: 0.8;
+}
+
+table,td{
+    border-collapse:collapse;
+    padding: 0;
+}
+.pro-name{
+    padding-left: 50px;
+}
+
+.all-pro-tdtil{
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    border: #f2f2f2;
+    background: #f2f2f2;
+}
+.pd-l{
+    width: 220px;
+    height: 19px;
+    padding-left: 46px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.transf-td{
+    height: 44px;
+    padding-left: 44px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display:block;
+}
+/**/
+.invest-icon{
+    width: 330px;
+    height: 44px;
+}
+.invest-icon li{
+    width:38px;
+    height: 30px;
+    margin-left: 50px;
+    float: left;
+}
+
+.bl-til{
+    width: 86px;
+    height:24px;
+    line-height: 24px;
+    border-radius: 12px;
+    bottom: -36px;
+    left: -26px;
+    text-align: center;
+    background: #2fb1ee;
+    color: #fff;
+}
+.bl-tilg{
+    width: 86px;
+    height:24px;
+    line-height: 24px;
+    border-radius: 12px;
+    bottom: -36px;
+    left: -26px;
+    text-align: center;
+    background:#62c95f;
+    color: #fff;
+}
+
+.prospectus-txt,.trans-txt,.load-txt{
+    display: none;
+}
+/**/
+.exgold li{
+    float: right;
+    margin-right: 56px;
+    margin-left: 0;
+}

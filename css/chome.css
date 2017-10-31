@@ -1,0 +1,92 @@
+/*企业用户*/
+.cmy-jkd-con{
+    width: 990px;
+    min-height:800px;
+    margin-bottom: 40px;
+}
+.cmy-jkd .person-center{
+    height: 124px;
+}
+.cmy-jkd{
+    min-height:800px;
+    margin-top:20px;
+    margin-bottom: 40px;
+}
+.cperson-centerl{
+    width: 459px;
+    height: 96px;
+    padding: 28px 0 0 28px;
+    margin-right: 14px;
+}
+.cperson-centerl .vip-box {
+    width: 162px;
+    height: 42px;
+    padding-left: 19px;
+    line-height:54px;
+}
+.cperson-centerl .jkd-num{
+  line-height: 30px;
+}
+ .jkdcoin-img {
+    margin: 0 10px 0 16px;
+}
+.cmy-jkd .jkdcoin{
+    width: 176px;
+    height: 44px;
+}
+.cmy-jkd .activ-account {
+    width: 487px;
+    height: 124px;
+}
+.cmy-jkd .activ-accounted {
+    width: 440px;
+    height: 92px;
+    margin: 32px 0 0 38px;
+}
+.cmy-jkd .elec-name {
+    padding: 4px 0 7px 14px;
+}
+.cmy-jkd .mine-account{
+    height: 316px;
+}
+.cmy-jkd .cacc-box{
+    margin-top: 24px;
+    height: 54px;
+}
+.cmy-jkd .mine-accl {
+    width: 438px;
+    height: 190px;
+}
+.cmy-jkd .invest-info ul li {
+    width: 328px;
+}
+/*我的借款*/
+.cmy-jkd-con .borrow-numed {
+    line-height: 48px;
+    padding-left: 56px;
+}
+.cmy-jkd-con .borrow-num {
+    padding: 24px 0 0 26px;
+}
+.cmy-jkd-con .invest-icon {
+    width: 418px;
+    height: 44px;
+    padding-right: 20px;
+}
+.cmy-jkd-con .invest-icon li {
+    width: 38px;
+    height: 30px;
+    margin-right: 30px;
+    margin-left: 0;
+    float: right;
+}
+.cmy-jkd-con .confirma{
+ margin-right: 20px;
+}
+
+.cmy-jkd-con .cbl-til{
+    background: #f15b3a;
+}
+.cchange-row{
+    height: 80px;
+}

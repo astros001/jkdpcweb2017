@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>金开贷电子账户认证</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/invest.css">
+    <link rel="stylesheet" href="../css/jkd-tab.css">
+    <link rel="stylesheet" href="../css/jquery-calendar.css" />
+    <link rel="stylesheet" href="../css/jkdpop-box.css">
+    <link rel="stylesheet" href="../css/chome.css">
+    <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="../js/jquery-calendar.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="ele-account back-w box-sh wd12 mg0 pt-re ">
+        <div class="ele-top border-bot mg0">
+            <div class="ele-topbg mg0 tl-center">
+                <p class="font24 colred">金开贷电子账户认证</p>
+                <span class="col6">金开贷全程由西安银行进行资金存管</span>
+            </div>
+        </div>
+        <div class="account-step mg0 font16">
+            <a class="yel-sbtn ele-mgr col-w fl">开通电子账户</a>
+            <div class="account-stepbg fl"><img src="../images/account-stepbg.png"></div>
+            <a class="lgray-btn col-w flr">完成认证</a>
+        </div>
+        <div class="account-row">
+            <div class="account-til tl-r fl">姓名：</div>
+            <div class="account-input fl"><input class="account-inputbg" type="text" value=" 金开贷" readonly></div>
+            <div style="clear: both"></div>
+            <p class="account-err colred"></p>
+        </div>
+        <div class="account-row">
+            <div class="account-til tl-r fl">身证号码：</div>
+            <div class="account-input fl"><input class="account-inputbg" type="text" value="610132199909190919" readonly></div>
+            <div style="clear: both"></div>
+            <p class="account-err colred"></p>
+        </div>
+        <div class="account-row">
+            <div class="account-til tl-r fl">银行卡号：</div>
+            <div class="account-input fl"><input  type="text" value="本人储蓄卡" ></div>
+            <a class="surpport-bank hov-alpha fl" onclick="rechargeBanklist()" >查看支持银行</a>
+            <div style="clear: both"></div>
+            <p class="account-err colred">暂不支持此银行卡</p>
+        </div>
+
+        <div class="account-row">
+            <div class="account-til tl-r fl">设置交易密码：</div>
+            <div class="account-input fl"><input  type="text" value="六位数字密码" ></div>
+            <div style="clear: both"></div>
+            <p class="account-err colred">请输入六位数字密码</p>
+        </div>
+        <div class="account-row">
+            <div class="account-til tl-r fl">重复交易密码：</div>
+            <div class="account-input fl"><input  type="text" value="请再次确认密码设置" ></div>
+            <div style="clear: both"></div>
+            <p class="account-err colred">密码不一致</p>
+        </div>
+        <div class="account-row">
+            <div class="account-til tl-r fl">银行预留手机：</div>
+            <div class="account-input fl"><input  type="text" value="上述银行卡预留手机号码" ></div>
+            <div style="clear: both"></div>
+            <p class="account-err colred">手机号码不存在</p>
+        </div>
+
+        <div class="account-row">
+            <div class="account-til tl-r fl">验证码：</div>
+            <div class="account-inputnum  fl">
+                <input class="input-phonenum"   type="text" value="请输入手机验证码" >
+                <input type="button" class="input-btn" value="获取验证码">
+            </div>
+            <div style="clear: both"></div>
+            <p class="account-err colred">验证码错误</p>
+        </div>
+        <div class="account-row">
+            <a class="ele-accinfo"><input type="checkbox">我已阅读并同意《西安银行互联网交易资金存管三方协议》</a>
+        </div>
+        <div class="account-row">
+            <a class="redbtn fl col-w tl-center font18 hov-alpha">确认开户</a>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    <div id="footer"></div>
+</body>
+</html>

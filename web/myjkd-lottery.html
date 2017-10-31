@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我的金开贷</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/invest.css">
+    <link rel="stylesheet" href="../css/jkd-tab.css">
+    <link rel="stylesheet" href="../css/jquery-calendar.css" />
+    <link rel="stylesheet" href="../css/jkdpop-box.css">
+    <link rel="stylesheet" href="../css/chome.css">
+    <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="../js/jquery-calendar.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<!--二.我的金开贷-->
+<div class="my-jkd wd12 mg0">
+    <!--侧边栏-->
+    <div id="myjkd-leftmenu"></div>
+    <!--侧边栏-r-->
+    <div class="my-jkd-con lottery fl">
+        <div class="aubid back-w box-sh ">
+            <div class="myjkd-transfer-til font18 colg tl-center pt-re">奖券功能介绍</div>
+            <div class="transfer-info fl"><span class="font18 colred">金开贷奖券 </span> 是为了方便那些没有时间逐个查看筛选
+                借款列表并进行投标的投资人。投资人可根据自己的风
+                险偏好、投资习惯在自动投标中设置各种条件，若有符
+                合相应条件的借款出现，将由程序自动完成投标。
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <!--奖券-->
+        <div class="lottery-box back-w box-sh">
+            <div class="lottery-top  pt-re">
+                <div class="invest-til font18 pt-ab colg tl-center">我的奖券</div>
+            </div>
+            <ul class="sm-btngroup ">
+                <li><a  class="sm-current">全部</a></li>
+                <li><a class="">可使用</a></li>
+                <li><a class="">已使用</a></li>
+                <li><a class="">已过期</a></li>
+            </ul>
+            <!--lottery-->
+            <div style="clear: both"></div>
+            <div class="lottery-input">
+                <input type="text">
+                <a class="lred-btn col-w  hov-alpha">添加</a>
+                <span class="colred">提示：请输入您获取的活动兑奖码，点击添加按钮获得奖券！</span>
+            </div>
+            <ul class="lottery-ul">
+                <li class="lottery lottery-coin">
+                    <a class="lot-info" onclick="detailCoinPop()">奖券详情</a>
+                    <p class="lot-txt font18">金开币<span class="font22">21000</span></p>
+                    <p>有效期至 2018-05-01</p>
+                    <a class="white-btn fon12 flr hov-alpha">添加</a>
+                </li>
+                <li class="lottery lottery-other">
+                    <a class="lot-info" onclick="lotteryOtherPop()">奖券详情</a>
+                    <p class="lot-txt font18">第三方优惠券<span class="font22">1000元</span></p>
+                    <p>有效期至 2018-05-01</p>
+                    <a class="white-btn fon12 flr hov-alpha">添加</a>
+                    <a class="lot-invite flr fon12 ">邀请朋友</a>
+                </li>
+                <li class="lottery lottery-activ">
+                    <a class="lot-info" onclick="lotteryCoinPop()">奖券详情</a>
+                    <p class="lot-txt font18">活动入场券</p>
+                    <p>金开贷周年庆线下活动</p>
+                    <p>有效期至 2018-05-01</p>
+                    <a class="white-btn fon12 flr hov-alpha">添加</a>
+                    <a class="lot-invite flr fon12 ">邀请朋友</a>
+                </li>
+                <li class="lottery lottery-rates">
+                    <a class="lot-info" onclick="lotteryRatesPop()">奖券详情</a>
+                    <p class="lot-txt font18">加息券<span class="font22">0.5%</span></p>
+                    <p>有效期至 2018-05-01</p>
+                    <a class="white-btn fon12 flr hov-alpha">添加</a>
+                    <a class="lot-invite flr fon12 ">送给朋友</a>
+                </li>
+                <li class="lottery lottery-ess">
+                    <a class="lot-info" onclick="lotteryEssPop()">奖券详情</a>
+                    <p class="lot-txt font18">实体奖品<span class="font22">电饭煲</span></p>
+                    <p>有效期至 2018-05-01</p>
+                    <a class="white-btn fon12 flr hov-alpha">添加</a>
+                    <a class="lot-invite flr fon12 "></a>
+                </li>
+                <li class="lottery lottery-manage">
+                    <a class="lot-info"  onclick="lotteryManagePop()">奖券详情</a>
+                    <p class="lot-txt font18">管理费优惠券<span class="font22">10元</span></p>
+                    <p>有效期至 2018-05-01</p>
+                    <a class="white-btn fon12 flr hov-alpha">添加</a>
+                    <a class="lot-invite flr fon12 ">送给朋友</a>
+                </li>
+                <li class="lottery lottery-cash">
+                    <a class="lot-info"  onclick="lotteryCashPop()">奖券详情</a>
+                    <p class="lot-txt font18">现金券<span class="font22">10元</span></p>
+                    <p>有效期至 2018-05-01</p>
+                    <a class="white-btn fon12 flr hov-alpha">添加</a>
+                    <a class="lot-invite flr fon12 ">送给朋友</a>
+                </li>
+                <li class="lottery lottery-cashbag">
+                    <a class="lot-info" onclick="lotteryCashbagPop()">奖券详情</a>
+                    <p class="lot-txt font18" >现金红包<span class="font22">10元</span></p>
+                    <p>有效期至 2018-05-01</p>
+                    <a class="white-btn fon12 flr hov-alpha">添加</a>
+                    <a class="lot-invite flr fon12 ">送给朋友</a>
+                </li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+
+
+    </div>
+
+</div>
+<div style="clear: both"></div>
+<div id="footer">
+</div>
+<style>
+    .home-a2{color:#f15b3a }
+    .jkd-li10{
+        background: url("../images/jkd-icon.png") no-repeat 5px 2px;
+    }
+
+    .jkd-a10{
+        background: url("../images/10.png") no-repeat;
+        background-position:  14px 4px ;
+        color: #f15b3a;
+    }
+</style>
+
+</body>
+</html>

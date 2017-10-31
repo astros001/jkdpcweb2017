@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我的担保</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/invest.css">
+    <link rel="stylesheet" href="../css/jkd-tab.css">
+    <link rel="stylesheet" href="../css/jquery-calendar.css" />
+    <link rel="stylesheet" href="../css/jkdpop-box.css">
+    <link rel="stylesheet" href="../css/chome.css">
+    <script type="text/javascript" src="../lib/jquery-1.7.2.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="../js/jquery-calendar.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<!--二.我的金开贷-->
+<div class="my-jkd wd12 mg0">
+    <!--侧边栏-->
+    <div id="cmyjkd-leftmenu"></div>
+    <!--侧边栏-r-->
+    <div class="my-jkd-con fl">
+        <div class="my-assetsr ">
+            <div class="borrowed-top font16 back-w  box-sh ">
+                <div class="invest-til font18 pt-re colg tl-center">我的担保</div>
+                <div style="clear: both"></div>
+                <div class="my-assets-ul fl pt-re">
+
+                    <div class="borrowed-ul1 fl">
+                        <div class="my-assetsinfo">
+                            <a class="q-mark fl" title="平台授予担保机构可为借款人担保的额度总额"><img src="../images/q-mark.png"></a>
+                            <span class="colg">授信总额</span>
+                            <span><span class="colred">2001111.00</span> 元</span>
+                        </div>
+                        <div>
+                            <a class="q-mark fl" title="在平台为其担保但尚未结清的项目笔数"><img src="../images/q-mark.png"></a>
+                            <span class="colg">在担笔数</span>
+                            <span><span class="colred">200</span>笔</span>
+                        </div>
+                    </div>
+
+                    <div class="borrowed-ul2 fl">
+                        <div class="my-assetsinfo">
+                            <a class="q-mark fl" title="在平台已担保项目资金总额"><img src="../images/q-mark.png"></a>
+                            <span class="colg">在担总额</span>
+                            <span><span class="colred">200787.00</span> 元</span>
+                        </div>
+                        <div>
+                            <a class="q-mark fl" title="在平台为其担保并已结清的项目笔数"><img src="../images/q-mark.png"></a>
+                            <span class="colg">结清笔数</span>
+                            <span><span class="colred">200</span>笔</span>
+                        </div>
+                    </div>
+                    <div class="borrowed-ul3 fl">
+                        <div class="my-assetsinfo">
+                            <a class="q-mark fl" title="在平台为其担保且已结清的项目资金总额"><img src="../images/q-mark.png"></a>
+                            <span class="colg">结清总额</span>
+                            <span><span class="colred">200787.00</span> 元</span>
+                        </div>
+                    </div>
+
+                    <div class="borrowed-img pt-ab col-w">
+                         <div class="borrow-num">
+                             <a class="q-mark fl" title="当前可用的担保授信额度余额"><img src="../images/q-mark-yl.png"></a>
+                             <span class="borrowed-num font22 ">可用担保额度</span>
+                         </div>
+                         <p class="borrow-numed font32">300.00<span class="font22">元</span></p>
+                    </div>
+                </div>
+            </div >
+
+            <div style="clear: both"></div>
+
+
+        </div>
+        <div style="clear: both"></div>
+        <!--我的借款详情-->
+        <div class="borrow-tb back-w box-sh pt-re">
+            <div class="borrow-tob ">
+               <div class="fl  pt-re font18 colg tl-center cash-logtil"> 我的借款详情</div>
+               <div class="flr"> <span class="colred">"下期还款日"</span> 为借款人最后还款期限,请您在还款日前将应还金额充值至账户</div>
+            </div>
+
+            <ul class="sm-btngroup ">
+                <li><a class="sm-current">全部</a></li>
+                <li><a class="">投标中</a></li>
+                <li><a class="">还款中</a></li>
+                <li><a class="">审核中</a></li>
+                <li><a class="">未通过</a></li>
+                <li><a class="">已结清</a></li>
+                <li><a class="">未成立</a></li>
+            </ul>
+            <table>
+                <tr>
+                    <td colspan="8">
+                        <div class="borrow-table">
+                            <p class="borrow-p1 fl">项目名称</p>
+                            <p class="borrow-p2 fl">借款金额</p>
+                            <p class="borrow-p3 fl">利率</p>
+                            <p class="borrow-p4 fl">借款期限</p>
+                            <p class="borrow-p5 fl">本期待还</p>
+                            <p class="borrow-p6 fl">剩余期数/天数</p>
+                            <p class="borrow-p7 fl">下期还款日</p>
+                            <p class="borrow-p8 fl">状态</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <div class="borrow-tbody">
+                            <div class="fl borrow-d">
+                                <div class="borrow-name">[担保贷]陕020170501DBD0012</div>
+                                <div class="transferable-icon"><img src="../images/transferable-icon.png"></div>
+                            </div>
+                            <p class="fl borrow-p2">1000.00</p>
+                            <p class="fl borrow-p3">8.00%+1.00%</p>
+                            <p class="fl borrow-p4">2期</p>
+                            <p class="fl borrow-p5">1000.00</p>
+                            <p class="fl borrow-p6">2017-05-01</p>
+                            <p class="fl borrow-p7">2017-06-01</p>
+                            <p class="fl borrow-p8">已转让</p>
+
+                           <ul class="invest-icon flr">
+                               <li>
+                                   <a class="trans-icon pt-ab"><img src="../images/c-received.png"></a>
+                                   <div class="bl-til trans-txt pt-re  font12">还款计划书</div>
+                               </li>
+                               <li>
+                                   <a class="load-icon pt-ab"><img src="../images/load-icon.png"></a>
+                                   <div class="bl-tilg   load-txt  pt-re  font12  ">下载合同</div>
+                               </li>
+                               <li>
+                                   <a class="confirma pt-ab tl-center font12">确认担保</a>
+                               </li>
+                           </ul>
+                      </span>
+                      </div>
+                    </td>
+                </tr>
+                <script>
+                    $(".invest-icon li").hover(function(){
+                        $(this).children("div").show();
+                    },function(){
+                        $(this).children("div").hide();
+                    });
+                </script>
+
+
+
+            </table>
+            <div style="clear: both"></div>
+            <!--分页器-->
+            <div id="jkdPagination">
+                <div class="jkdPagination">
+                    <a class="homePag hov-alpha">首页</a>
+                    <a class="jkdpag-l hov-alpha"><img src="../images/jkdpagleft.png"></a>
+                    <div class="jkdpag-num">
+                        <div>
+                            <span class="colred">1</span>
+                            <span>/</span>
+                            <span>4</span>
+                        </div>
+                    </div>
+                    <a class="jkdpag-r hov-alpha"><img src="../images/jkdpagright.png"></a>
+                    <a class="lastPag hov-alpha">尾页</a>
+                </div>
+            </div>
+            <!--分页-->
+        </div>
+
+    </div>
+    <div style="clear: both"></div>
+</div>
+<div style="clear: both"></div>
+<div id="footer">
+</div>
+<style>
+    .home-a2{color:#f15b3a }
+    .jkd-li14{
+        background: url("../images/jkd-icon.png") no-repeat 5px 2px;
+    }
+
+    .jkd-a14{
+        background: url("../images/14.png") no-repeat;
+        background-position:  14px 4px ;
+        color: #f15b3a;
+    }
+</style>
+</body>
+</html>

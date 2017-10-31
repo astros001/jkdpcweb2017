@@ -1,0 +1,3279 @@
+/*
+* @Author: Administrator
+* @Date:   2017-09-14 10:32:53
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-09-19 14:31:54
+*/
+    html, body {
+        background: #f8f8f8;
+    }
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+/*公共样式*/
+    html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+        margin: 0;
+        padding: 0;
+    }
+    em {
+        font-style: normal;
+    }
+    ul,ol{ list-style:none;}
+    body{
+        margin:0;
+        padding:0;
+        font-size: 14px;
+        font-family: "微软雅黑","宋体",STHeiti,Verdana,Arial,Helvetica,sans-serif;
+        }
+    a {
+        cursor:pointer;
+        text-decoration: none;
+        border: none;
+        color: #333;
+    }
+    a:focus {
+        outline: none;
+    }
+    input:focus {
+        outline: none;
+    }
+
+    img {
+            border: none;
+        }
+    button {
+        border:0;
+    }
+    .wd12{
+        width:1200px;
+    }
+    .mg0{
+        margin: 0 auto;
+    }
+    .tl-center{
+        text-align: center;
+    }
+    .tl-l{
+         text-align: left;
+     }
+    .tl-r{
+        text-align: right;
+    }
+
+    .fl{
+        float: left;
+    }
+    .flr{
+        float: right;
+    }
+    .dis-bl{
+        display: block;
+    }
+    .dis-none{
+        display: none;
+    }
+    .font12{
+        font-size: 12px;
+    }
+    .colred{
+        color: #fb5530;
+    }
+    .colgr{
+        color: #59a211
+    }
+    .colg{
+        color:#a27600 ;
+    }
+    .d-colg{
+        color: #57420b;
+    }
+    .hov-red:hover{
+        color: #fb5530;
+    }
+    .hov-alpha:hover{
+        opacity: 0.8;
+    }
+    .over-hid{
+        overflow: hidden;
+    }
+    .col6{
+        color: #666;
+    }
+    .clorg{
+        color: #da9f00;
+    }
+    .col-w{
+        color: #fff;
+    }
+    .col-darkbl{
+        color: #334199;
+    }
+    .col-lightbl{
+        color: #3174e9;
+    }
+    .col-midbl{
+        color: #0093bd;
+        }
+    .col-gold{
+        color: #ffe6b8;
+        text-decoration: underline;
+    }
+    .pt-ab{
+        position: absolute;
+    }
+    .pt-re{
+        position: relative;
+    }
+    .border{
+        border: 1px solid #e6e6e6;
+    }
+    .border-bot{
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .border-r{
+        border-right: 1px solid #e6e6e6;
+    }
+    .font14{
+        font-size: 14px;
+    }
+    .font16{
+        font-size: 16px;
+    }
+    .font18{
+        font-size: 18px;
+    }
+    .font20{
+        font-size: 20px;
+    }
+    .font22{
+        font-size: 22px;
+    }
+    .font24{
+        font-size: 24px;
+    }
+    .fon26{
+        font-size: 26px;
+    }
+    .font32{
+        font-size: 32px;
+    }
+    .font36{
+        font-size: 36px;
+    }
+    .font40{
+        font-size:40px;
+    }
+    .font46{
+        font-size:46px;
+    }
+    .li-h40{
+        line-height: 40px;
+    }
+
+    .fontw50{
+        font-weight:500;
+    }
+    .font60{
+        font-weight:600;
+    }
+    .font40 {
+        font-size: 40px;
+    }
+    .text-ind6{
+        text-indent:6px;
+    }
+    .txt-underl{
+        text-decoration:underline;
+    }
+    .back-w{
+        background: #fff;
+    }
+    .back-g{
+        background: #e9e9e9;
+    }
+    .mgb2{
+        max-width:20px;
+    }
+    .box-sh{
+        box-shadow: 2px 2px 4px #dedede;
+    }
+    /*分页器*/
+    .jkdPagination{
+        width: 230px;
+        height: 26px;
+        position: absolute;
+        bottom:34px;
+        right: 40px;
+    }
+    .homePag{
+      width:44px;
+      height: 26px;
+      line-height: 26px;
+      margin-right: 8px;
+      text-align: center;
+      float: left;
+      background:#666 ;
+      display: inline-block;
+      color: #fff;
+    }
+    .lastPag{
+        width:44px;
+        height: 24px;
+        line-height: 24px;
+        margin-left: 8px;
+        text-align: center;
+        float: left;
+        border:1px solid #666;
+        display: inline-block;
+        color: #666;
+    }
+    .jkdpag-l,.jkdpag-r{
+        width: 26px;
+        height: 22px;
+        padding-top: 5px;
+        text-align: center;
+        float: left;
+        background: #666;
+    }
+    .jkdpag-num{
+        width: 68px;
+        height: 26px;
+        text-align: center;
+        float: left;
+    }
+    /*分页*/
+    /*返回顶部*/
+    .backto-top{
+        width: 216px;
+        height:72px ;
+        position:fixed;
+        top:45%;
+        right:-8%;
+        z-index: 10000;
+    }
+    .backto-top1,.backto-top2,.backto-top3,.backto-top4{
+        width: 72px;
+        height: 60px;
+        padding-top: 12px;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+    }
+    .backto-top3,.backto-top2 {
+        border-top:none;
+    }
+    .backto-top3{
+        margin-bottom: 20px;
+    }
+    .backto-top4{
+        width: 72px;
+        height: 48px;
+        padding-top: 24px;
+        display: none;
+        background:#fff url("../images/home-topgray.png") no-repeat 20px 28px;
+    }
+    .backto-top4:hover{
+        cursor: pointer;
+        background:#fff url("../images/home-topred.png") no-repeat 20px 28px;
+    }
+    /* footer start */
+    #footer {
+        width:100%;
+        height:350px;
+        background: #d8dce1;
+    }
+    .footer_content {
+        overflow: hidden;
+        height: 310px;
+        padding-top:40px;
+    }
+    .footer-top{
+        width: 1200px;
+        height: 200px;
+        overflow: hidden;
+    }
+    .foot-l{
+        width: 692px;
+        height: 200px;
+    }
+    .foot-code{
+        width: 450px;
+        height: 200px;
+    }
+     .foot-code li{
+         float: left;
+         margin-right: 26px;
+         line-height: 30px;
+     }
+     .share-btn{
+         margin-left: 10px;
+     }
+     .foot-code p{
+         line-height: 66px;
+     }
+     .about-jkd{
+         width: 238px;
+         height: 200px;
+         margin-top: 17px;
+     }
+     .about-jkd ul{
+         width: 86px;
+     }
+    .about-jkd li{
+        line-height:30px;
+        float: left;
+    }
+    .about-jkd li a:hover{
+        color: #fb5530;
+    }
+    /*其他平台*/
+    .other-plat{
+        width: 246px;
+        height: 200px;
+        margin-top: 14px;
+    }
+    .other-plat li{
+        line-height: 34px;
+    }
+    .other-plat li a:hover{
+        color: #fb5530;
+    }
+    .our-service{
+        width: 260px;
+        height: 200px;
+        margin-top: 16px;
+    }
+    .phone-txt{
+        line-height: 32px;
+    }
+    .phone-num{
+        line-height:30px;
+    }
+    .serve-time{
+        margin-top: 16px;
+    }
+    .serve-time>span{
+        line-height: 30px;
+    }
+    .footer-bot{
+        height: 64px;
+        padding: 20px 0 0 8px ;
+
+    }
+    .foot-img{
+        margin-right: 32px;
+    }
+    .our-company{
+        width:811px;
+        height: 38px;
+    }
+/*banner图滚动条设置*/
+    /* bancss */
+    .swip-ban .slideBox {
+        width: 100%;
+        height: 342px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .swip-ban .slideBox .hd {
+        width: 100%;
+        height: 15px;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        z-index: 1;
+    }
+
+    .swip-ban  .slideBox .hd ul li {
+        margin-right: 6px;
+        width: 100px;
+        height: 4px;
+        display: inline-block;
+        background: #fff;
+        cursor: pointer;
+        opacity: 0.6;
+    }
+
+    .swip-ban .slideBox .hd ul li.on {
+        background: #fff;
+        opacity: 1;
+    }
+
+    .swip-ban .slideBox .bd {
+        position: relative;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .swip-ban  .slideBox .bd li {
+        zoom: 1;
+        vertical-align: middle;
+    }
+
+    .swip-ban  .slideBox .bd img {
+        height: 342px;
+        display: block;
+    }
+
+    .swip-ban .ban-menu {
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .swip-ban .ban-menu ul {
+        margin: 0 auto;
+        text-align: center;
+        -webkit-transition: 100ms;
+        -moz-transition: 100ms;
+        -o-transition: 100ms;
+        transition: 100ms;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        z-index: 10;
+    }
+
+    .swip-ban   .ban-menu ul li {
+        width: 100px;
+        height: 4px;
+    }
+
+    /* 下面是前/后按钮代码，如果不需要删除即可 */
+    .swip-ban  .slideBox .prev,
+    .swip-ban .slideBox .next {
+        position: absolute;
+        left: 3%;
+        top: 50%;
+        margin-top: -25px;
+        display: block;
+        width: 32px;
+        height: 40px;
+        background: url(../images/slider-arrow.png) -110px 5px no-repeat;
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+
+    .swip-ban .slideBox .next {
+        left: auto;
+        right: 3%;
+        background-position: 8px 5px;
+    }
+
+    .swip-ban   .slideBox .prev:hover,
+    .swip-ban    .slideBox .next:hover {
+        filter: alpha(opacity=100);
+        opacity: 1;
+    }
+
+    .swip-ban .slideBox .prevStop {
+        display: none;
+    }
+
+    .swip-ban  .slideBox .nextStop {
+        display: none;
+    }
+
+    .swip-ban .bd ul li {
+        height: 342px;
+        width: 100%;
+        text-align: center;
+    }
+    /*banend*/
+    .left-sq,.right-sq{
+        opacity: 0.6;
+    }
+    .left-sq:hover,.right-sq:hover{
+        opacity: 1;
+    }
+/*banner注册框*/
+    .ban-regis{
+       height:0.1px;
+    }
+    .ban-regis-box {
+        width: 274px;
+        height: 284px;
+        padding: 22px 0px 0 18px;
+        top: -324px;
+        right: 0;
+        z-index: 10;
+    }
+    .turnover{
+        line-height:16px;
+    }
+    .turnover-num,.people-num{
+        line-height: 48px;
+    }
+    .people-num{
+        margin-bottom:10px;
+    }
+    .sub-regisbtn:hover{
+        opacity: 0.85;
+    }
+    .regis-border{
+        height: 1px;
+        width: 258px;
+        margin: 8px 0 14px 0;
+    }
+    .gigt-packtxt{
+        color: #3174e9;
+        line-height: 38px;
+        font-size: 20px;
+    }
+    .ban-login{
+        text-align: right;
+        padding-right: 24px;
+        line-height:28px;
+        font-weight: 600;
+    }
+    .gigt-packtxt:hover{
+        color: #1f59be;
+    }
+    .swiper-container2{
+        height: 300px;
+        background: #666;
+    }
+/*首页公告栏*/
+    .notice,.notice-in{
+        height: 76px;
+    }
+    .notice-txtin a{
+        color: #666;
+    }
+    .notice-txtin a:hover{
+        color: #f15b3a;
+    }
+    .notice-til{
+        width: 94px;
+        height:40px;
+        margin: 14px 10px 0 0;
+        line-height: 13px;
+    }
+    .notice-icon{
+        margin-right: 10px;
+    }
+    .notice-txt,.notice-txt-two {
+        width: 470px;
+        height: 70px;
+        margin-top: 6px;
+        line-height: 27px;
+    }
+    .notice-txt{
+        margin-right: 16px;
+    }
+    .notice-txtin{
+        width: 296px;
+        height: 70px;
+    }
+    .notice-line{
+        width: 1px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .notice-more{
+        line-height: 76px;
+        text-decoration:underline;
+    }
+/*4.关于平台*/
+    .about-plat{
+        height: 126px;
+        margin-bottom: 20px;
+    }
+    .about-platimg{
+        padding-top:28px;
+    }
+    /*邀请好友*/
+    .ban-invite{
+        height: 124px;
+        margin-bottom: 20px;
+    }
+    .new-pe{
+        width: 426px;
+        height: 102px;
+        padding-top: 20px;
+        padding-left: 154px;
+        overflow: hidden;
+        background: url("../images/exper.png");
+    }
+    .new-petxt{
+        width: 222px;
+        height: 74px;
+    }
+    .quickbye-btn{
+        padding: 14px 32px 0 0;
+    }
+    .quickbye-btn:hover{
+        opacity: 0.85;
+    }
+    /*优选个贷*/
+    .ban-loan,.ban-trans,.ban-transthree{
+        height: 380px;
+        margin-top: 20px;
+        box-shadow: 2px 2px 4px #dedede;
+    }
+    .ban-loan-l,.ban-trans-l,.ban-transthree-l{
+        height: 380px;
+        width: 340px;
+        overflow: hidden;
+        background: url("../images/ban-loan.png") top left no-repeat;
+    }
+    .ban-trans-l{
+        background: url("../images/company-loan.png") top left no-repeat;
+    }
+    .ban-transthree-l{
+        background: url("../images/transimg.png") top left no-repeat;
+    }
+    .ban-loan-r{
+        height: 380px;
+        width: 860px;
+    }
+    .ban-loan-lin{
+        width: 280px;
+        height:300px;
+        margin: 20px 22px 0 42px;
+    }
+    .loan-line{
+        line-height: 88px;
+    }
+    .loan-name{
+        text-indent:19px;
+    }
+    .loan-more{
+        margin-right: 22px;
+    }
+    /*6.1.优选个贷-列表*/
+    .ban-loan-ul{
+        width: 834px;
+        min-height: 380px;
+        margin-top: 6px;
+        margin-left: 14px;
+    }
+    .ban-loan-ul li{
+        height:96px;
+        width: 832px;
+        margin-top: 24px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .ban-loan-ul a:hover{
+        opacity: 0.85;
+    }
+
+    .ban-loan-ul li:last-child{
+        border-bottom:none;
+    }
+    .ban-loan-ul li:first-child{
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .ban-loan-ul li:hover{
+        border-bottom: 1px solid #b6b6b6;
+    }
+    .loan-num{
+        overflow: hidden;
+        width: 238px;
+        height: 18px;
+    }
+    .loan-company-name{
+        line-height: 40px;
+    }
+    .loan-money,.loan-time{
+        line-height: 30px;
+    }
+    .invest-btn,.invest-grbtn,.therelease{
+        width: 146px;
+        height: 40px;
+        line-height: 40px;
+        margin-left:22px;
+        color: #fff;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+        background:url("../images/invest-btn.png") no-repeat top center;
+    }
+    .invest-grbtn{
+        background:url("../images/invest-grbtn.png") no-repeat top center;
+    }
+    .therelease{
+        background:url("../images/therelease.png") no-repeat top center;
+        color: #000;
+    }
+    .payment-btn{
+        width: 184px;
+        text-align: center;
+        line-height: 46px;
+    }
+
+/*进度条*/
+.percent{
+    width: 180px;
+    height: 4px;
+    position: relative;
+    margin-top: 10px;
+}
+.barp{
+    width: 180px;
+    height: 4px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background: #fff;
+}
+.bar-num{
+    width: 10%;
+    height: 4px;
+    line-height: 4px;
+    background:#3174e9;
+
+}
+.bar-num-count{
+    position: absolute;
+    top:-5px;
+    right:-48px;
+}
+/*7.平台公告*/
+    .ban-announcement{
+        height: 440px;
+        margin-top: 20px;
+        box-shadow: 2px 2px 4px #dedede;
+    }
+    .ban-announcementl{
+        height: 362px;
+        width: 638px;
+        padding: 0 38px 0 40px;
+    }
+    .swipe-cont{
+        width: 638px;
+        height:340px;
+        overflow: hidden;
+    }
+    .more-activity{
+        padding-top:22px;
+    }
+    .ban-announcementr{
+        width: 462px;
+        height: 438px;
+        overflow: hidden;
+    }
+    .swip-out{
+        width: 462px;
+        height: 340px;
+        overflow: hidden;
+    }
+    .ban-plat-til{
+        width: 120px;
+        height: 76px;
+        line-height: 54px;
+        text-align: center;
+        background: url("../images/ban-plat-til.png") no-repeat top left;
+        z-index: 19999;
+    }
+
+    .swip-one .ban-plat-til-img{
+        height: 216px;
+    }
+
+    /*微型轮播图1*/
+
+    .swip-one .swiper-pagination{
+        position: static;
+    }
+    .swip-one .swiper-pagination-bullet {
+        width: 4px;
+        height: 4px;
+        border-radius:100%;
+        display: inline-block;
+        /* border-radius: 100%; */
+        background: #999;
+        opacity: 0.5;
+    }
+    .swip-one .swiper-pagination-bullet-active {
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        display: inline-block;
+        /* border-radius: 100%; */
+        background: #454545;
+        opacity: 1;
+    }
+    .platnewsimg-til{
+        width: 462px;
+        margin-top:20px;
+    }
+    .hot{
+        padding-right: 6px;
+        font-style:italic;
+    }
+/*8.投资人课堂*/
+.inves-classroom{
+    height: 266px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.classroom-l{
+    height: 266px;
+    width: 818px;
+}
+.classroom-icon{
+    position: relative;
+    top: -2px;
+    left:48px;
+
+}
+.classroom-img{
+    width:812px;
+    height: 188px;
+    border-right: 1px dashed #e5e5e5;
+
+}
+/*微型轮播图3*/
+.swip-three{
+    height: 180px;
+    overflow: hidden;
+}
+.swip-threeul{
+    height: 180px;
+}
+.swip-threeul li{
+    width: 714px;
+    height: 190px;
+}
+.swip-three>.swiper-button-next{
+    width: 22px;
+    height: 30px;
+    background-image: url(../images/banner3-right.png);
+    background-size: contain;
+    opacity: 0.2;
+}
+.swip-three>.swiper-button-next:hover{
+    opacity: 0.8;
+}
+.swip-three>.swiper-button-prev{
+    width: 22px;
+    height: 30px;
+    background-image: url(../images/banner3-left.png);
+    background-size: contain;
+}
+/*8.2存管指南-*/
+    .fingerpost{
+        width: 362px;
+        height: 260px;
+        padding-left: 20px;
+    }
+    .cyber-entry {
+        width: 170px;
+    }
+    .cyber-entry-icon{
+        padding-top: 4px;
+    }
+    .cyber-txt{
+        line-height: 52px;
+        margin-bottom: 14px;
+    }
+    .cyber-bar{
+        width: 356px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .cyber-ptxt{
+        line-height: 24px;
+        padding-left: 14px;
+        width: 100px;
+        display: inline-block;
+    }
+    .cyber-ptxt:hover{
+        opacity: 0.8;
+    }
+    .risk-entry{
+        color: #21b192;
+        line-height: 34px;
+    }
+
+
+        /*弹窗样式*/
+    #new_dialogue {
+
+        padding:1%;
+        margin: 0 auto;
+        position: absolute;
+        top: 10%;
+        bottom:0;
+        right:0;
+        left:0;
+        z-index: 100000;
+    }
+    #dark_bg{
+        z-index: 100000;
+        position:absolute;
+        background-color:#000;
+        opacity: 0.6;
+        filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+    }
+    .alert_box_big{
+        width:800px;
+        border-radius: 4px;
+        padding: 40px;
+        position: fixed;
+        top:30px;
+        left:50%;
+        margin-left:-400px;
+        z-index: 100000;
+        background-color:#fff;
+    }
+
+
+    /*平台公告*/
+    .plat-notice{
+        height: 148px;
+    }
+
+/*登录-注册*/
+.login,.regist{
+    height: 546px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    overflow: hidden;
+}
+.login-l,.regist-l{
+    width: 782px;
+    height: 454px;
+    padding-top:94px;
+    background: #fffae3;
+}
+.login-r,.regist-r{
+    width:418px;
+    height:500px;
+}
+.login-in,.regist-in{
+    width: 290px;
+    height:400px;
+    margin: 36px 0 0 72px;
+}
+.login-in input,.regist-in input{
+    padding-left: 14px;
+}
+.login-til,.regist-til{
+    width:112px;
+    height:60px;
+    line-height: 60px;
+    background: url("../images/login-til.png") 14px 30px no-repeat;
+}
+.regis-til{
+    height:60px;
+    line-height: 60px;
+    text-decoration:underline;
+}
+.log-input,.regist-input{
+    width: 300px;
+    height:242px;
+    margin-bottom: 40px;
+}
+.phone-input,.pass-sub,.passag-sub,.rephone-sub{
+    width: 272px;
+    height: 38px;
+    line-height: 38px;
+    border: 2px solid #999999;
+    border-radius: 4px;
+}
+.log-err{
+    width: 274px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 14px;
+}
+.rephone-num{
+    width: 160px;
+    height: 32px;
+    border: none;
+}
+
+.img-num{
+    width: 300px;
+    height:44px;
+}
+.img-input{
+    width: 180px;
+    height: 38px;
+    line-height: 38px;
+    border: 2px solid #999999;
+    border-radius: 4px;
+}
+.login-er,.regist-er{
+    height:48px;
+    line-height: 48px;
+    text-align: left;
+}
+.login-btng,.regist--btng{
+    width: 300px;
+    height: 50px;
+}
+.login-btn{
+    width: 138px;
+    height: 50px;
+    line-height: 42px;
+    background: url("../images/login-btn.png") no-repeat top center;
+}
+.forget-pass{
+ padding-top: 30px;
+    text-decoration: underline;
+}
+/*注册重构*/
+.regist-l{
+    background: #effaff;
+}
+.regist-input{
+    height: 400px;
+    margin-bottom: 0;
+}
+.regist-in {
+    margin: 10px 0 0 72px;
+}
+.phone-btn{
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    background: #ffba01;
+}
+.regis-sq{
+    padding-right: 6px;
+}
+.rephone-sub{
+    width: 288px;
+    margin-bottom: 0;
+}
+.regis-rich{
+    line-height: 34px;
+}
+.regis-aree{
+    color: #767676;
+}
+.rphone-input,.rpass-sub,.rpassag-sub,.rtephone-sub{
+    width: 272px;
+    height: 32px;
+    line-height: 32px;
+    border: 2px solid #999999;
+    border-radius: 4px;
+}
+.rtephone-sub{
+    width: 286px;
+    height: 34px;
+}
+
+/* 注册成功*/
+.regis-success{
+    height: 480px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.look-gift{
+    text-decoration: underline;
+    line-height:60px;
+    text-align: right;
+    padding-right: 20px;
+}
+.look-giftimg{
+    width: 678px;
+    height:421px;
+    background: url("../images/lool-giftimg.png") no-repeat bottom center;
+}
+.look-txt,.open-btn{
+    width: 280px;
+    height:48px;
+    line-height: 48px;
+    color: #8fbf35;
+}
+.look-txt{
+    padding-top: 65px;
+}
+.look-txt span{
+    margin-left: 24px;
+}
+.your-gift{
+    width: 678px;
+    height: 66px;
+    line-height: 66px;
+}
+
+/*二.我的金开贷*/
+.my-jkd{
+    min-height:400px;
+    margin-top:20px;
+    margin-bottom: 40px;
+}
+.myjkd-leftmenu{
+    min-height:820px;
+    width: 182px;
+    margin-right: 24px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+.my-jkd-con{
+    width: 990px;
+    min-height:400px;
+}
+
+.wid90{
+    width: 990px;
+}
+.activation-top{
+    height: 90px;
+}
+.activation-tip{
+    line-height: 90px;
+    width: 736px;
+    padding-left: 40px;
+    overflow: hidden;
+}
+.redbtn{
+    width: 140px;
+    height:44px;
+    line-height: 38px;
+    display: block;
+    background: url("../images/redbtn.png") no-repeat top  center;
+}
+.activation-top a{
+    margin-top: 24px;
+}
+.person-center{
+    height: 220px;
+    margin: 20px 0;
+}
+.person-centerl{
+    width: 656px;
+    height: 192px;
+    padding: 28px 0 0 28px;
+    margin-right: 14px;
+}
+.head-box{
+    width: 236px;
+    height: 72px;
+}
+.head-img{
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    margin-right: 16px;
+    background: #999;
+}
+.pe-txt{
+    width:94px;
+    height: 72px;
+    line-height:72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+}
+.pe-name{
+    width: 146px;
+    height: 72px;
+}
+.pe-name a{
+    float: left;
+    padding: 28px 0 0 14px;
+}
+.vip-box{
+    width: 348px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 58px;
+}
+.vip-coin{
+    width: 650px;
+    height: 44px;
+    margin-top: 46px;
+}
+.vipicon{
+    width: 160px;
+    height: 44px;
+    padding-left: 20px;
+}
+.vip-num{
+    line-height: 50px;
+    padding-left: 12px;
+    color: #a27600;
+}
+.jkd-num{
+    padding-left:2px;
+    line-height: 44px;
+    color: #a27600;
+}
+
+.jkdcoin{
+    width: 248px;
+    height: 44px;
+}
+.jkdcoin-img{
+    margin: 0 10px 0 52px;
+}
+.coin-num{
+    text-decoration: underline;
+    padding-left: 4px;
+}
+.jkd-lottery{
+    width: 218px;
+    height: 44px;
+}
+.lottery-img{
+    margin: 0 10px  0 56px;
+}
+
+.idcode,.sf-center,.jkd-letter{
+    width: 22px;
+    height: 24px;
+    padding-right: 26px;
+}
+.letter-num{
+    padding:0 4px;
+    height:14px;
+    line-height: 14px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    top:10px;
+    left: 20px;
+    background: #e90000;
+}
+.vippe{
+    padding-right: 14px;
+}
+/*激活账户*/
+.activ-account{
+    width: 290px;
+    height: 222px;
+}
+.account-num{
+    width: 190px;
+    height: 128px;
+}
+.bank-name{
+    margin-top: 70px;
+    line-height: 34px;
+}
+.bank-num{
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+ /*激活后*/
+.activ-accounted{
+    width: 240px;
+    height: 180px;
+    margin: 38px 0 0 38px;
+    color: #3797979;
+}
+.elec-name{
+    padding:4px 0 22px 14px;
+}
+.recharge-activ{
+    width: 202px;
+    height: 30px;
+}
+.recharge-redbtn,.drawing-blbtn{
+    width: 66px;
+    height: 28px;
+    line-height: 22px;
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+.recharge-redbtn{
+    background: url("../images/recharge-redbtn.png") top center no-repeat;
+}
+.drawing-blbtn{
+    background: url("../images/drawing-blbtn.png") top center no-repeat;
+
+}
+.recharge-activ a{
+    margin-left: 24px;
+}
+.limit-txt{
+    text-decoration: underline;
+    float: right;
+    line-height: 72px;
+}
+/*<!--我的账户信息-->*/
+.mine-account{
+    width: 934px;
+    height: 248px;
+    padding: 40px 0 0 56px;
+}
+.mine-accl{
+    width: 440px;
+    height:106px;
+}
+.acc-box{
+    margin-top: 6px;
+    height: 54px;
+}
+.acc-boxr{
+    margin: 6px 0 0 56px;
+    height: 54px;
+}
+.q-mark{
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 14px;
+}
+.my-balance{
+    line-height: 22px;
+}
+.my-balance-num{
+    padding: 0 8px 0 26px;
+}
+.profit{
+    padding-top: 20px;
+}
+.my-profit{
+    line-height: 22px;
+    padding-top: 30px;
+}
+/*账户中心背景*/
+.acc-bg{
+    width: 1000px;
+    height:80px;
+    background: url("../images/acc-bg.png") no-repeat top center;
+    bottom: 20px ;
+    right: -6px;
+    z-index: 1;
+}
+.acc-bgl{
+    width: 440px;
+    height: 80px;
+    padding-left: 60px;
+    line-height: 86px;
+}
+.acc-bgl .q-mark{
+    padding-top: 14px;
+}
+.add-income{
+    padding: 0 14px 0 26px;
+}
+.invest-info{
+    width: 990px;
+    height: 220px;
+    margin-top: 14px;
+    margin-bottom:30px;
+}
+.invest-info ul li{
+    width: 246px;
+    height:175px;
+    margin-top: 44px;
+    text-align: center;
+    float: left;
+}
+.invet-icon{
+    margin-bottom: 10px;
+}
+
+/*我的投资*/
+.my-invest,.jkd-exgold{
+    width: 990px;
+    height: 222px;
+}
+.my-investl,.jkd-exgoldl{
+    width: 660px;
+    height:  222px;
+}
+.invest-til{
+    width: 114px;
+    height:50px;
+    line-height: 46px;
+    margin-left: 40px;
+    top: -4px;
+    background: url("../images/myinves.png") no-repeat top center;
+}
+.cash-logtil{
+    width: 184px;
+    height: 44px;
+    line-height: 44px;
+    z-index: 3;
+    background: url(../images/invest-selected.png) no-repeat top center;
+    opacity: 1;
+    padding-top: 0px;
+    color: #a27600;
+    font-size: 20px;
+    top:-4px;
+    left: 35px;
+}
+.my-investl ul li{
+    width: 276px;
+    height: 76px;
+    line-height: 76px;
+    float: left;
+}
+.my-investl ul{
+    padding: 42px 0 0 45px;
+}
+.my-investl .q-mark{
+    padding-top: 6px;
+}
+.add-num,.add-numl{
+    width: 136px;
+    height:76px ;
+    display: inline-block;
+    padding-right:10px;
+}
+.add-numl{
+    width:102px;
+}
+/*invest-bg*/
+.invest-bg {
+    width:362px;
+    height: 234px;
+    background: url("../images/invest-bg.png") no-repeat top center;
+    right: 20px;
+    top:-8px;
+}
+.invest-bg .q-mark{
+    padding:44px 0 0 32px;
+}
+.principal{
+    line-height: 104px;
+}
+.principal-num{
+    line-height: 48px;
+    padding-left:68px;
+}
+.principal-num span{
+    padding-left: 20px;
+}
+/*--投资项目列表--*/
+.invest-list,.exgold-list{
+    width: 990px;
+    min-height: 490px;
+    margin: 26px 0 40px 0;
+    padding-bottom: 30px;
+}
+
+
+/* 我的金开贷债权转让myjkd-transfer*/
+.myjkd-transfer{
+    width: 950px;
+    height: 222px;
+    padding-left: 40px;
+    background: #fff url(../images/myjkd-transferimg.png) no-repeat 580px 10px;
+}
+.myjkd-transfer-til{
+    width: 184px;
+    height: 44px;
+    line-height: 44px;
+    z-index: 3;
+    background: url(../images/invest-selected.png) no-repeat top center;
+    opacity: 1;
+    padding-top: 0px;
+    color: #a27600;
+    font-size: 20px;
+    top: -4px;
+    left:0;
+}
+.transfer-num{
+    width: 990px;
+    height: 82px;
+    margin: 10px 0 20px 0;
+}
+.transfer-numimg{
+    width: 296px;
+    padding-left: 154px;
+    height: 68px;
+    margin-top: 14px;
+}
+.transfer-numimg span{
+    line-height: 54px;
+}
+.transfer-numimg p{
+    padding: 0 14px 0 14px;
+}
+.mid-line{
+    height: 42px;
+    width: 1px;
+    margin-top: 20px;
+    background: #f2f2f2;
+}
+
+.transfer-table{
+    width: 990px;
+    height:38px;
+    line-height: 38px;
+    background: #f2f2f2;
+}
+.transfer-p1{
+    width: 296px;
+    padding-left: 38px;
+}
+
+.transfer-p2{
+    width: 124px;
+}
+.transfer-p3{
+    width: 100px;
+}
+.transfer-p4{
+    width: 102px;
+}
+.transfer-p5{
+    width: 78px;
+}
+.transfer-p6{
+    width: 170px;
+}
+.transfer-p7{
+    width: 76px;
+}
+.transfer-tbody{
+    height: 86px;
+    line-height: 86px;
+    border-bottom: 1px solid #e9e9e9;
+}
+/* 我的金开贷债权转让myjkd-trans*/
+.myjkd-trans{
+    width: 950px;
+    height: 398px;
+    padding-left: 40px;
+}
+
+.myjkd-trans-til,.recharge-til,.withdraw-til{
+    width: 210px;
+    height: 58px;
+    line-height: 46px;
+    margin-bottom: 14px;
+    top:-5px;
+    left: -16px;
+    background:url("../images/myinves.png") no-repeat top center;
+}
+.recharge-til,.withdraw-til{
+    left: -55px;
+}
+.trans-box{
+    top:-5px;
+    left: -48px;
+}
+.transp{
+    line-height: 44px;
+}
+.trans-name{
+    width: 90px;
+    line-height: 44px;
+    display: inline-block;
+}
+.transp input{
+    width: 124px;
+    height: 26px;
+    margin-right: 20px;
+}
+.transp-redbtn{
+    width: 509px;
+    height: 44px;
+    margin: 20px 0 30px 92px;
+}
+.transp-pt{
+    right: -400px;
+    top:-44px;
+}
+
+/*我的资产提现myjkd-property-withdraw*/
+.propertymy  select{
+    width: 220px;
+    height: 32px;
+    color: #999;
+}
+.propertymy-redbtn{
+    margin: 34px 0 30px 92px;
+}
+.myjkd-property{
+    height: 590px;
+}
+/*我的资产提现-充值red-path*/
+.red-path{
+    padding-left: 20px;
+    text-decoration: underline;
+}
+.my-assets{
+    width: 990px;
+    min-height:880px;
+}
+.my-assetsr{
+    width: 990px;
+    min-height: 222px;
+}
+.my-assets-top{
+    width: 990px;
+    height: 434px;
+}
+.my-assets-ul{
+    width: 950px;
+    height: 164px;
+    padding-left: 40px;
+}
+.my-assets-ul .q-mark{
+    margin-right: 4px;
+}
+.my-assets-ul1 {
+    width: 284px;
+    height: 164px;
+}
+.my-assets-ul2{
+    width: 224px;
+    height: 164px;
+}
+.my-assets-ul3{
+    width:188px;
+    height: 164px;
+}
+.my-assets-ul4{
+    width:153px;
+    height: 164px;
+}
+.my-assetsinfo{
+    margin: 30px 0 42px 0;
+}
+.my-assets-ul span{
+    padding: 0 1px;
+}
+.coin-log{
+    text-decoration: underline;
+}
+.bank-card{
+    width: 709px;
+    height: 185px;
+    background: url("../images/redcard.png") no-repeat top left;
+
+}
+.bank-cardl{
+    width: 344px;
+    height:184px;
+}
+.bind-card{
+    line-height: 34px;
+    margin: 0 40px 0 14px;
+}
+.replac-card{
+    text-decoration: underline;
+}
+.bind-name{
+    line-height: 48px;
+    margin-top:16px;
+}
+.bind-name,.bind-num{
+    margin-left: 26px;
+}
+.bank-cardr {
+    width: 330px;
+    height: 156px;
+    padding-top: 14px;
+    padding-left:18px;
+}
+.tele-num{
+    line-height: 34px;
+}
+.tele-name{
+    width: 90px;
+    line-height: 38px;
+    padding-right: 30px;
+    display: inline-block;
+    text-align: right;
+}
+.aaset-recharge{
+    width: 260px;
+    height:40px;
+    margin-top: 14px;
+}
+.aaset-recharge .drawing-blbtn{
+    margin-left: 26px;
+}
+.cash-log{
+    width: 990px;
+    min-height:502px;
+    padding-bottom: 80px;
+    margin-top: 14px;
+    margin-bottom: 40px;
+}
+.assets-select{
+    width: 940px;
+    height: 30px;
+    padding:22px 0 22px 42px;
+}
+.assets-selectp{
+    width: 240px;
+    height: 30px;
+}
+.assets-selectp select{
+    width: 116px;
+    height: 30px;
+    margin-left: 14px;
+}
+.assets-table{
+    width: 990px;
+    height:38px;
+    line-height: 38px;
+    background: #f2f2f2;
+}
+.asset-p1{
+    width: 180px;
+    padding-left: 38px;
+}
+.asset-p2{
+    width: 300px;
+    margin-right: 40px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.asset-p3{
+    width: 126px;
+}
+.asset-p4{
+    width:148px;
+}
+.asset-p5{
+    width:144px;
+}
+
+.assets-tbody{
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.transferable-icon{
+    width: 66px;
+    height: 80px;
+    display: inline-block;
+    top: -8px;
+    right: -5px;
+}
+.transfer-info{
+    width: 356px;
+    height: 148px;
+    line-height: 26px;
+    padding-top: 14px;
+}
+/*自动投标*/
+.aubid{
+    width: 950px;
+    min-height: 222px;
+    padding-left: 40px;
+    background: #fff url(../images/bidgo.png) no-repeat 580px 10px;
+}
+.autobid-box{
+    height: 750px;
+    margin: 20px 0 34px 0;
+}
+.autobid-top{
+    width: 990px;
+    height: 92px;
+}
+.autobid-topr{
+    width: 158px;
+    height: 90px;
+    padding: 22px 18px 0 0;
+    top:0;
+    right:0;
+}
+.bid-open{
+    width: 96px;
+    height: 24px;
+    line-height: 24px;
+}
+.bidop-btn,.bidcl-btn{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url("../images/op-close.png") no-repeat top center;
+}
+.bidcl-btn{
+    background: url("../images/bidclose.png") no-repeat top center;
+}
+.autobid-topr p{
+    padding-left:8px;
+}
+.bid-product{
+    height: 100px;
+}
+.product-name{
+    width: 194px;
+    height:60px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bid-product-name{
+    width: 160px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 40px;
+}
+.pro-only{
+    width: 68px;
+    height: 100px;
+    line-height: 100px;
+    margin-right: 58px;
+    cursor: pointer;
+
+}
+.pro-onlyb{
+    color: #fff;
+    background: url(../images/bid-onlybtn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.credit-loan{
+    width: 106px;
+    height: 100px;
+    line-height: 100px;
+}
+.ticket-loan{
+    width: 208px;
+    line-height: 100px;
+
+}
+.assure-loan {
+    width: 94px;
+    line-height: 100px;
+
+}
+.car-loan {
+    width: 222px;
+    line-height: 100px;
+}
+.bid-bg{
+    background: url("../images/bid-btnbg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+.loan-input{
+    line-height: 100px;
+}
+.loan-input  input{
+    width: 112px;
+    height: 26px;
+    margin-top: 38px;
+    padding-left: 6px;
+    color: #666;
+    border: 1px solid #d2d2d2;
+    float: left;
+}
+.loan-input span{
+    padding: 0 32px 0 12px;
+}
+.coupon-box{
+    width: 72px;
+    height: 48px;
+    padding: 30px 0 0 48px;
+}
+.coupon{
+    width: 72px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    background: url("../images/coupon.png") no-repeat top center;
+}
+.couponb{
+    width: 72px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    background: url("../images/couponb.png") no-repeat top center;
+}
+.bid-btn{
+    height: 96px;
+    padding-left: 446px;
+    padding-top: 64px;
+}
+
+/*9.25*/
+.borrowed-top{
+    width: 990px;
+    height: 211px;
+}
+.borrowed-ul1{
+    width: 212px;
+    height: 96px;
+}
+.borrowed-ul2{
+    width: 236px;
+    height: 164px;
+}
+.borrowed-ul3{
+    width: 230px;
+    height:164px;
+}
+.borrowed-img{
+    width: 264px;
+    height: 234px;
+    top: -61px;
+    right: 0;
+    background:url("../images/borrowimg.png") no-repeat center;
+}
+.borrow-num{
+    padding: 40px 0 0 26px;
+}
+.borrow-numed{
+    line-height: 140px;
+    padding-left: 56px;
+}
+.borrow-num .q-mark{
+    padding-top: 6px;
+}
+.borrow-tabtop{
+    width: 990px;
+    height: 46px;
+}
+.borrow-table{
+    width: 990px;
+    height: 40px;
+    line-height: 40px;
+    background: #f2f2f2;
+}
+.borrow-tbody{
+    height: 106px;
+    line-height: 56px;
+    display: inline-block;
+    border-bottom: 1px solid #e9e9e9;
+}
+.borrow-tb{
+    width: 990px;
+    min-height: 490px;
+    margin-top:6px;
+    padding-bottom: 80px;
+}
+.borrow-tob{
+    width: 910px;
+    height: 58px;
+    line-height: 58px;
+}
+.borrow-d{
+    width: 226px;
+    height: 100px;
+    padding-left: 14px;
+}
+.borrow-name{
+    width: 220px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.borrow-p1{
+    width: 226px;
+    padding-left: 14px;
+
+}
+.borrow-p2{
+    width: 104px;
+}
+.borrow-p3{
+    width:134px;
+}
+.borrow-p4{
+    width: 74px;
+}
+.borrow-p5{
+    width: 120px;
+}
+.borrow-p6{
+    width: 128px;
+}
+.borrow-p7{
+    width: 100px;
+}
+.borrow-p8{
+    width: 76px;
+}
+.confirma{
+    width: 68px;
+    height: 26px;
+    line-height: 20px;
+    margin-top: 12px;
+    color: #fff;
+    background: url("../images/confirma.png") no-repeat top center;
+}
+/*我的VIP*/
+.vip .myjkd-vip{
+    width: 950px;
+    height: 222px;
+    padding-left: 40px;
+    background: #fff url(../images/myvip-bg.png) no-repeat 580px 10px;
+}
+.vip-numimg{
+    width: 370px;
+    padding-left: 71px;
+    height: 68px;
+    margin-top: 14px;
+}
+.jkdvipicon{
+    padding: 0 15px;
+}
+.vip-txt {
+    width: 470px;
+    height: 68px;
+    margin-top: 14px;
+    padding: 0 0 0 60px;
+}
+.vip-index{
+    padding:0 14px;
+}
+    .lred-btn{
+        min-width:40px;
+        padding: 0 12px;
+        height:20px;
+        display: inline-block;
+        border-radius:12px ;
+        background: #f15b3a;
+        line-height: 20px;
+        border: 2px solid #000;
+        box-shadow: 2px 2px 0 #f15b3a;
+    }
+    .yel-sbtn,.gr-sbtn,.user-num,.grsbtn-bordergr,.greysbtn-bordergr{
+        min-width:40px;
+        padding: 0 12px;
+        height:20px;
+        display: inline-block;
+        line-height: 20px;
+        border-radius:12px ;
+        background: #ffba01;
+        border: 2px solid #000;
+        text-align: center;
+        box-shadow: 2px 2px 0 #ffba01;
+    }
+    .gr-sbtn{
+        background: #619e13;
+        box-shadow: 2px 2px 0 #619e13;
+        color: #fff;
+    }
+    .grsbtn-bordergr{
+        background: #57c018;
+        box-shadow: 0 0 0 #ffba01;
+        border:2px solid #4fa001;
+    }
+    .greysbtn-bordergr{
+        background: #9b9b9b;
+        box-shadow: 0 0 0 #ffba01;
+        border:2px solid #7e7e7e;
+    }
+    .lgray-btn{
+        min-width:40px;
+        padding: 0 12px;
+        height:20px;
+        display: inline-block;
+        border-radius:12px ;
+        text-align: center;
+        background: #999999;
+        line-height:20px;
+        border: 2px solid #000;
+        box-shadow: 2px 2px 0 #999999;
+    }
+    .white-btn{
+        min-width:40px;
+        padding: 0 12px;
+        height:20px;
+        border-radius:12px ;
+        background: #fff;
+        color: #000;
+        text-align: center;
+        line-height: 20px;
+        margin: 10px;
+        margin-top: 6px;
+        border: 2px solid #000;
+        box-shadow: 2px 2px 0 #fff;
+    }
+    .blue-sbtn{
+        margin-right: 10px;
+        text-align: center;
+        min-width: 40px;
+        padding: 0 12px;
+        height: 20px;
+        color: #fff;
+        display: inline-block;
+        border-radius: 12px;
+        background: #3174e9;
+        line-height: 20px;
+        border: 2px solid #000;
+        box-shadow: 2px 2px 0 #3174e9;
+    }
+    .vip .lred-btn{
+        margin: 10px 0 0 24px;
+    }
+/*VIP等级*/
+.vip-outbox  {
+    height: 412px;
+    margin: 20px 0 34px 0;
+}
+.vip-v{
+    width: 902px;
+    height:66px;
+    margin: 42px 0 0 35px;
+}
+.vip-rank{
+    width: 890px;
+    height: 10px;
+    background: #ececec;
+}
+.vip-rankred{
+    height: 10px;
+    width: 66.66%;
+    background: #fb8e5e;
+}
+.vip-icon{
+    width: 890px;
+    height: 20px;
+    top: -6px;
+    left: 0;
+}
+.vip1{
+    width: 122px;
+    height: 20px;
+    margin-right: 114px;
+}
+.vip2{
+    width: 120px;
+    height: 20px;
+    margin-right:194px;
+}
+.vip3{
+    width: 90px;
+    height: 20px;
+    margin-right: 100px;
+}
+.vip4{
+    width: 148px;
+    height: 20px;
+}
+.vip-til{
+    line-height:44px;
+    padding-left: 60px;
+}
+.vip-table{
+    width: 926px;
+    height: 194px;
+    display: block;
+    border: 1px solid #fb8e5e;
+    overflow: hidden;
+}
+.vip-tablein{
+    width: 990px;
+    height:38px;
+    line-height: 38px;
+    background: #f2f2f2;
+}
+.vip-tbodyin{
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.vip-table thead{
+    height: 34px;
+    line-height: 34px;
+    display: block;
+    text-align: center;
+    background: #ffebde;
+}
+.vip-table thead td{
+    line-height: 39px;
+    border: 1px solid #ecf0f1;
+    border-top: none;
+}
+.vip-tablein p,.vip-tbodyin p{
+    text-align: center;
+}
+.vip-tableinfo{
+    width:626px;
+    height:46px;
+    padding-right: 30px;
+    top: 14px;
+    right: 0;
+    text-align: right;
+}
+.vip-tbn{
+    text-decoration: underline;
+}
+.vip-p1{
+    width: 340px;
+}
+.vip-p2{
+    width: 94px;
+}
+.vip-p3{
+    width: 320px;
+}
+.vip-p4{
+    width: 130px;
+}
+.vip-bot{
+    margin-bottom: 24px;
+}
+/*我的今开币*/
+.myjkd-jkdcoin{
+    width: 990px;
+    height: 222px;
+    margin-bottom:14px;
+}
+.myjkd-jkdcoin .myjkd-transfer-til{
+    margin-left: 40px;
+}
+.jkdcoin-ul{
+    width: 950px;
+    height: 130px;
+    margin-left: 40px;
+    margin-top:36px;
+}
+.jkdcoin-ul li{
+    width:212px;
+    height: 130px;
+    float: left;
+}
+.jkdcoin-ul li a{
+    margin-top: 16px;
+}
+/*我的金开币*/
+.coinimg-bg{
+    width: 990px;
+    height:82px;
+    margin-bottom: 14px;
+    background: url("../images/coinimg-bg.png") no-repeat top center;
+}
+.coin-bgl{
+    width: 346px;
+    height: 82px;
+    margin:20px  24px 0  160px;
+}
+.coin-bgr{
+    width: 450px;
+    height: 82px;
+    margin-top: 20px;
+}
+.coinicon{
+    margin-right: 32px;
+}
+.coin-p1{
+    width: 300px;
+}
+.coin-p2{
+    width: 96px;
+}
+.coin-p3{
+    width: 248px;
+}
+.coin-p4{
+    width: 88px;
+}
+.coin-p5{
+    width: 236px;
+}
+/*w我的体验金*/
+.exgoldSlide{
+    width:630px;
+    text-align:left;
+}
+.exgoldSlide .hd{
+    height:50px;
+    line-height:50px;
+    position:relative;
+}
+.exgoldSlide .hd ul{
+    position: absolute;
+    top: -5px;
+    float:left;
+    height:56px;
+}
+.exgoldSlide .hd ul li {
+    width: 194px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 18px;
+    text-align:center;
+    float:left;
+    cursor:pointer;
+}
+.exgoldSlide .hd ul li.on{
+    line-height: 58px;
+    color: #a27600;
+    z-index: 3;
+    background: url(../images/invest-selected.png) no-repeat top center;
+}
+/*我的体验金*/
+.exgold-select{
+    width: 990px;
+    min-height:350px;
+    padding-bottom: 80px;
+}
+
+.jkd-exgold .add-num{
+    width: 120px;
+}
+.jkd-exgold .add-numl {
+    width: 100px;
+}
+.jkd-exgold .myjkd-transfer-til{
+    margin-left: 40px;
+}
+.jkd-exgold .exgold-li1,.jkd-exgold .exgold-li3{
+    width: 240px;
+}
+.exgold-y{
+    width: 296px;
+    height: 78px;
+    margin:40px 0 0 50px ;
+}
+.exgold-g{
+    width: 296px;
+    height: 90px;
+    margin-left:50px ;
+}
+.exgold-img{
+    margin-right: 28px;
+    height: 78px;
+}
+.exgold-g .exgold-img{
+    margin-top: 10px;
+}
+.exgold-use {
+    text-decoration: underline;
+    padding-left: 14px;
+}
+.exgold-select .assets-select{
+    display:block;
+}
+.calendar1{
+    width: 110px;
+    height: 24px;
+    margin-left: 14px;
+    text-align: center;
+}
+.exgold-table{
+    width: 990px;
+    height:38px;
+    line-height: 38px;
+    background: #f2f2f2;
+    display:inline-block;
+}
+.exgold-tbody{
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    border-bottom: 1px solid #e9e9e9;
+}
+.exgold-p1{
+    width: 244px;
+    padding-left: 30px;
+}
+.exgold-p2{
+    width: 192px;
+}
+.exgold-p3{
+    width:200px;
+}
+.exgold-p4{
+    width:170px;
+}
+.exgold-p5{
+    width:126px;
+}
+
+/*我的奖券*/
+.lottery-box{
+    min-height:210px;
+    margin: 20px 0 34px 0;
+    padding-bottom: 80px;
+}
+.lottery-top{
+    width: 990px;
+    height:56px;
+}
+.lottery-input{
+    width: 950px;
+    height:58px;
+    padding: 4px 0 0 40px;
+    border-bottom: 1px dashed #e6e6e6;
+}
+.lottery-input input{
+    width:226px;
+    height: 26px;
+}
+.lottery-input .lred-btn{
+    display: inline;
+    margin:0 14px;
+}
+.lottery-input  .sm-btngroup {
+    width: 800px;
+    height: 21px;
+    margin-left: 45px;
+    padding: 6px 0 20px 0;
+}
+.lottery-ul{
+    width: 944px;
+    min-height: 200px;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.lottery-ul li{
+    width: 234px;
+    height: 132px;
+    margin-right: 40px;
+    margin-bottom: 24px;
+    float: left;
+}
+.lottery-coin{
+    background: url("../images/lottery-coin.png") no-repeat top center;
+}
+.lottery-rates{
+    background: url("../images/lottery-rates.png") no-repeat top center;
+}
+.lottery-other{
+    background: url("../images/lottery-other.png") no-repeat top center;
+}
+.lottery-activ{
+    background: url("../images/lottery-activ.png") no-repeat top center;
+}
+.lottery-ess{
+    background: url("../images/lottery-ess.png") no-repeat top center;
+}
+ .lottery-manage{
+     background: url("../images/lottery-manage.png") no-repeat top center;
+ }
+.lottery-cash{
+    background: url("../images/lottery-cash.png") no-repeat top center;
+}
+.lottery-cashbag{
+    background: url("../images/lottery-cashbag.png") no-repeat top center;
+}
+.lot-info{
+    width: 136px;
+    height: 30px;
+    color: #fff;
+    text-decoration: underline;
+    line-height: 30px;
+    margin-left: 160px;
+    display: block;
+}
+.lottery p{
+    text-align: left;
+    padding-left: 24px;
+    color: #fff;
+}
+.lottery-coin p{
+    text-align: left;
+    padding-left:66px;
+    color: #fff;
+}
+.lot-txt{
+    width: 216px;
+    height:40px;
+    line-height:40px;
+    color: #fff;
+}
+.lottery-activ .lot-txt{
+    width: 216px;
+    height:20px;
+    line-height:20px;
+    color: #fff;
+}
+.lot-txt span{
+    line-height: 40px;
+    padding-left: 14px;
+}
+.lot-invite{
+    min-width:40px;
+    padding: 0 12px;
+    height:20px;
+    margin-top:8px;
+    color: #fff;
+    text-decoration: underline;
+}
+/* 安全中心css */
+.safeSlideTxtBox{
+    width:990px;
+    text-align:left;
+}
+.safeSlideTxtBox .hd{
+    height:80px;
+    line-height:80px;
+    padding:0 10px 0 0;
+    position:relative;
+}
+.safeSlideTxtBox .hd ul{
+    float:left;
+    position:absolute;
+    top:-4px;
+    height:38px;
+}
+.safeSlideTxtBox .hd ul li
+{
+    float:left;
+    cursor:pointer;
+}
+/*安全中心*/
+.my-jkdsafe-con{
+    width: 990px;
+    min-height:400px;
+    padding-bottom: 80px;
+    margin-bottom:40px;
+}
+.account-info{
+    width: 144px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.bank-info{
+    width: 252px;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 20px;
+    text-align: center;
+    background: url("../images/bankinfo.png") no-repeat 2px 12px;
+}
+.other-info{
+    width: 112px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+.safeSlideTxtBox .hd ul  .account-info.on,.other-info.on{
+    color: #a27600;
+    background: url("../images/myinves.png") no-repeat top center;
+}
+.safeSlideTxtBox .hd ul  .bank-info.on{
+    color: #a27600;
+    background: url("../images/other-info.png") no-repeat top center;
+}
+.safety-factor{
+    width: 990px;
+    height: 62px;
+}
+.safety-bar{
+    margin-left: 58px;
+}
+.safety-til{
+    line-height: 16px;
+}
+.safety-barline{
+    width: 466px;
+    height: 16px;
+    border-radius: 4px;
+    border:1px solid #e5e5e5;
+    margin-left: 20px;
+    background: #efefef;
+    float: left;
+}
+.safety-num{
+    height: 16px;
+    border-radius: 4px;
+    background: #619e13;
+}
+.safety-counter{
+    font-size: 20px;
+    line-height: 20px;
+    color: #619e13;
+    padding:0 24px;
+}
+/*用户名*/
+.safe-user-name{
+    width: 936px;
+    min-height: 60px;
+    padding-left: 54px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.safe-right{
+    width: 34px;
+    height: 38px;
+    margin: 16px 46px 0 0;
+}
+.user-txt{
+    width: 100px;
+    line-height: 62px;
+}
+.user-name-info{
+    width: 272px;
+    height: 62px;
+    line-height: 62px;
+}
+.user-err-info{
+    width:384px;
+    height: 62px;
+    line-height: 62px;
+}
+.safe-user-name .yel-sbtn,.safe-user-name .lgray-btn{
+    margin-top: 20px;
+}
+
+.user-show{
+    width: 990px;
+    min-height: 86px;
+    padding-bottom: 20px;
+    background: #f2f2f2;
+}
+.show-down{
+    display: block;
+}
+.user-info{
+    width:878px;
+    min-height: 118px;
+    margin-top: 14px;
+}
+.user-row{
+    width: 870px;
+    height:36px;
+}
+
+.user-nametxt,.user-name,.user-input{
+    width: 94px;
+    height: 34px;
+    line-height: 34px;
+}
+.user-nametxt{
+    margin-left: 132px;
+}
+.user-name{
+    width: 140px;
+}
+.user-input{
+    width:140px;
+    height: 26px;
+}
+.user-input input{
+    width: 112px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 4px;
+}
+.user-err{
+    height: 34px;
+    line-height:34px;
+    padding-left: 14px;
+}
+.btn-box{
+    width: 64px;
+    height: 40px;
+    margin:32px 32px  0 0;
+}
+.user-row .user-num{
+  margin-top: 4px;
+}
+.address{
+    height: 100px;
+}
+.user-address,.user-instruction{
+    width:240px;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-right:32px;
+}
+.user-instruction{
+    width: 280px;
+    margin-right: 104px;
+}
+.address-row{
+    margin-left: 132px;
+}
+.address-row select{
+    width: 132px;
+    height: 26px;
+    float: left;
+    margin-right: 12px;
+}
+.detail-add{
+    width: 560px;
+    height: 26px;
+    margin-top: 4px;
+}
+.detail-add input{
+    height: 20px;
+}
+.detail-addrow{
+    margin-bottom:0;
+}
+.detail-add input{
+    width: 560px;
+}
+/*银行存管电子账户信息*/
+.user-cardtxt{
+    width: 400px;
+    margin-left: 130px;
+}
+.bank-btn{
+    margin-left: 130px;
+}
+/*其他信息*/
+.personal{
+    padding-top: 10px;
+}
+.personal-til{
+    width: 90px;
+    height: 34px;
+    line-height: 24px;
+    text-align: right;
+    margin: 0 2px 0 116px;
+}
+.personal-sel{
+    width: 132px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 10px;
+}
+.personal-sel input{
+    width: 124px;
+    height: 18px;
+    line-height:18px;
+    margin-left: 0;
+    padding-left: 4px;
+    text-align: left;
+}
+.personal-sel select{
+     width: 132px;
+     height: 24px;
+    text-align: center;
+     line-height:24px;
+ }
+.detail-personal input{
+    width: 266px;
+    height: 18px;
+    line-height:18px;
+    margin-left:9px;
+    padding-left: 4px;
+    text-align: left;
+}
+.personal .yuan,.person-err {
+    line-height:26px;
+    padding-left: 10px;
+}
+/* 变更银行卡*/
+.change-card {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 40px;
+}
+.change-time{
+    min-height: 452px;
+    padding-left: 40px;
+}
+.change-til{
+    line-height: 60px;
+}
+.change-txt{
+    width:110px;
+    height: 26px;
+}
+.change-input{
+    width: 650px;
+    height: 24px;
+    line-height: 24px;
+}
+.change-row{
+    margin: 14px 0;
+}
+.change-input input{
+    width:280px;
+    padding-left: 10px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    background: #e6e6e6;
+    border: 1px solid #d2d2d2;
+}
+.change-err{
+    line-height: 24px;
+}
+.readon input{
+    background: #fff;
+}
+.change-reason{
+    width: 650px;
+    height: 46px;
+    line-height: 24px;
+}
+.change-reason textarea{
+    width: 280px;
+    height: 46px;
+    max-width: 280px;
+    max-height: 46px;
+    padding-left: 8px;
+    line-height: 22px;
+    font-size: 12px;
+    border: 1px solid #d2d2d2;
+    resize: none;
+}
+.doc-info{
+    width: 850px;
+    height: 316px;
+}
+.doc-info li {
+    width: 182px;
+    height: 322px;
+    margin-right: 20px;
+    text-align: center;
+    float: left;
+}
+.idtxt{
+    line-height: 28px;
+}
+.idimage{
+    width: 174px;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    background: #e6e6e6;
+}
+.addid-btn{
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    color: #efa007;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    background: url("../images/addidimage.png") no-repeat top center;
+}
+.id-tips{
+    width: 690px;
+}
+.id-check{
+    margin: 14px 0 40px 0;
+}
+.id-check span{
+    padding-right: 10px;
+}
+.sub-apply{
+    height: 44px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+/*我的消息*/
+.activ-news{
+    height: 64px;
+    line-height: 64px;
+}
+.activ-news li{
+    border-bottom: 1px solid #e5e5e5;
+}
+.activ-txt{
+    width: 790px;
+    height: 64px;
+    overflow: hidden;
+}
+.activ-info{
+    width: 720px;
+    height: 64px;
+    overflow: hidden;
+}
+.activ-poit{
+    width: 8px;
+    height: 8px;
+    margin: 28px 8px 0 30px;
+}
+.red-poit{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin: 28px 8px 0 30px;
+    background: #f26344;
+    float: left;
+}
+.activ-time{
+    width: 118px;
+    height: 64px;
+    line-height: 64px;
+    margin-right: 14px;
+}
+.activ-showbtn{
+    width: 24px;
+    height: 18px;
+    margin-top: 24px;
+    display: block;
+    background: url("../images/activ-show.png") no-repeat top center;
+}
+.activ-showbtn2{
+    transform:rotate(180deg);
+}
+.activ-show{
+    height: 112px;
+    padding-left: 130px;
+    padding-top: 8px;
+    background: #f2f2f2;
+    display: none;
+}
+.activ-show p{
+    line-height: 26px;
+    width: 560px;
+}
+.activ-detail{
+    width: 560px;
+    min-height: 98px;
+}
+.activ-invite{
+    width: 300px;
+    height: 42px;
+    margin-top: 10px;
+    float: right;
+}
+.activ-invite .blue-sbtn{
+    margin-right: 24px;
+}
+/*邀请好友*/
+.myjkd-invite{
+    width: 950px;
+    height: 222px;
+    padding-left: 40px;
+    background:#fff;
+}
+.invite-til{
+    width: 184px;
+    height: 44px;
+    line-height: 44px;
+    z-index: 3;
+    background: url(../images/invest-selected.png) no-repeat top center;
+    opacity: 1;
+    padding-top: 0px;
+    color: #a27600;
+    font-size: 20px;
+    top: -4px;
+    left:40px;
+}
+.invite-bg{
+    width: 228px;
+    height: 220px;
+}
+.inviteimg{
+    height: 134px;
+    background: url("../images/invite-bg.png") no-repeat top center;
+}
+.invite-name{
+    line-height: 50px;
+}
+.invite-txt{
+    width: 342px;
+    height: 140px;
+    line-height: 24px;
+    margin-top: 66px;
+    margin-right: 130px;
+}
+.invite-num{
+    line-height: 116px;
+    text-shadow: 2px 2px 0 #fff;
+}
+.share-icon{
+    width: 200px;
+    height: 18px;
+}
+.invite-box{
+    height: 82px;
+}
+.invite-numimg{
+    margin: 24px 26px 0 160px;
+}
+.num-group{
+    padding-top: 24px;
+    margin-right: 140px;
+}
+.invite-time{
+    line-height: 56px;
+    padding-right: 26px;
+}
+.invite-tab {
+    width: 990px;
+    min-height:340px;
+    margin-bottom:24px;
+}
+.invite-hd{
+    height: 40px;
+    line-height: 40px;
+    background: #f2f2f2;
+}
+.txt-hd{
+    width: 160px;
+    margin-left: 42px;
+}
+.txt-hd2{
+    width: 172px;
+}
+.txt-hd3{
+    width:614px;
+}
+.invite-bd{
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.invite-oder{
+    width: 500px;
+    height: 80px;
+    margin-left: 52px;
+}
+.invite-fr{
+    width: 18px;
+    height:22px;
+    padding-top: 6px;
+    margin-right: 14px;
+}
+.dash-line{
+    width: 70px;
+    height:2px;
+    margin: 38px 20px;
+    border-bottom: 1px dashed #b1b1b1;
+}
+.invite-bot{
+    min-height: 400px;
+    padding-bottom: 80px;
+}
+.invite-p1{
+    width: 203px;
+    margin-left: 42px;
+}
+.invite-p2{
+    width: 208px;
+    margin-left: 90px;
+    text-align: left;
+}
+.invite-p3{
+    width: 211px;
+}
+.invite-p4{
+    width: 192px;
+    text-align: left;
+}
+.lottery .aubid{
+    background: #fff url(../images/lottery-bg.png) no-repeat 480px -42px;
+}
+/*我的电子账户*/
+.ele-account{
+    min-height: 880px;
+    margin-top: 22px;
+    margin-bottom:28px ;
+}
+.ele-top{
+    height: 94px;
+}
+.ele-topbg{
+    width: 342px;
+    height: 94px;
+    padding-top: 20px;
+    background: url("../images/ele-topbg.png") no-repeat 0 40px;
+}
+.account-step{
+    width: 416px;
+    height:94px;
+    margin-top: 38px;
+}
+.account-step .yel-sbtn,.account-step .lgray-btn{
+    width: 96px;
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+.account-step .lgray-btn{
+    color: #fff;
+    margin-right:0;
+}
+.account-stepbg{
+    margin-top: 6px;
+}
+.account-step .ele-mgr{
+    margin-right:30px;
+}
+.account-step .ele-mgl{
+    margin-left:30px;
+}
+
+.account-row{
+    width: 514px;
+    height: 68px;
+    padding-left: 24px;
+    margin: 0 auto;
+}
+.account-til{
+    font-size: 16px;
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 12px;
+}
+.account-input,.account-inputnum{
+    width: 252px;
+    height: 36px;
+}
+.account-input input{
+    width: 246px;
+    height: 34px;
+    color: #929292;
+    border: 1px solid #cccccc;
+    line-height: 34px;
+    padding-left: 6px;
+}
+.account-inputbg{
+    background: #e5e5e5;
+}
+.account-err{
+    height: 30px;
+    line-height: 30px;
+    margin-left: 142px;
+}
+.surpport-bank{
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    padding-left: 18px;
+    text-decoration: underline;
+}
+.account-inputnum .input-phonenum{
+    width: 142px;
+    height: 34px;
+    color: #929292;
+    float: left;
+    border: 1px solid #cccccc;
+    line-height: 34px;
+    padding-left: 6px;
+}
+.account-inputnum .input-btn{
+    width: 90px;
+    border: 1px solid #ffe191;
+    color: #fff;
+    float: right;
+    background: #ffba01;
+    line-height: 34px;
+}
+.ele-accinfo{
+    margin-left: 128px;
+}
+.account-row .redbtn{
+    margin-left: 128px;
+}
+/*充值*/
+.recharge-steptop{
+    height: 364px;
+}
+.recharge-account{
+    height: 230px;
+    width: 542px;
+    padding-left: 90px;
+}
+.account-opened{
+    width: 270px;
+    height: 150px;
+}
+.account-numinfo{
+    width: 260px;
+    height: 124px;
+    line-height: 32px;
+    padding-top: 58px;
+}
+.account-txt{
+    width: 200px;
+    margin-left: 20px;
+}
+.elec-num{
+    width: 76px;
+    height: 32px;
+    display: inline-block;
+}
+.recharge-step{
+    width: 1110px;
+    height: 124px;
+    margin: 30px 0 0 80px;
+}
+.recharge-step li{
+    width: 214px;
+    float: left;
+    margin-right:60px;
+    height: 104px;
+    text-align: center;
+}
+.acc-btn1,.acc-btn1-1,.acc-btn2,.acc-btn2-1,.acc-btn3,.acc-btn3-1,.acc-btn4,.acc-btn4-1{
+    width: 214px;
+    height: 66px;
+    display: block;
+}
+/*ie8888888888*/
+.acc-btn1{
+    background: url("../images/acc-steprecharge.png") no-repeat top center;
+}
+.acc-btn1-1{
+    background: url("../images/acc-steprecharge1.png") no-repeat top center;
+}
+.acc-btn2{
+    background: url("../images/app-rechage.png") no-repeat top center;
+}
+.acc-btn2-1{
+    background: url("../images/app-rechage1.png") no-repeat top center;
+}
+.acc-btn3{
+    background: url("../images/cyber-recharge.png") no-repeat top center;
+}
+.acc-btn3-1{
+    background: url("../images/cyber-recharge1.png") no-repeat top center;
+}
+.acc-btn4{
+    background: url("../images/bank-recharge.png") no-repeat top center;
+}
+.acc-btn4-1{
+    background: url("../images/bank-recharge1.png") no-repeat top center;
+}
+.recharge-bd2,.recharge-bd3,.recharge-bd4{
+    display: none;
+}
+.recharge-gray-{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    opacity: 0.85;
+}
+.recharge-bd{
+    min-height: 390px;
+}
+.recharge-bdstep1,.recharge-bdstep2,.recharge-bdstep3,.recharge-bdstep4{
+    width: 990px;
+    min-height: 284px;
+    border-top: 1px solid #e6e6e6;
+}
+.stepnum{
+    width: 94px;
+    height: 60px;
+    top: -4px;
+    left: 66px;
+}
+.stepimg1{
+    width: 290px;
+    min-height: 180px;
+    margin-top: 56px;
+    margin-left: 196px;
+    border-right:1px solid #e6e6e6;
+}
+.steptxt{
+    padding-top: 92px;
+    padding-left: 70px;
+    line-height: 38px;
+}
+.recharge-bd2 .steptxt{
+    padding-top: 60px;
+}
+.recharge-bd3 .steptxt{
+    padding-top: 42px;
+}
+.steptxt p{
+    width: 430px;
+}
+.steptxt .text-ind40{
+    width: 390px;
+    padding-left: 26px;
+    line-height:26px;
+}
+.steptxt .redbtn{
+    margin: 26px 0 0 26px;
+}
+.step-til{
+    padding-right: 14px;
+    font-weight: 600;
+}
